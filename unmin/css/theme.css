@@ -68,7 +68,11 @@
   body> header {
     background: #cccccc;
   }
-
+  
+  main {
+	background: white !important;
+  }
+  
   #wb-bar {
     background: #555555;
   }
@@ -77,8 +81,8 @@
     background: #333333;
   }
 
-  #wb-bnr> .container {
-    background: #cf3f0e;
+  #wb-bnr {
+    background: #3cb878;
   }
 
   #wb-sttl a {
@@ -122,6 +126,14 @@
 
   [dir=rtl] #wb-dtmd {
     float: left;
+  }
+  
+  .btn-primary {
+	background-color: #3cb878;
+  }
+  
+  #wb-sttl a {
+	text-decoration: none;
   }
 }
 
@@ -345,10 +357,6 @@
   body> header+ .container,
   #wb-bc .container {
     background-color: white;
-  }
-
-  body {
-    background: #eeeeee;
   }
 
   footer {
