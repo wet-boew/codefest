@@ -4,12 +4,23 @@
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  *
  */
-
-#side-nav {
-	padding-left: 0px;
-	padding-right: 0px;
-}
+ 
 
 #wb-sttl {
 	padding-top: 15px !important;
+}
+
+#codefest-menu {
+	background: #464646;
+}
+
+#wb-sec {
+	margin-top: 0px;
+	border: 0px;
+}
+
+#wb-sec .list-group a.list-group-item {
+	background: #464646;
+	color: white;
+	border: 1px solid #525252;
 }
