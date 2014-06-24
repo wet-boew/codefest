@@ -9,10 +9,22 @@
 #wb-sttl {
 	padding-top: 10px !important;
 	padding-left: 15px;
+    min-height: 67px;
+}
+
+#codefest-wrapper {
+	background: #464646;
+
 }
 
 #codefest-menu {
-	background: #464646;
+	background: #transparent;
+
+}
+
+#codefest-body {
+	background: #fff;
+
 }
 
 #wb-sec {
@@ -26,3 +38,75 @@
 	border: 1px solid #525252;
 }
 
+
+
+#banner-top {
+    background: rgb(60,184,120);
+    min-height: 67px;
+    padding: 15px;
+
+}
+
+#foot {
+    background: rgba(60,184,120,.3);
+
+    text-align: center;
+    padding-top: 15px;
+}
+
+#register-button {
+    float: right; 
+    font-size: 1.1em;
+    font-weight: 800;
+}
+
+#banner-date {
+    font-size: 1.4em;
+    display: inline;
+    padding-top: 3px;
+    color: white;    
+    
+}
+
+h2#announce {
+    font-weight: 800;
+    font-size: 2em; 
+}
+
+p#home-content{
+    font-size: 1.8em;
+    font-weight: 800;
+    padding-top: 10px;
+        
+}
+
+.emphasis {
+    border: none; 
+    font-size: 1em;
+}
+
+#data-section {
+    line-height: 30px;
+    font-weight: 700;    
+    background-color: rgb(240,240,240);
+    margin-top: 15px;   
+}
+
+#data-section-announce {
+    line-height: 30px;
+    font-weight: 700;    
+    background-color: rgb(240,240,240);
+    margin-top: 15px;  
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#data-container-one {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.wb-twitter {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
