@@ -5,106 +5,102 @@
  *
  */
 
-#wb-sttl {
-	padding-top: 10px !important;
-	padding-left: 15px;
-    min-height: 67px;
+/*
+ *  Site banner
+ */
+#banner {    
+    background-color: #3cb878;
 }
 
-#codefest-wrapper {
-	background: #464646;
-
+#banner-logo {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-#codefest-menu {
-	background: #transparent;
-
+#banner-date-location {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 1.4em;
+    color: white;
 }
 
-#codefest-body {
-	background: #fff;
-
+#banner-register {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-#wb-sec {
-	margin-top: 0px;
-	border: 0px;
-}
-
-#wb-sec .list-group a.list-group-item {
-	background: #464646;
-	color: white;
-	border: 1px solid #525252;
-}
-
-
-
-#banner-top {
-    background: rgb(60,184,120);
-    min-height: 67px;
-    padding: 15px;
-
-}
-
-#foot {
+/*
+ *  Site footer
+ */
+#footer {
     background: rgba(60,184,120,.3);
-
     text-align: center;
     padding-top: 15px;
 }
 
-#register-button {
-    float: right; 
-    font-size: 1.1em;
-    font-weight: 800;
+/*
+ *  Site menu
+ */
+#site-menu {
+	background: #464646;
+    padding-left: 0;
+    padding-right: 0;
 }
 
-#banner-date {
-    font-size: 1.4em;
-    display: inline;
-    padding-top: 3px;
-    color: white;    
-    
+#site-menu .list-group a.list-group-item {
+	background: transparent;
+	color: white;
+    border: none;
+	border-bottom: 1px solid #525252;
+    padding-left: 5em;
+    text-decoration: none;
 }
 
-h2#announce {
-    font-weight: 800;
-    font-size: 2em; 
+#site-menu .list-group a.list-group-item:hover,
+#site-menu .list-group a.list-group-item:focus {
+    background-color: #3e3e3e;
+    text-decoration: underline;
 }
 
-p#home-content{
-    font-size: 1.8em;
-    font-weight: 800;
-    padding-top: 10px;
-        
+.menu-util {
+    color: #e3cc5e !important;
 }
 
-.emphasis {
-    border: none; 
-    font-size: 1em;
-}
-
-#data-section {
+/*
+ *  Content area
+ */
+#content-area {
     line-height: 30px;
-    font-weight: 700;    
-    background-color: rgb(240,240,240);
-    margin-top: 15px;   
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+ 
 }
 
-#data-section-announce {
+#announcements {
+    background-color: grey;
+    margin-top: 15px;
+}
+
+#intro {
     line-height: 30px;
-    font-weight: 700;    
-    background-color: rgb(240,240,240);
+    background-color: grey;
     margin-top: 15px;  
     padding-left: 15px;
     padding-right: 15px;
+    min-height: 600px;
 }
 
-#data-container-one {
-    padding-left: 15px;
-    padding-right: 15px;
+/*
+ *  Bootstrap overrides
+ */
+.btn-info {
+    background-color: #464646;
 }
 
+/*
+ *  WET overrides
+ */
 .wb-twitter {
     padding-top: 15px;
     padding-bottom: 15px;
