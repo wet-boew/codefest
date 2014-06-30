@@ -84,11 +84,40 @@
 
 #intro {
     line-height: 30px;
-
     margin-top: 15px;  
     padding-left: 15px;
     padding-right: 15px;
     min-height: 600px;
+}
+
+
+/*
+ * Speakers page
+*/
+.media {
+border-bottom: 1px solid rgba(62,62,62,.2); 
+padding-bottom: 15px;
+padding-top: 15px;
+}
+
+.media-object {
+    padding-top: 3px;
+}
+/*
+ * Media queries
+*/
+@media all and (max-width: 500px){
+   .media-body{
+   
+   margin-top: 140px;       
+  
+  }
+}
+@media all and (max-width: 500px){
+   .media-object{
+      
+  }   
+    
 }
 
 /*
