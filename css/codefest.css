@@ -51,9 +51,28 @@ footer {
  
 #footer-contact {
     background: rgba(60,184,120,.3);
-    text-align: center;
     padding-top: 15px;
     border-top: 1px solid #bbbbbb;
+}
+
+#footer-hosts {
+    background: rgba(60,184,120,.6);
+    padding-top: 15px;
+    border-top: 1px solid #bbbbbb;
+}
+
+#host-list {
+	list-style: none;
+	padding-left: 0;
+}
+
+#host-list li {	
+	display: inline-block;
+	margin: 0 2em;
+}
+
+#host-list li:first-child {
+	margin-left: 0;
 }
 
 /*
