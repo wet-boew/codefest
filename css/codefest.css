@@ -24,6 +24,18 @@
     color: #464646;
 }
 
+@media (min-width: 768px) {
+	#banner-date-location span {
+		display: inline-block;
+		text-align: center;
+		vertical-align: top;
+	}
+
+	#banner-date, #banner-location {
+		width: 49%;
+	}
+}
+
 #banner-register {
     padding-top: 15px;
     padding-bottom: 15px;
