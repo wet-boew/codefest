@@ -9,7 +9,7 @@
  *  Site banner
  */
 #banner {    
-    background-color: #3cb878;
+    background-color: #52d591;
 }
 
 #banner-logo {
@@ -50,13 +50,13 @@ footer {
 }
  
 #footer-contact {
-    background: rgba(60,184,120,.3);
+    background: rgba(82,213,145,.3);
     padding-top: 15px;
     border-top: 1px solid #bbbbbb;
 }
 
 #footer-hosts {
-    background: rgba(60,184,120,.6);
+    background: rgba(82,213,145,.6);
     padding-top: 15px;
     border-top: 1px solid #bbbbbb;
 }
