@@ -44,10 +44,16 @@
 /*
  *  Site footer
  */
-#footer {
+footer {
+	background: none;
+	border: none;
+}
+ 
+#footer-contact {
     background: rgba(60,184,120,.3);
     text-align: center;
     padding-top: 15px;
+    border-top: 1px solid #bbbbbb;
 }
 
 /*
