@@ -99,6 +99,10 @@ footer {
     text-decoration: none;
 }
 
+.item-selected {
+    background-color: #3e3e3e !important;
+}
+
 .menu-util {
     color: #e3cc5e !important;
 }
