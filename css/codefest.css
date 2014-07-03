@@ -89,18 +89,22 @@ footer {
 	color: white;
     border: none;
 	border-bottom: 1px solid #525252;
-    padding-left: 5em;
+    padding-left: 4em;
     text-decoration: none;
 }
 
 #site-menu .list-group a.list-group-item:hover,
 #site-menu .list-group a.list-group-item:focus {
     background-color: #3e3e3e;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .menu-util {
     color: #e3cc5e !important;
+}
+
+.glyphicon {  
+  color: #CCC; 
 }
 
 /*
