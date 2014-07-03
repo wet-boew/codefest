@@ -17,6 +17,14 @@
     padding-bottom: 15px;
 }
 
+#banner-logo a {
+	display: block;
+}
+
+#banner-logo a object[type="image/svg+xml"] {
+	pointer-events: none;
+}
+
 #banner-date-location {
     padding-top: 15px;
     padding-bottom: 15px;
