@@ -84,7 +84,7 @@ footer {
     padding-right: 0;
 }
 
-#site-menu .list-group a.list-group-item {
+#site-menu .list-group .list-group-item {
 	background: transparent;
 	color: white;
     border: none;
@@ -93,8 +93,8 @@ footer {
     text-decoration: none;
 }
 
-#site-menu .list-group a.list-group-item:hover,
-#site-menu .list-group a.list-group-item:focus {
+#site-menu .list-group .list-group-item:hover,
+#site-menu .list-group .list-group-item:focus {
     background-color: #3e3e3e;
     text-decoration: none;
 }
