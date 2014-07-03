@@ -97,7 +97,7 @@ footer {
 	color: white;
     border: none;
 	border-bottom: 1px solid #525252;
-    padding-left: 4em;
+    padding-left: 2em;
     text-decoration: none;
 }
 
@@ -116,7 +116,7 @@ footer {
 }
 
 .glyphicon {  
-  color: #CCC; 
+  color: #C2C2C2; 
 }
 
 /*
