@@ -37,6 +37,7 @@
     padding-bottom: 15px;
     font-size: 1.4em;
     color: #464646;
+    margin-top: 3px;
 }
 
 @media (min-width: 768px) {
@@ -126,51 +127,81 @@ footer {
   color: #C2C2C2; 
 }
 
+.glyphicon.glyphicon-comment {
+    color: #3e3e3e;   
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
 /*
  *  Content area
  */
 #content-area {
     line-height: 30px;
     background-color: white;
-    padding-left: 15px;
-    padding-right: 15px;
- 
+    /*padding-left: 15px;
+    padding-right: 15px;*/
 }
 
 #announcements {
-    
-    margin-top: 15px;
+    padding-top: 12px;
+    margin-bottom: 1.25em;
+    font-size: 1.35em;
+    background-color: rgba(82,213,145,.3); 
 }
+
+#intro li {
+    margin-bottom: .5em;   
+}
+
 
 #intro {
     line-height: 30px;
-    margin-top: 15px;  
+    margin-top: 20px;  
     padding-left: 15px;
     padding-right: 15px;
     min-height: 600px;
+    font-size: 1.75em;
+    line-height: 1.3em;
+}
+
+/*
+ *  Index
+ */
+.home-title {  
+    font-size: 1.8em;
+    line-height: 1.0em;
+    font-weight: bold;
+}
+
+.job-titles {
+    color: rgba(0,0,0,.7);
+    font-weight: bold;
 }
 
 
+
 /*
- * Speakers page
-*/
+ *  Speakers page
+ */
 .media {
-border-bottom: 1px solid rgba(62,62,62,.2); 
-padding-bottom: 15px;
-padding-top: 15px;
+    border-bottom: 1px solid rgba(62,62,62,.2); 
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 .media-object {
     padding-top: 3px;
 }
+
+
 /*
- * Media queries
-*/
+ *  Media queries
+ */
 @media all and (max-width: 500px){
    .media-body{
-   
    margin-top: 140px;       
-  
   }
 }
 @media all and (max-width: 500px){
