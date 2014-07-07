@@ -17,7 +17,6 @@
  */
 #banner {    
     background-color: #52d591;
-    
 }
 
 #banner-logo {
@@ -50,7 +49,6 @@
 
 	#banner-date, #banner-location {
 		width: 49%;
-        
 	}
 }
 
@@ -142,9 +140,8 @@ footer {
 #content-area {
     line-height: 30px;
     background-color: white;
-    padding-left: 15px;
-    padding-right: 15px;
-    
+    /*padding-left: 15px;
+    padding-right: 15px;*/
 }
 
 #announcements {
@@ -152,7 +149,6 @@ footer {
     margin-bottom: 1.25em;
     font-size: 1.35em;
     background-color: rgba(82,213,145,.3); 
-    
 }
 
 #intro li {
@@ -168,7 +164,6 @@ footer {
     min-height: 600px;
     font-size: 1.75em;
     line-height: 1.3em;
-    
 }
 
 /*
@@ -206,9 +201,7 @@ footer {
  */
 @media all and (max-width: 500px){
    .media-body{
-   
    margin-top: 140px;       
-  
   }
 }
 @media all and (max-width: 500px){
