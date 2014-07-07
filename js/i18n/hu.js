@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.3-development - 2014-06-11
+ * v4.0.3 - 2014-06-18
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -79,8 +79,7 @@ wb.i18nDict = {
 	pause: "Pillanatmegállító",
 	open: "Nyitva",
 	close: "Bezárás",
-	rew: "Vissza",
-	ffwd: "Előre",
+	volume: "Volume",
 	mute: {
 		on: "Lenémítás",
 		off: "Hang bekapcsolása"
@@ -192,6 +191,19 @@ wb.i18nDict = {
 	"geo-attrttl": "GeoGratis - Kanada alaptérkép (angol vagy francia nyelven esetén)",
 	"geo-sel": "Választ",
 	"geo-lblsel": "Ellenőrizze, hogy jelölje ki az elemet a térképen",
+	"geo-locurl-geogratis": "http://geogratis.gc.ca/services/geolocation/en/locate",
+	"geo-loc-placeholder": "Enter placename&#44; postal code&#44; street address&#44; NTS number...",
+	"geo-loc-label": "Elhelyezkedés",
+	"geo-aoi-north": "North",
+	"geo-aoi-east": "East",
+	"geo-aoi-south": "South",
+	"geo-aoi-west": "West",
+	"geo-aoi-instructions": "Draw box on map or enter coordinates below and click the <em>Draw</em> button.",
+	"geo-aoi-btndraw": "Draw",
+	"geo-aoi-btnclear": "Clear",
+	"geo-geoloc-btn": "Zoom to current location",
+	"geo-geoloc-fail": "Geolocation failed. Please ensure that location services are enabled.",
+	"geo-geoloc-uncapable": "Geolocation not supported by your browser.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Egyszerű HTML verzió",
 	"wb-enable": "Standard verzió",
