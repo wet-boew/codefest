@@ -4,14 +4,7 @@
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  *
  */
-
-/*
- *	Splash page banner
- */
-#wb-bnr {
-	background: #3cb878;
-}
-
+ 
 /*
  *	Splash page logo
  */
@@ -173,6 +166,26 @@ footer {
     line-height: 1.3em;
 }
 
+.homepage-name {
+    font-weight: bold;
+    text-decoration: none;    
+    color: black;
+    
+}
+
+.homepage-title {
+    font-style: italic;
+    color: black;
+    font-size: .8em;
+}
+
+.homepage-name-title {
+    line-height: .7em;
+    min-height: 90px;  
+    padding-top: 25px;
+    text-decoration: none;
+}
+
 /*
  *  Index
  */
@@ -221,10 +234,6 @@ footer {
 /*
  *  Bootstrap overrides
  */
-.btn-primary {
-	background-color: #3cb878;
-}
-
 .btn-info {
     background-color: #464646;
 }
