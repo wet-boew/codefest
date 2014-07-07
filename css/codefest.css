@@ -4,7 +4,14 @@
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  *
  */
- 
+
+/*
+ *	Splash page banner
+ */
+#wb-bnr {
+	background: #3cb878;
+}
+
 /*
  *	Splash page logo
  */
@@ -214,6 +221,10 @@ footer {
 /*
  *  Bootstrap overrides
  */
+.btn-primary {
+	background-color: #3cb878;
+}
+
 .btn-info {
     background-color: #464646;
 }
