@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.3-development - 2014-06-11
+ * v4.0.3 - 2014-06-18
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -79,8 +79,7 @@ wb.i18nDict = {
 	pause: "Пауза",
 	open: "Oткрыть",
 	close: "Закрыть",
-	rew: "Перемотка",
-	ffwd: "Ускоренная перемотка",
+	volume: "Volume",
 	mute: {
 		on: "Отключение звука",
 		off: "Включить звук"
@@ -192,6 +191,19 @@ wb.i18nDict = {
 	"geo-attrttl": "GeoGratis - Канада базовой карты (на английском или французском языке)",
 	"geo-sel": "Выбирать",
 	"geo-lblsel": "Проверьте, чтобы выбрать элемент на карте",
+	"geo-locurl-geogratis": "http://geogratis.gc.ca/services/geolocation/en/locate",
+	"geo-loc-placeholder": "Enter placename&#44; postal code&#44; street address&#44; NTS number...",
+	"geo-loc-label": "Pасположение",
+	"geo-aoi-north": "North",
+	"geo-aoi-east": "East",
+	"geo-aoi-south": "South",
+	"geo-aoi-west": "West",
+	"geo-aoi-instructions": "Draw box on map or enter coordinates below and click the <em>Draw</em> button.",
+	"geo-aoi-btndraw": "Draw",
+	"geo-aoi-btnclear": "Clear",
+	"geo-geoloc-btn": "Zoom to current location",
+	"geo-geoloc-fail": "Geolocation failed. Please ensure that location services are enabled.",
+	"geo-geoloc-uncapable": "Geolocation not supported by your browser.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Базовая версия HTML",
 	"wb-enable": "Стандартная версия",

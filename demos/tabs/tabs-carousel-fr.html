@@ -18,7 +18,7 @@
 </title>
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
 		<!-- Meta data -->
-		<meta name="description" content="La Boîte à outils de l’expérience Web (BOEW) rassemble différents composants réutilisables et prêts-à-utiliser pour la conception et la mise à jour de sites Web innovateurs qui sont à la fois accessibles, conviviaux et interopérables. Tous ces composants réutilisables sont des logiciels libres mis à la disposition des ministères et des collectivités Web externes." />
+		<meta name="description" content="Comprime plusieurs images et légendes superposées et fourni des controls qui permettent à l&#x27;utilisateur de choisi l&#x27;image à afficher." />
 		<!-- Meta data-->
 		<!--[if gte IE 9 | !IE ]><!-->
 <link href="../../assets/favicon.ico" rel="icon" type="image/x-icon" />
@@ -29,7 +29,7 @@
 <!--[if lt IE 9]>
 <link href="../../assets/favicon.ico" rel="shortcut icon" />
 <link rel="stylesheet" href="../../css/ie8-wet-boew.css" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
 <script src="../../js/ie8-wet-boew.js"></script>
 <![endif]-->
 
@@ -85,7 +85,8 @@
 					<div class="row">
 
 						<div id="wb-sttl" class="col-md-8">
-							<a href="http://wet-boew.github.io/v4.0-ci/index-fr.html">
+							<a href="../../index-fr.html">
+	<object type="image/svg+xml" tabindex="-1" role="img" data="../../assets/logo.svg" aria-label="Boîte à outils de l'expérience Web"></object>
 	<span>Boîte à outils de l'expérience Web<span class="wb-inv">, </span><small>Projet à source ouverte collaboratif dirigé par le Gouvernement du Canada</small></span>
 </a>
 
@@ -128,17 +129,22 @@
 			</nav>
 
 
+	
 			<nav role="navigation" id="wb-bc" property="breadcrumb">
 				<h2>Vous êtes ici :</h2>
 				<div class="container">
 	<div class="row">
 		<ol class="breadcrumb">
 			<li>
-				<a href="http://wet-boew.github.io/v4.0-ci/index-fr.html">Accueil</a>
+				<a href="../../index-fr.html">Accueil</a>
 			</li>
+
+	
 			<li>
-				<a href="http://wet-boew.github.io/v4.0-ci/demos/index-fr.html">Exemples pratiques</a>
+				<a href="../../demos/index-fr.html">Exemples pratiques</a>
 			</li>
+		
+	
 
 			<li>Interface à onglets - Carrousel</li>
 		</ol>
@@ -146,6 +152,7 @@
 </div>
 
 			</nav>
+	
 
 		</header>
 
@@ -155,6 +162,25 @@
 			
 
 
+<section class="alert alert-info">
+	<h2 class="h3">Vous cherchez la BOEW v3.1?</h2>
+	<p>La BOEW v4.0 est maintenant la version courrante. La <a href="http://wet-boew.github.io/v3.1-ci/demos/tabs/tabs-fr.html">version de la page actuelle pour la BOEW v3.1</a> a été déplacée.</p>
+</section>
+
+
+
+
+
+
+
+
+			
+
+<ul class="list-inline">
+	<li><a class="btn btn-primary" href="../../docs/ref/tabs/tabs-fr.html">Documentation</a></li>
+	<li><a class="btn btn-primary" href="https://github.com/wet-boew/wet-boew/issues/new?title=Interface%20%C3%A0%20onglets%20-%20Carrousel:%20">Questions ou commentaires?</a></li>
+</ul>
+
 
 			
 
@@ -162,42 +188,44 @@
 	<h2>Carrousel - Style 1 (<code>carousel-s1</code>)</h2>
 	<div class="wb-tabs carousel-s1">
 		<ul role="tablist">
-			<li class="active"><a href="#panel1">Image 1</a></li>
-			<li><a href="#panel2">Image 2</a></li>
-			<li><a href="#panel3">Image 3</a></li>
+			<li class="active"><a href="#panel1">Onglet	1</a></li>
+			<li><a href="#panel2">Onglet 2</a></li>
+			<li><a href="#panel3">Onglet 3</a></li>
 		</ul>
-		<div role="tabpanel" id="panel1" class="in fade">
-			<figure>
-				<img src="img/protect-environment.jpg" alt="panneau 1" />
-				<figcaption>
-					<p>
-						Prenez note : <a href="http://www.tc.gc.ca/fra/aviationcivile/opssvs/generale-personnel-changements-1814.htm">Renouvellement du carnet de documents d'aviation</a><br />
-						En savoir plus sur <a href="http://www.tc.gc.ca/fra/aerien-menu.htm">le transport aérien</a> au Canada.
-					</p>
-				</figcaption>
-			</figure>
-		</div>
-		<div role="tabpanel" id="panel2" class="out fade">
-			<figure>
-				<img src="img/banff.jpg" alt="panneau 2" />
-				<figcaption>
-					<p>
-						Prenez note : <a href="http://www.tc.gc.ca/fra/securiteferroviaire/publications-46.htm">Programme d'amélioration des passages à niveau (PAPN)</a><br />
-						En savoir plus sur <a href="http://www.tc.gc.ca/fra/ferroviaire-menu.htm">le transport ferroviaire</a> au Canada.
-					</p>
-				</figcaption>
-			</figure>
-		</div>
-		<div role="tabpanel" id="panel3" class="out fade">
-			<figure>
-				<img src="img/investinourfuture.jpg" alt="panneau 3" />
-				<figcaption>
-					<p>
-						Prenez note : <a href="http://www.tc.gc.ca/fra/comiteexpertssecuritenaviresciternes/menu.htm">Tanker Groupe d'experts sur la sécurité</a><br />
-						En savoir plus sur <a href="http://www.tc.gc.ca/fra/maritime-menu.htm">le transport maritime</a> au Canada.
-					</p>
-				</figcaption>
-			</figure>
+		<div class="tabpanels">
+			<div role="tabpanel" id="panel1" class="in fade">
+				<figure>
+					<img src="img/protect-environment.jpg" alt="Panneau 1" />
+					<figcaption>
+						<p>
+							Prenez note : <a href="http://www.tc.gc.ca/fra/aviationcivile/opssvs/generale-personnel-changements-1814.htm">Renouvellement du carnet de documents d'aviation</a><br />
+							En savoir plus sur <a href="http://www.tc.gc.ca/fra/aerien-menu.htm">le transport aérien</a> au Canada.
+						</p>
+					</figcaption>
+				</figure>
+			</div>
+			<div role="tabpanel" id="panel2" class="out fade">
+				<figure>
+					<img src="img/banff.jpg" alt="Panneau 2" />
+					<figcaption>
+						<p>
+							Prenez note : <a href="http://www.tc.gc.ca/fra/securiteferroviaire/publications-46.htm">Programme d'amélioration des passages à niveau (PAPN)</a><br />
+							En savoir plus sur <a href="http://www.tc.gc.ca/fra/ferroviaire-menu.htm">le transport ferroviaire</a> au Canada.
+						</p>
+					</figcaption>
+				</figure>
+			</div>
+			<div role="tabpanel" id="panel3" class="out fade">
+				<figure>
+					<img src="img/investinourfuture.jpg" alt="Panneau 3" />
+					<figcaption>
+						<p>
+							Prenez note : <a href="http://www.tc.gc.ca/fra/comiteexpertssecuritenaviresciternes/menu.htm">Tanker Groupe d'experts sur la sécurité</a><br />
+							En savoir plus sur <a href="http://www.tc.gc.ca/fra/maritime-menu.htm">le transport maritime</a> au Canada.
+						</p>
+					</figcaption>
+				</figure>
+			</div>
 		</div>
 	</div>
 </section>
@@ -206,42 +234,44 @@
 	<h2>Carrousel - Style 2</h2>
 	<div class="wb-tabs carousel-s2">
 		<ul role="tablist">
-			<li class="active"><a href="#panel4"><img src="img/protect-environment.jpg" alt="onglet 1" /></a></li>
-			<li><a href="#panel5"><img src="img/banff.jpg" alt="onglet 2" /></a></li>
-			<li><a href="#panel6"><img src="img/investinourfuture.jpg" alt="onglet 3" /></a></li>
+			<li class="active"><a href="#panel4">Onglet 1</a></li>
+			<li><a href="#panel5">Onglet 2</a></li>
+			<li><a href="#panel6">Onglet 3</a></li>
 		</ul>
-		<div role="tabpanel" id="panel4" class="in fade">
-			<figure>
-				<img src="img/protect-environment.jpg" alt="panneau 1" />
-				<figcaption>
-					<p>
-						Prenez note : <a href="http://www.tc.gc.ca/fra/aviationcivile/opssvs/generale-personnel-changements-1814.htm">Renouvellement du carnet de documents d'aviation</a><br />
-						En savoir plus sur <a href="http://www.tc.gc.ca/fra/aerien-menu.htm">le transport aérien</a> au Canada.
-					</p>
-				</figcaption>
-			</figure>
-		</div>
-		<div role="tabpanel" id="panel5" class="out fade">
-			<figure>
-				<img src="img/banff.jpg" alt="panneau 2" />
-				<figcaption>
-					<p>
-						Prenez note : <a href="http://www.tc.gc.ca/fra/securiteferroviaire/publications-46.htm">Programme d'amélioration des passages à niveau (PAPN)</a><br />
-						En savoir plus sur <a href="http://www.tc.gc.ca/fra/ferroviaire-menu.htm">le transport ferroviaire</a> au Canada.
-					</p>
-				</figcaption>
-			</figure>
-		</div>
-		<div role="tabpanel" id="panel6" class="out fade">
-			<figure>
-				<img src="img/investinourfuture.jpg" alt="panneau 3" />
-				<figcaption>
-					<p>
-						Prenez note : <a href="http://www.tc.gc.ca/fra/comiteexpertssecuritenaviresciternes/menu.htm">Tanker Groupe d'experts sur la sécurité</a><br />
-						En savoir plus sur <a href="http://www.tc.gc.ca/fra/maritime-menu.htm">le transport maritime</a> au Canada.
-					</p>
-				</figcaption>
-			</figure>
+		<div class="tabpanels">
+			<div role="tabpanel" id="panel4" class="in fade">
+				<figure>
+					<img src="img/protect-environment.jpg" alt="Panneau 1" />
+					<figcaption>
+						<p>
+							Prenez note : <a href="http://www.tc.gc.ca/fra/aviationcivile/opssvs/generale-personnel-changements-1814.htm">Renouvellement du carnet de documents d'aviation</a><br />
+							En savoir plus sur <a href="http://www.tc.gc.ca/fra/aerien-menu.htm">le transport aérien</a> au Canada.
+						</p>
+					</figcaption>
+				</figure>
+			</div>
+			<div role="tabpanel" id="panel5" class="out fade">
+				<figure>
+					<img src="img/banff.jpg" alt="Panneau 2" />
+					<figcaption>
+						<p>
+							Prenez note : <a href="http://www.tc.gc.ca/fra/securiteferroviaire/publications-46.htm">Programme d'amélioration des passages à niveau (PAPN)</a><br />
+							En savoir plus sur <a href="http://www.tc.gc.ca/fra/ferroviaire-menu.htm">le transport ferroviaire</a> au Canada.
+						</p>
+					</figcaption>
+				</figure>
+			</div>
+			<div role="tabpanel" id="panel6" class="out fade">
+				<figure>
+					<img src="img/investinourfuture.jpg" alt="Panneau 3" />
+					<figcaption>
+						<p>
+							Prenez note : <a href="http://www.tc.gc.ca/fra/comiteexpertssecuritenaviresciternes/menu.htm">Tanker Groupe d'experts sur la sécurité</a><br />
+							En savoir plus sur <a href="http://www.tc.gc.ca/fra/maritime-menu.htm">le transport maritime</a> au Canada.
+						</p>
+					</figcaption>
+				</figure>
+			</div>
 		</div>
 	</div>
 </section>
@@ -253,42 +283,44 @@
 			<h3>Carrousel - Style 1 - col-sm-6 col-md-4</h3>
 			<div class="wb-tabs carousel-s1">
 				<ul role="tablist">
-					<li class="active"><a href="#panel7">Image 1</a></li>
-					<li><a href="#panel8">Image 2</a></li>
-					<li><a href="#panel9">Image 3</a></li>
+					<li class="active"><a href="#panel7">Onglet 1</a></li>
+					<li><a href="#panel8">Onglet 2</a></li>
+					<li><a href="#panel9">Onglet 3</a></li>
 				</ul>
-				<div role="tabpanel" id="panel7" class="in fade">
-					<figure>
-						<img src="img/protect-environment.jpg" alt="panneau 1" />
-						<figcaption>
-							<p>
-								Prenez note : <a href="http://www.tc.gc.ca/fra/aviationcivile/opssvs/generale-personnel-changements-1814.htm">Renouvellement du carnet de documents d'aviation</a><br />
-								En savoir plus sur <a href="http://www.tc.gc.ca/fra/aerien-menu.htm">le transport aérien</a> au Canada.
-							</p>
-						</figcaption>
-					</figure>
-				</div>
-				<div role="tabpanel" id="panel8" class="out fade">
-					<figure>
-						<img src="img/banff.jpg" alt="panneau 2" />
-						<figcaption>
-							<p>
-								Prenez note : <a href="http://www.tc.gc.ca/fra/securiteferroviaire/publications-46.htm">Programme d'amélioration des passages à niveau (PAPN)</a><br />
-								En savoir plus sur <a href="http://www.tc.gc.ca/fra/ferroviaire-menu.htm">le transport ferroviaire</a> au Canada.
-							</p>
-						</figcaption>
-					</figure>
-				</div>
-				<div role="tabpanel" id="panel9" class="out fade">
-					<figure>
-						<img src="img/investinourfuture.jpg" alt="panneau 3" />
-						<figcaption>
-							<p>
-								Prenez note : <a href="http://www.tc.gc.ca/fra/comiteexpertssecuritenaviresciternes/menu.htm">Tanker Groupe d'experts sur la sécurité</a><br />
-								En savoir plus sur <a href="http://www.tc.gc.ca/fra/maritime-menu.htm">le transport maritime</a> au Canada.
-							</p>
-						</figcaption>
-					</figure>
+				<div class="tabpanels">
+					<div role="tabpanel" id="panel7" class="in fade">
+						<figure>
+							<img src="img/protect-environment.jpg" alt="Panneau 1" />
+							<figcaption>
+								<p>
+									Prenez note : <a href="http://www.tc.gc.ca/fra/aviationcivile/opssvs/generale-personnel-changements-1814.htm">Renouvellement du carnet de documents d'aviation</a><br />
+									En savoir plus sur <a href="http://www.tc.gc.ca/fra/aerien-menu.htm">le transport aérien</a> au Canada.
+								</p>
+							</figcaption>
+						</figure>
+					</div>
+					<div role="tabpanel" id="panel8" class="out fade">
+						<figure>
+							<img src="img/banff.jpg" alt="Panneau 2" />
+							<figcaption>
+								<p>
+									Prenez note : <a href="http://www.tc.gc.ca/fra/securiteferroviaire/publications-46.htm">Programme d'amélioration des passages à niveau (PAPN)</a><br />
+									En savoir plus sur <a href="http://www.tc.gc.ca/fra/ferroviaire-menu.htm">le transport ferroviaire</a> au Canada.
+								</p>
+							</figcaption>
+						</figure>
+					</div>
+					<div role="tabpanel" id="panel9" class="out fade">
+						<figure>
+							<img src="img/investinourfuture.jpg" alt="Panneau 3" />
+							<figcaption>
+								<p>
+									Prenez note : <a href="http://www.tc.gc.ca/fra/comiteexpertssecuritenaviresciternes/menu.htm">Tanker Groupe d'experts sur la sécurité</a><br />
+									En savoir plus sur <a href="http://www.tc.gc.ca/fra/maritime-menu.htm">le transport maritime</a> au Canada.
+								</p>
+							</figcaption>
+						</figure>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -296,42 +328,44 @@
 			<h3>Carrousel - Style 2 - col-sm-6 col-md-8</h3>
 			<div class="wb-tabs carousel-s2">
 				<ul role="tablist">
-					<li class="active"><a href="#panel10"><img src="img/protect-environment.jpg" alt="onglet 1" /></a></li>
-					<li><a href="#panel11"><img src="img/banff.jpg" alt="onglet 2" /></a></li>
-					<li><a href="#panel12"><img src="img/investinourfuture.jpg" alt="onglet 3" /></a></li>
+					<li class="active"><a href="#panel10">Onglet 1</a></li>
+					<li><a href="#panel11">Onglet 2</a></li>
+					<li><a href="#panel12">Onglet 3</a></li>
 				</ul>
-				<div role="tabpanel" id="panel10" class="in fade">
-					<figure>
-						<img src="img/protect-environment.jpg" alt="panneau 1" />
-						<figcaption>
-							<p>
-								Prenez note : <a href="http://www.tc.gc.ca/fra/aviationcivile/opssvs/generale-personnel-changements-1814.htm">Renouvellement du carnet de documents d'aviation</a><br />
-								En savoir plus sur <a href="http://www.tc.gc.ca/fra/aerien-menu.htm">le transport aérien</a> au Canada.
-							</p>
-						</figcaption>
-					</figure>
-				</div>
-				<div role="tabpanel" id="panel11" class="out fade">
-					<figure>
-						<img src="img/banff.jpg" alt="panneau 2" />
-						<figcaption>
-							<p>
-								Prenez note : <a href="http://www.tc.gc.ca/fra/securiteferroviaire/publications-46.htm">Programme d'amélioration des passages à niveau (PAPN)</a><br />
-								En savoir plus sur <a href="http://www.tc.gc.ca/fra/ferroviaire-menu.htm">le transport ferroviaire</a> au Canada.
-							</p>
-						</figcaption>
-					</figure>
-				</div>
-				<div role="tabpanel" id="panel12" class="out fade">
-					<figure>
-						<img src="img/investinourfuture.jpg" alt="panneau 3" />
-						<figcaption>
-							<p>
-								Prenez note : <a href="http://www.tc.gc.ca/fra/comiteexpertssecuritenaviresciternes/menu.htm">Tanker Groupe d'experts sur la sécurité</a><br />
-								En savoir plus sur <a href="http://www.tc.gc.ca/fra/maritime-menu.htm">le transport maritime</a> au Canada.
-							</p>
-						</figcaption>
-					</figure>
+				<div class="tabpanels">
+					<div role="tabpanel" id="panel10" class="in fade">
+						<figure>
+							<img src="img/protect-environment.jpg" alt="Panneau 1" />
+							<figcaption>
+								<p>
+									Prenez note : <a href="http://www.tc.gc.ca/fra/aviationcivile/opssvs/generale-personnel-changements-1814.htm">Renouvellement du carnet de documents d'aviation</a><br />
+									En savoir plus sur <a href="http://www.tc.gc.ca/fra/aerien-menu.htm">le transport aérien</a> au Canada.
+								</p>
+							</figcaption>
+						</figure>
+					</div>
+					<div role="tabpanel" id="panel11" class="out fade">
+						<figure>
+							<img src="img/banff.jpg" alt="Panneau 2" />
+							<figcaption>
+								<p>
+									Prenez note : <a href="http://www.tc.gc.ca/fra/securiteferroviaire/publications-46.htm">Programme d'amélioration des passages à niveau (PAPN)</a><br />
+									En savoir plus sur <a href="http://www.tc.gc.ca/fra/ferroviaire-menu.htm">le transport ferroviaire</a> au Canada.
+								</p>
+							</figcaption>
+						</figure>
+					</div>
+					<div role="tabpanel" id="panel12" class="out fade">
+						<figure>
+							<img src="img/investinourfuture.jpg" alt="Panneau 3" />
+							<figcaption>
+								<p>
+									Prenez note : <a href="http://www.tc.gc.ca/fra/comiteexpertssecuritenaviresciternes/menu.htm">Tanker Groupe d'experts sur la sécurité</a><br />
+									En savoir plus sur <a href="http://www.tc.gc.ca/fra/maritime-menu.htm">le transport maritime</a> au Canada.
+								</p>
+							</figcaption>
+						</figure>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -344,42 +378,44 @@
 		<h3>Attribut &#171;&#160;data&#160;&#187; (<code>data-wb-tabs='{"interval": 3}'</code>)</h3>
 		<div class="wb-tabs carousel-s2" data-wb-tabs='{"interval": 3}'>
 			<ul role="tablist">
-				<li class="active"><a href="#panel13"><img src="img/protect-environment.jpg" alt="onglet 1" /></a></li>
-				<li><a href="#panel14"><img src="img/banff.jpg" alt="onglet 2" /></a></li>
-				<li><a href="#panel15"><img src="img/investinourfuture.jpg" alt="onglet 3" /></a></li>
+				<li class="active"><a href="#panel13">Onglet 1</a></li>
+				<li><a href="#panel14">Onglet 2</a></li>
+				<li><a href="#panel15">Onglet 3</a></li>
 			</ul>
-			<div role="tabpanel" id="panel13" class="in fade">
-				<figure>
-					<img src="img/protect-environment.jpg" alt="panneau 1" />
-					<figcaption>
-						<p>
-							Prenez note : <a href="http://www.tc.gc.ca/fra/aviationcivile/opssvs/generale-personnel-changements-1814.htm">Renouvellement du carnet de documents d'aviation</a><br />
-							En savoir plus sur <a href="http://www.tc.gc.ca/fra/aerien-menu.htm">le transport aérien</a> au Canada.
-						</p>
-					</figcaption>
-				</figure>
-			</div>
-			<div role="tabpanel" id="panel14" class="out fade">
-				<figure>
-					<img src="img/banff.jpg" alt="panneau 2" />
-					<figcaption>
-						<p>
-							Prenez note : <a href="http://www.tc.gc.ca/fra/securiteferroviaire/publications-46.htm">Programme d'amélioration des passages à niveau (PAPN)</a><br />
-							En savoir plus sur <a href="http://www.tc.gc.ca/fra/ferroviaire-menu.htm">le transport ferroviaire</a> au Canada.
-						</p>
-					</figcaption>
-				</figure>
-			</div>
-			<div role="tabpanel" id="panel15" class="out fade">
-				<figure>
-					<img src="img/investinourfuture.jpg" alt="panneau 3" />
-					<figcaption>
-						<p>
-							Prenez note : <a href="http://www.tc.gc.ca/fra/comiteexpertssecuritenaviresciternes/menu.htm">Tanker Groupe d'experts sur la sécurité</a><br />
-							En savoir plus sur <a href="http://www.tc.gc.ca/fra/maritime-menu.htm">le transport maritime</a> au Canada.
-						</p>
-					</figcaption>
-				</figure>
+			<div class="tabpanels">
+				<div role="tabpanel" id="panel13" class="in fade">
+					<figure>
+						<img src="img/protect-environment.jpg" alt="Panneau 1" />
+						<figcaption>
+							<p>
+								Prenez note : <a href="http://www.tc.gc.ca/fra/aviationcivile/opssvs/generale-personnel-changements-1814.htm">Renouvellement du carnet de documents d'aviation</a><br />
+								En savoir plus sur <a href="http://www.tc.gc.ca/fra/aerien-menu.htm">le transport aérien</a> au Canada.
+							</p>
+						</figcaption>
+					</figure>
+				</div>
+				<div role="tabpanel" id="panel14" class="out fade">
+					<figure>
+						<img src="img/banff.jpg" alt="Panneau 2" />
+						<figcaption>
+							<p>
+								Prenez note : <a href="http://www.tc.gc.ca/fra/securiteferroviaire/publications-46.htm">Programme d'amélioration des passages à niveau (PAPN)</a><br />
+								En savoir plus sur <a href="http://www.tc.gc.ca/fra/ferroviaire-menu.htm">le transport ferroviaire</a> au Canada.
+							</p>
+						</figcaption>
+					</figure>
+				</div>
+				<div role="tabpanel" id="panel15" class="out fade">
+					<figure>
+						<img src="img/investinourfuture.jpg" alt="Panneau 3" />
+						<figcaption>
+							<p>
+								Prenez note : <a href="http://www.tc.gc.ca/fra/comiteexpertssecuritenaviresciternes/menu.htm">Tanker Groupe d'experts sur la sécurité</a><br />
+								En savoir plus sur <a href="http://www.tc.gc.ca/fra/maritime-menu.htm">le transport maritime</a> au Canada.
+							</p>
+						</figcaption>
+					</figure>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -388,51 +424,93 @@
 		<h3>Classes CSS (<code lang="en">slow</code>, <code lang="en">fast</code>)</h3>
 		<div class="wb-tabs carousel-s2" data-wb-tabs='{"interval": 3}'>
 			<ul role="tablist">
-				<li class="active"><a href="#panel16"><img src="img/protect-environment.jpg" alt="onglet 1" /></a></li>
-				<li><a href="#panel17"><img src="img/banff.jpg" alt="onglet 2" /></a></li>
-				<li><a href="#panel18"><img src="img/investinourfuture.jpg" alt="onglet 3" /></a></li>
+				<li class="active"><a href="#panel16">Onglet 1</a></li>
+				<li><a href="#panel17">Onglet 2</a></li>
+				<li><a href="#panel18">Onglet 3</a></li>
 			</ul>
-			<div role="tabpanel" id="panel16" class="in fade">
-				<figure>
-					<img src="img/protect-environment.jpg" alt="panneau 1" />
-					<figcaption>
-						<p>
-							Prenez note : <a href="http://www.tc.gc.ca/fra/aviationcivile/opssvs/generale-personnel-changements-1814.htm">Renouvellement du carnet de documents d'aviation</a><br />
-							En savoir plus sur <a href="http://www.tc.gc.ca/fra/aerien-menu.htm">le transport aérien</a> au Canada.
-						</p>
-					</figcaption>
-				</figure>
-			</div>
-			<div role="tabpanel" id="panel17" class="out fade">
-				<figure>
-					<img src="img/banff.jpg" alt="panneau 2" />
-					<figcaption>
-						<p>
-							Prenez note : <a href="http://www.tc.gc.ca/fra/securiteferroviaire/publications-46.htm">Programme d'amélioration des passages à niveau (PAPN)</a><br />
-							En savoir plus sur <a href="http://www.tc.gc.ca/fra/ferroviaire-menu.htm">le transport ferroviaire</a> au Canada.
-						</p>
-					</figcaption>
-				</figure>
-			</div>
-			<div role="tabpanel" id="panel18" class="out fade">
-				<figure>
-					<img src="img/investinourfuture.jpg" alt="panneau 3" />
-					<figcaption>
-						<p>
-							Prenez note : <a href="http://www.tc.gc.ca/fra/comiteexpertssecuritenaviresciternes/menu.htm">Tanker Groupe d'experts sur la sécurité</a><br />
-							En savoir plus sur <a href="http://www.tc.gc.ca/fra/maritime-menu.htm">le transport maritime</a> au Canada.
-						</p>
-					</figcaption>
-				</figure>
+			<div class="tabpanels">
+				<div role="tabpanel" id="panel16" class="in fade">
+					<figure>
+						<img src="img/protect-environment.jpg" alt="Panneau 1" />
+						<figcaption>
+							<p>
+								Prenez note : <a href="http://www.tc.gc.ca/fra/aviationcivile/opssvs/generale-personnel-changements-1814.htm">Renouvellement du carnet de documents d'aviation</a><br />
+								En savoir plus sur <a href="http://www.tc.gc.ca/fra/aerien-menu.htm">le transport aérien</a> au Canada.
+							</p>
+						</figcaption>
+					</figure>
+				</div>
+				<div role="tabpanel" id="panel17" class="out fade">
+					<figure>
+						<img src="img/banff.jpg" alt="Panneau 2" />
+						<figcaption>
+							<p>
+								Prenez note : <a href="http://www.tc.gc.ca/fra/securiteferroviaire/publications-46.htm">Programme d'amélioration des passages à niveau (PAPN)</a><br />
+								En savoir plus sur <a href="http://www.tc.gc.ca/fra/ferroviaire-menu.htm">le transport ferroviaire</a> au Canada.
+							</p>
+						</figcaption>
+					</figure>
+				</div>
+				<div role="tabpanel" id="panel18" class="out fade">
+					<figure>
+						<img src="img/investinourfuture.jpg" alt="Panneau 3" />
+						<figcaption>
+							<p>
+								Prenez note : <a href="http://www.tc.gc.ca/fra/comiteexpertssecuritenaviresciternes/menu.htm">Tanker Groupe d'experts sur la sécurité</a><br />
+								En savoir plus sur <a href="http://www.tc.gc.ca/fra/maritime-menu.htm">le transport maritime</a> au Canada.
+							</p>
+						</figcaption>
+					</figure>
+				</div>
 			</div>
 		</div>
 	</section>
 </section>
 
+<section>
+	<h2>Exemple avec le lecteur multimédia</h2>
+	<div class="row">
+		<div class="col-xs-12 col-sm-6">
+			<div class="wb-tabs carousel-s2">
+				<ul role="tablist">
+					<li class="active"><a href="#panel19">Onglet 1</a></li>
+					<li><a href="#panel20">Onglet 2</a></li>
+				</ul>
+				<div class="tabpanels">
+					<div role="tabpanel" id="panel19" class="in fade">
+						<figure class="wb-mltmd">
+							<video poster="http://www.servicecanada.gc.ca/fra/video/images/te-lj-fra.jpg" title="Trouver un emploi">
+								<source type="video/webm" src="http://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.webm" />
+								<source type="video/mp4" src="http://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.mp4" />
+								<track src="../multimedia/cpts-lg-fr.html" kind="captions" data-type="text/html" srclang="fr" label="Français" />
+							</video>
+							<figcaption>
+								<p>Trouver un emploi (<a href="http://www.servicecanada.gc.ca/fra/video/te.shtml">Transcription</a>)</p>
+							</figcaption>
+						</figure>
+					</div>
+					<div role="tabpanel" id="panel20" class="out fade">
+						<figure class="wb-mltmd">
+							<video poster="http://www.servicecanada.gc.ca/fra/video/images/dc-td-fra.jpg" title="Développement des compétences">
+								<source type="video/webm" src="http://video2.servicecanada.gc.ca/video/boew-wet/dc-td-fra.webm" />
+								<source type="video/mp4" src="http://video2.servicecanada.gc.ca/video/boew-wet/dc-td-fra.mp4" />
+								<track src="../multimedia/cpts-lg2-fr.html" kind="captions" data-type="text/html" srclang="fr" label="Français" />
+							</video>
+							<figcaption>
+								<p>Développement des compétences (<a href="http://www.servicecanada.gc.ca/fra/video/dc.shtml">Transcription</a>)</p>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 
 			<dl id="wb-dtmd" property="dateModified">
 	<dt>Date de modification&#160;:&#32;</dt>
-	<dd><time>2014-06-03</time></dd>
+	<dd><time>2014-06-10</time></dd>
 </dl>
 
 
@@ -447,7 +525,7 @@
 					<section class="col-sm-3">
 	<h3>À propos</h3>
 	<ul class="list-unstyled">
-		<li><a href="http://wet-boew.github.io/v4.0-ci/index-fr.html#apropos">À propos de la Boîte à outils de l’expérience Web</a></li>
+		<li><a href="../../index-fr.html#apropos">À propos de la Boîte à outils de l’expérience Web</a></li>
 		<li><a href="http://www.tbs-sct.gc.ca/ws-nw/index-fra.asp">À propos des normes Web</a></li>
 	</ul>
 </section>
@@ -476,7 +554,7 @@
 		</footer>
 
 		<!--[if gte IE 9 | !IE ]><!-->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
 <script src="../../js/wet-boew.js"></script>
 <!--<![endif]-->
 <!--[if lt IE 9]>

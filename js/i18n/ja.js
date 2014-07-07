@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.3-development - 2014-06-11
+ * v4.0.3 - 2014-06-18
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -79,8 +79,7 @@ wb.i18nDict = {
 	pause: "一時停止",
 	open: "開く",
 	close: "閉じる",
-	rew: "巻き戻し",
-	ffwd: "早送り",
+	volume: "Volume",
 	mute: {
 		on: "ミュート",
 		off: "ミュート解除"
@@ -192,6 +191,19 @@ wb.i18nDict = {
 	"geo-attrttl": "GeoGratis-カナダベースマップ（英語またはフランス語のみ",
 	"geo-sel": "選択",
 	"geo-lblsel": "マップエレメントを選択",
+	"geo-locurl-geogratis": "http://geogratis.gc.ca/services/geolocation/en/locate",
+	"geo-loc-placeholder": "Enter placename&#44; postal code&#44; street address&#44; NTS number...",
+	"geo-loc-label": "場所",
+	"geo-aoi-north": "North",
+	"geo-aoi-east": "East",
+	"geo-aoi-south": "South",
+	"geo-aoi-west": "West",
+	"geo-aoi-instructions": "Draw box on map or enter coordinates below and click the <em>Draw</em> button.",
+	"geo-aoi-btndraw": "Draw",
+	"geo-aoi-btnclear": "Clear",
+	"geo-geoloc-btn": "Zoom to current location",
+	"geo-geoloc-fail": "Geolocation failed. Please ensure that location services are enabled.",
+	"geo-geoloc-uncapable": "Geolocation not supported by your browser.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "HTMLベーシック版",
 	"wb-enable": "スタンダード版",
