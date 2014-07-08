@@ -210,41 +210,28 @@ footer {
 
 
 
-/*
- *  Speakers page
+ /*
+ * Speakers page
  */
 .media {
-    border-bottom: 1px solid rgba(62,62,62,.2); 
+    border-bottom: 1px solid rgba(62,62,62,.2);
     padding-bottom: 15px;
     padding-top: 15px;
 }
-
 .media-object {
     padding-top: 3px;
 }
-
-
 /*
- *  Media queries
+ * Media queries
  */
 @media all and (max-width: 500px){
-   .media-body{
-   margin-top: 140px;       
-  }
+.media-body{
+    margin-top: 140px;
+    }
 }
-
-    
-@media all and (max-width: 768px){
-    #intro p {
-        font-size: .8em; 
-  }     
-    #intro li {
-        font-size: .8em; 
-        line-height: 1.2em;
-  }  
-    .home-title {
-        font-size: 1.4em; 
-  }  
+@media all and (max-width: 500px){
+.media-object{
+    }
 }
 
 /*
