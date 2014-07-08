@@ -141,6 +141,8 @@ footer {
     margin-left: 10px;
 }
 
+
+
 /*
  *  Content area
  */
@@ -174,14 +176,18 @@ footer {
 }
 
 .homepage-name {
-    font-weight: bold;git 
+    display: block;
+    font-weight: bold;
     text-decoration: none;    
     color: black;
     font-size: 1.1em;
+    line-height: 1.05em;
     
 }
 
 .homepage-title {
+    padding-top: 15px;
+    display: block;
     font-style: italic;
     color: black;
     font-size: .8em;
@@ -190,8 +196,32 @@ footer {
 .homepage-name-title {
     line-height: .9em;
     min-height: 90px;  
-    padding-top: 25px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.homepage-name-title a {
     text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .homepage-name-title {
+        display: inline-block;
+        width: 49%;
+    }
+}
+
+@media (min-width: 992px) {
+    .homepage-name-title {
+        width: 32%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .homepage-name-title {
+        width: 24%;
+    }
 }
 
 /*
