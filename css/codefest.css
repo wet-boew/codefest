@@ -13,6 +13,13 @@
 }
 
 /*
+ * Splash page banner
+ */
+#wb-bnr {
+    background: #3cb878;
+}
+
+/*
  *  Site banner
  */
 #banner {    
@@ -167,9 +174,10 @@ footer {
 }
 
 .homepage-name {
-    font-weight: bold;
+    font-weight: bold;git 
     text-decoration: none;    
     color: black;
+    font-size: 1.1em;
     
 }
 
@@ -180,7 +188,7 @@ footer {
 }
 
 .homepage-name-title {
-    line-height: .7em;
+    line-height: .9em;
     min-height: 90px;  
     padding-top: 25px;
     text-decoration: none;
@@ -224,11 +232,19 @@ footer {
    margin-top: 140px;       
   }
 }
-@media all and (max-width: 500px){
-   .media-object{
-      
-  }   
+
     
+@media all and (max-width: 768px){
+    #intro p {
+        font-size: .8em; 
+  }     
+    #intro li {
+        font-size: .8em; 
+        line-height: 1.2em;
+  }  
+    .home-title {
+        font-size: 1.4em; 
+  }  
 }
 
 /*
@@ -238,6 +254,10 @@ footer {
     background-color: #464646;
 }
 
+.btn-primary {
+background-color: #3cb878;
+}
+    
 /*
  *  WET overrides
  */
