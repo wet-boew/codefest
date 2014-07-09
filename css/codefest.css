@@ -4,19 +4,19 @@
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  *
  */
-
-/*
- *	Splash page banner
- */
-#wb-bnr {
-	background: #3cb878;
-}
-
+ 
 /*
  *	Splash page logo
  */
 .wb-sppe #wb-bnr object {
 	width: 100%;
+}
+
+/*
+ * Splash page banner
+ */
+#wb-bnr {
+    background: #3cb878;
 }
 
 /*
@@ -141,6 +141,8 @@ footer {
     margin-left: 10px;
 }
 
+
+
 /*
  *  Content area
  */
@@ -173,6 +175,55 @@ footer {
     line-height: 1.3em;
 }
 
+.homepage-name {
+    display: block;
+    font-weight: bold;
+    text-decoration: none;    
+    color: black;
+    font-size: 1.1em;
+    line-height: 1.05em;
+    
+}
+
+.homepage-title {
+    padding-top: 15px;
+    display: block;
+    font-style: italic;
+    color: black;
+    font-size: .8em;
+}
+
+.homepage-name-title {
+    line-height: .9em;
+    min-height: 90px;  
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.homepage-name-title a {
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .homepage-name-title {
+        display: inline-block;
+        width: 49%;
+    }
+}
+
+@media (min-width: 992px) {
+    .homepage-name-title {
+        width: 32%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .homepage-name-title {
+        width: 24%;
+    }
+}
+
 /*
  *  Index
  */
@@ -189,46 +240,41 @@ footer {
 
 
 
-/*
- *  Speakers page
+ /*
+ * Speakers page
  */
 .media {
-    border-bottom: 1px solid rgba(62,62,62,.2); 
+    border-bottom: 1px solid rgba(62,62,62,.2);
     padding-bottom: 15px;
     padding-top: 15px;
 }
-
 .media-object {
     padding-top: 3px;
 }
-
-
 /*
- *  Media queries
+ * Media queries
  */
 @media all and (max-width: 500px){
-   .media-body{
-   margin-top: 140px;       
-  }
+.media-body{
+    margin-top: 140px;
+    }
 }
 @media all and (max-width: 500px){
-   .media-object{
-      
-  }   
-    
+.media-object{
+    }
 }
 
 /*
  *  Bootstrap overrides
  */
-.btn-primary {
-	background-color: #3cb878;
-}
-
 .btn-info {
     background-color: #464646;
 }
 
+.btn-primary {
+background-color: #3cb878;
+}
+    
 /*
  *  WET overrides
  */
