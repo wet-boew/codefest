@@ -147,8 +147,8 @@ footer {
 #content-area {
     line-height: 30px;
     background-color: white;
-    /*padding-left: 15px;
-    padding-right: 15px;*/
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 #announcements {
@@ -194,21 +194,47 @@ footer {
  */
 .media {
     border-bottom: 1px solid rgba(62,62,62,.2); 
-    padding-bottom: 15px;
+    padding-bottom: 5px;
     padding-top: 15px;
 }
 
 .media-object {
     padding-top: 3px;
+    
 }
 
+.media-heading {
+    font-size: 1.6em;
+}
+
+
+
+.speaker-job {
+  
+    display: inline;
+    margin-bottom: 20px;
+    
+}
+
+#workplace {
+    color: gray;   
+    font-style: italic;
+}
+
+/*.media-object {
+    height: auto;
+    width: 250px;
+    overflow: hidden;
+}*/
 
 /*
  *  Media queries
  */
-@media all and (max-width: 500px){
+@media all and (max-width: 768px){
    .media-body{
-   margin-top: 140px;       
+   /*max-width 500 margin-top: 140px; */  
+       display: inline-block;
+       margin-top: 15px;
   }
 }
 @media all and (max-width: 500px){
