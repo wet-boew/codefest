@@ -173,6 +173,13 @@ footer {
     line-height: 1.3em;
 }
 
+#homepage-btn {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
 /*
  *  Index
  */
