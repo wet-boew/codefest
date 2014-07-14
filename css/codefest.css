@@ -34,6 +34,7 @@
 
 #banner-logo a object[type="image/svg+xml"] {
 	pointer-events: none;
+	width: 100%;
 }
 
 #banner-date-location {
