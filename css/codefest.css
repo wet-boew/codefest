@@ -22,11 +22,8 @@
 /*
  *  Site banner
  */
-#banner {    
-    background-color: #52d591;
-}
-
 #banner-logo {
+	background-color: #464646;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -40,11 +37,11 @@
 }
 
 #banner-date-location {
+	background-color: #52d591;
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 1.4em;
     color: #464646;
-    margin-top: 3px;
 }
 
 @media (min-width: 768px) {
@@ -60,6 +57,7 @@
 }
 
 #banner-register {
+	background-color: #52d591;
     padding-top: 15px;
     padding-bottom: 15px;
 }
