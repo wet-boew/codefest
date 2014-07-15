@@ -9,7 +9,7 @@
  *	Splash page banner
  */
 #wb-bnr {
-	background: #3cb878;
+	background: #52d591;
 }
 
 /*
@@ -258,7 +258,7 @@ footer {
  *  Bootstrap overrides
  */
 .btn-primary {
-	background-color: #3cb878;
+	background-color: #52d591;
 }
 
 .btn-info {
