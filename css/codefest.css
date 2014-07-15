@@ -22,6 +22,10 @@
 /*
  *  Site banner
  */
+#banner {
+	background-color: #52d591;
+}
+
 #banner-logo {
 	background-color: #464646;
     padding-top: 15px;
