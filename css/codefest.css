@@ -217,25 +217,16 @@ footer {
     font-size: 1.6em;
 }
 
-
-
 .speaker-job {
-  
-    display: inline;
+    display: block;
     margin-bottom: 20px;
-    
+    font-size: .6em; 
 }
 
-#workplace {
+.workplace {
     color: gray;   
     font-style: italic;
 }
-
-/*.media-object {
-    height: auto;
-    width: 250px;
-    overflow: hidden;
-}*/
 
 /*
  *  Media queries
