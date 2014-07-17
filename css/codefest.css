@@ -272,6 +272,18 @@ footer {
 }
 
 /*
+ *	Schedule page
+ */
+.talk-title {
+	font-weight: bold;
+}
+ 
+.speaker-name {
+	display: block;
+	font-style: italic;
+}
+
+/*
  *  Bootstrap overrides
  */
 .btn-primary {
