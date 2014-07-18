@@ -101,6 +101,7 @@ footer {
 	margin-left: 0;
 }
 
+
 /*
  *  Site menu
  */
@@ -134,7 +135,7 @@ footer {
 }
 
 .glyphicon {  
-  color: #C2C2C2; 
+    color: #C2C2C2; 
 }
 
 .glyphicon.glyphicon-comment {
@@ -227,6 +228,89 @@ footer {
     color: gray;   
     font-style: italic;
 }
+
+/*
+ *  Sessions page
+ */
+.session-div {
+    font-size: 18px;
+    line-height: 1.5em;
+    border-bottom: 1px solid rgba(62,62,62,.2); 
+    padding-bottom: 20px;    
+    padding-top: 20px;
+}
+
+.emphasis-bold {
+    font-size: 1.1em; 
+    font-weight: bold;
+    
+}
+
+.emphasis-bold-2 {
+    font-size: 1.1em; 
+    font-weight: bold;
+    display: block;
+    padding-top: 10px;    
+}
+
+.emphasis-text {
+    font-style: italic;
+    color: gray;
+
+}
+
+.session-title {
+    margin: 0;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+.session-description { 
+    
+}
+
+.session-supplies {
+    
+}
+
+.session-name {
+    line-height: 1.1em;
+    padding-bottom: 15px;
+    margin-top: 5px;
+}
+
+.session-audience {
+    line-height: 1em;
+}
+
+.toc-sessions {
+    border-bottom: 1px solid rgba(62,62,62,.2); 
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 1.1em;
+    margin-right: 10px;
+   
+}
+
+.toc-sessions ul { 
+    padding-left: 15px;
+     
+}
+
+.toc-sessions ul a {
+    font-weight: bold;
+}
+
+.toc-sessions ul a:visited {
+    color: #295376;
+}
+
+.toc-sessions ul a:hover {
+    color: gray;
+}
+
+
+
 
 /*
  *  Media queries
