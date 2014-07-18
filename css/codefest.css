@@ -246,12 +246,39 @@ footer {
 .speaker-job {
     display: block;
     margin-bottom: 20px;
-    font-size: .6em; 
+    font-size: .8em; 
 }
 
 .workplace {
     color: gray;   
     font-style: italic;
+}
+
+.image-twitter {
+    font-size: 1.3em;
+    
+}
+
+.social-media a {
+    text-decoration: none;   
+}
+
+.social-media a:hover {
+    font-weight: bold;
+}
+
+.social-media a:visited {
+   color: black; 
+}
+
+#twitter-next-line {
+    display: block;
+    padding-top: 10px;
+}
+
+h4.twitter-handle {
+    margin-top: 10px;   
+    padding-left: 5px;
 }
 
 /*
