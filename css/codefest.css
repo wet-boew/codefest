@@ -329,7 +329,9 @@ h4.twitter-handle {
     padding-bottom: 15px;
 }
 
-
+details[open] > * {
+	margin: 0;
+}
 
 
 
