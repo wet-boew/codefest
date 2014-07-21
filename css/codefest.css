@@ -301,6 +301,59 @@ h4.twitter-handle {
 /*
  *	Schedule page
  */
+.table.schedule-morning > thead {
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	margin: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+}
+
+.table.schedule-morning > tbody > tr {
+	border-bottom: 1px solid #ddd;
+	display: block;
+	margin-top: 2em;
+	padding-bottom: 1em;
+}
+
+.table.schedule-morning > tbody > tr:first-child {
+	margin-top: 1em;
+}
+
+.table.schedule-morning > tbody > tr > td {
+	border-top: none;
+	display: block;
+	padding: 0 0 4px;
+}
+
+@media (min-width: 768px) {
+	.table.schedule-morning > thead {
+		clip: auto;
+		height: auto;
+		overflow: visible;
+		position: static;
+		width: auto;
+	}
+
+	.table.schedule-morning > tbody > tr {
+		border-bottom: 0;
+		display: table-row;
+		margin-top: 0;
+		padding-bottom: 0;
+	}
+
+	.table.schedule-morning > tbody > tr:first-child {
+		margin-top: 0;
+	}
+
+	.table.schedule-morning > tbody > tr > td {
+		border-top: 1px solid #ddd;
+		display: table-cell;
+		padding: 8px;
+	}
+}
+
 .talk-title {
 	font-weight: bold;
 }
