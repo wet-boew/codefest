@@ -120,13 +120,12 @@ footer {
 
 #host-list li {	
 	display: inline-block;
-	margin: 0 2em;
+	margin: 0em 2em 1em 2em;
 }
 
 #host-list li:first-child {
 	margin-left: 0;
 }
-
 
 /*
  *  Site menu
