@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.3 - 2014-06-18
+ * v4.0.4 - 2014-07-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -58,8 +58,8 @@ wb.i18nDict = {
 	"prv-l": "Vorige (links pyltjie sleutel)",
 	first: "Eerste",
 	last: "Laaste",
-	menu: "Menu",
-	email: "Stuur \\'n e-pos aan",
+	"srch-menus": "Soek en spyskaarte",
+	email: "Stuur 'n e-pos aan",
 	"menu-close": "Maak die menu",
 	"overlay-close": "Maak die oortrek",
 	"esc-key": "(Escape-sleutel)",
@@ -106,7 +106,7 @@ wb.i18nDict = {
 	"errs-fnd": " foute is gevind nie.",
 	"err-fnd": " fout gevind word.",
 	/* Date picker */
-	"date-show": "Kies \\'n datum van \\'n kalender vir die veld:",
+	"date-show": "Kies 'n datum van \\'n kalender vir die veld:",
 	"date-sel": "Gekies",
 	/* Calendar */
 	days: [
@@ -192,18 +192,18 @@ wb.i18nDict = {
 	"geo-sel": "Kies",
 	"geo-lblsel": "Gaan die element te kies op die kaart",
 	"geo-locurl-geogratis": "http://geogratis.gc.ca/services/geolocation/en/locate",
-	"geo-loc-placeholder": "Enter placename&#44; postal code&#44; street address&#44; NTS number...",
+	"geo-loc-placeholder": "Dui die naam van die plek&#44; poskode&#44; adres (pos)&#44; die aantal NTS ...",
 	"geo-loc-label": "Ligging",
-	"geo-aoi-north": "North",
-	"geo-aoi-east": "East",
-	"geo-aoi-south": "South",
-	"geo-aoi-west": "West",
-	"geo-aoi-instructions": "Draw box on map or enter coordinates below and click the <em>Draw</em> button.",
-	"geo-aoi-btndraw": "Draw",
-	"geo-aoi-btnclear": "Clear",
-	"geo-geoloc-btn": "Zoom to current location",
-	"geo-geoloc-fail": "Geolocation failed. Please ensure that location services are enabled.",
-	"geo-geoloc-uncapable": "Geolocation not supported by your browser.",
+	"geo-aoi-north": "Noord",
+	"geo-aoi-east": "Oos",
+	"geo-aoi-south": "Suid",
+	"geo-aoi-west": "Weste",
+	"geo-aoi-instructions": "Baken 'n gebied op die kaart of die onderstaande inligting in en kliek dan op die \"Teken\"-knoppie.",
+	"geo-aoi-btndraw": "Teken",
+	"geo-aoi-btnclear": "Verwyder",
+	"geo-geoloc-btn": "Zoom in jou huidige posisie",
+	"geo-geoloc-fail": "Plek gefaal het. Maak asseblief seker dat plek dienste word aangeskakel.",
+	"geo-geoloc-uncapable": "Lokalisering word nie ondersteun deur die leser.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Basiese HTML-weergawe",
 	"wb-enable": "Standaard weergawe",

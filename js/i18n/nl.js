@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.3 - 2014-06-18
+ * v4.0.4 - 2014-07-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -58,7 +58,7 @@ wb.i18nDict = {
 	"prv-l": "Vorige (linkse pijlen-toets)",
 	first: "Eerste",
 	last: "Laatste",
-	menu: "Menu",
+	"srch-menus": "Zoeken en menu's",
 	email: "E-mail",
 	"menu-close": "Sluit het menu",
 	"overlay-close": "Sluit het dialoogvenster",
@@ -165,11 +165,11 @@ wb.i18nDict = {
 	sortAsc: ": activeren voor oplopende sortering",
 	sortDesc: ": activeren voor aflopende sortering",
 	emptyTbl: "Geen gegevens beschikbaar in de tabel",
-	infoEntr: "Toon _START_ tot _END_ van _TOTAL_ lemma\\'s",
-	infoEmpty: "Toon 0 tot 0 van 0 lemma\\'s",
-	infoFilt: "(gefilterd uit _MAX_ totaal aantal lemma\\'s)",
+	infoEntr: "Toon _START_ tot _END_ van _TOTAL_ lemma's",
+	infoEmpty: "Toon 0 tot 0 van 0 lemma's",
+	infoFilt: "(gefilterd uit _MAX_ totaal aantal lemma's)",
 	info1000: "&#160;",
-	lenMenu: "Toon _MENU_ lemma\\'s",
+	lenMenu: "Toon _MENU_ lemma's",
 	filter: "Artikelen filteren",
 	/* Geomap */
 	"geo-mapctrl": "@geo-mapctrl@",
@@ -192,18 +192,18 @@ wb.i18nDict = {
 	"geo-sel": "Selecteren",
 	"geo-lblsel": "Vink het element aan om het op de kaart te selecteren",
 	"geo-locurl-geogratis": "http://geogratis.gc.ca/services/geolocation/en/locate",
-	"geo-loc-placeholder": "Enter placename&#44; postal code&#44; street address&#44; NTS number...",
+	"geo-loc-placeholder": "Vermeld de naam van de locatie&#44; postcode&#44; adres (post)&#44; het aantal NTS ...",
 	"geo-loc-label": "Plaats",
-	"geo-aoi-north": "North",
-	"geo-aoi-east": "East",
-	"geo-aoi-south": "South",
-	"geo-aoi-west": "West",
-	"geo-aoi-instructions": "Draw box on map or enter coordinates below and click the <em>Draw</em> button.",
-	"geo-aoi-btndraw": "Draw",
-	"geo-aoi-btnclear": "Clear",
-	"geo-geoloc-btn": "Zoom to current location",
-	"geo-geoloc-fail": "Geolocation failed. Please ensure that location services are enabled.",
-	"geo-geoloc-uncapable": "Geolocation not supported by your browser.",
+	"geo-aoi-north": "Noorden",
+	"geo-aoi-east": "Oosten",
+	"geo-aoi-south": "Zuiden",
+	"geo-aoi-west": "Westen",
+	"geo-aoi-instructions": "Bakenen een gebied op de kaart of voer de onderstaande informatie in en klik op de \"Trekken\" button.",
+	"geo-aoi-btndraw": "Trekken",
+	"geo-aoi-btnclear": "Verwijderen",
+	"geo-geoloc-btn": "Zoomen naar onderdeel",
+	"geo-geoloc-fail": "Locatie mislukt. Zorg ervoor dat locatiediensten zijn ingeschakeld.",
+	"geo-geoloc-uncapable": "Lokalisatie wordt niet ondersteund door uw browser.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Versie in basis-HTML",
 	"wb-enable": "Standaardversie",
