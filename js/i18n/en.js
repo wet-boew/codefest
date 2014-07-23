@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.3 - 2014-06-18
+ * v4.0.4 - 2014-07-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -58,7 +58,7 @@ wb.i18nDict = {
 	"prv-l": "Previous (left arrow key)",
 	first: "First",
 	last: "Last",
-	menu: "Menu",
+	"srch-menus": "Search and menus",
 	email: "Email",
 	"menu-close": "Close menu",
 	"overlay-close": "Close overlay",
@@ -198,12 +198,12 @@ wb.i18nDict = {
 	"geo-aoi-east": "East",
 	"geo-aoi-south": "South",
 	"geo-aoi-west": "West",
-	"geo-aoi-instructions": "Draw box on map or enter coordinates below and click the <em>Draw</em> button.",
+	"geo-aoi-instructions": "Draw box on map or enter coordinates below and click the \"Draw\" button.",
 	"geo-aoi-btndraw": "Draw",
 	"geo-aoi-btnclear": "Clear",
 	"geo-geoloc-btn": "Zoom to current location",
 	"geo-geoloc-fail": "Geolocation failed. Please ensure that location services are enabled.",
-	"geo-geoloc-uncapable": "Geolocation not supported by your browser.",
+	"geo-geoloc-uncapable": "Geolocation is not supported by your browser.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Basic HTML version",
 	"wb-enable": "Standard version",

@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.3 - 2014-06-18
+ * v4.0.4 - 2014-07-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -58,7 +58,7 @@ wb.i18nDict = {
 	"prv-l": "Sebelumnya (tombol panah kiri)",
 	first: "Pertama",
 	last: "Terakhir",
-	menu: "Menu",
+	"srch-menus": "Cari dan menu",
 	email: "Email",
 	"menu-close": "Tutup menu",
 	"overlay-close": "Tutup hamparan",
@@ -115,7 +115,7 @@ wb.i18nDict = {
 		"Selasa",
 		"Rabu",
 		"Kamis",
-		"Jum\\'at",
+		"Jum'at",
 		"Sabtu"
 	],
 	mnths: [
@@ -192,18 +192,18 @@ wb.i18nDict = {
 	"geo-sel": "Memilih",
 	"geo-lblsel": "Periksa untuk memilih elemen pada peta",
 	"geo-locurl-geogratis": "http://geogratis.gc.ca/services/geolocation/en/locate",
-	"geo-loc-placeholder": "Enter placename&#44; postal code&#44; street address&#44; NTS number...",
+	"geo-loc-placeholder": "Menunjukkan nama lokasi&#44; kode pos&#44; alamat (pos)&#44; jumlah NTS ...",
 	"geo-loc-label": "Tempat",
-	"geo-aoi-north": "North",
-	"geo-aoi-east": "East",
-	"geo-aoi-south": "South",
-	"geo-aoi-west": "West",
-	"geo-aoi-instructions": "Draw box on map or enter coordinates below and click the <em>Draw</em> button.",
-	"geo-aoi-btndraw": "Draw",
-	"geo-aoi-btnclear": "Clear",
-	"geo-geoloc-btn": "Zoom to current location",
-	"geo-geoloc-fail": "Geolocation failed. Please ensure that location services are enabled.",
-	"geo-geoloc-uncapable": "Geolocation not supported by your browser.",
+	"geo-aoi-north": "Utara",
+	"geo-aoi-east": "Timur",
+	"geo-aoi-south": "Selatan",
+	"geo-aoi-west": "Barat",
+	"geo-aoi-instructions": "Menggambarkan sebuah area pada peta atau masukkan rincian di bawah ini kemudian klik pada \"Menarik\" tombol.",
+	"geo-aoi-btndraw": "Menarik",
+	"geo-aoi-btnclear": "Menghapus",
+	"geo-geoloc-btn": "Zoom ke lokasi saat ini",
+	"geo-geoloc-fail": "Lokasi gagal. Pastikan bahwa layanan lokasi diaktifkan.",
+	"geo-geoloc-uncapable": "Lokalisasi tidak didukung oleh browser Anda.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Versi HTML dasar",
 	"wb-enable": "Versi standar",

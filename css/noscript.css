@@ -2,7 +2,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.3 - 2014-06-18
+ * v4.0.4 - 2014-07-23
  *
  *//*
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
@@ -18,8 +18,10 @@
 /**
  * Mobile-friendly styles
  */
-.wb-tabs > details > summary, .wb-tabs > .tabpanels > details > summary {
-  display: block !important; }
+.wb-tabs > details, .wb-tabs > .tabpanels > details {
+  display: block; }
+  .wb-tabs > details[open] > summary, .wb-tabs > .tabpanels > details[open] > summary {
+    display: block !important; }
 
 .wb-tabs {
   /* Only for backwards compatibility. Should be removed in v4.1. */ }

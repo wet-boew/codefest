@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.3 - 2014-06-18
+ * v4.0.4 - 2014-07-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -58,7 +58,7 @@ wb.i18nDict = {
 	"prv-l": "Predchádzajúci (klávesy šípka doľava)",
 	first: "Prvé",
 	last: "Posledný",
-	menu: "Menu",
+	"srch-menus": "Vyhľadávanie a ponuky",
 	email: "E-mail",
 	"menu-close": "Zavrite menu",
 	"overlay-close": "Zavrite so šablónou",
@@ -79,7 +79,7 @@ wb.i18nDict = {
 	pause: "Pauza",
 	open: "Otvoriť",
 	close: "Zavrieť",
-	volume: "Volume",
+	volume: "Hlasitosti",
 	mute: {
 		on: "Vypnutie",
 		off: "Nahlas"
@@ -192,18 +192,18 @@ wb.i18nDict = {
 	"geo-sel": "Vybrať",
 	"geo-lblsel": "Skontrolujte, vyberte prvok na mape",
 	"geo-locurl-geogratis": "http://geogratis.gc.ca/services/geolocation/en/locate",
-	"geo-loc-placeholder": "Enter placename&#44; postal code&#44; street address&#44; NTS number...",
+	"geo-loc-placeholder": "Uveďte názov miesta&#44; poštové smerovacie číslo&#44; adresu (poštové)&#44; počet NTS ...",
 	"geo-loc-label": "Umiestnenie",
-	"geo-aoi-north": "North",
-	"geo-aoi-east": "East",
-	"geo-aoi-south": "South",
-	"geo-aoi-west": "West",
-	"geo-aoi-instructions": "Draw box on map or enter coordinates below and click the <em>Draw</em> button.",
-	"geo-aoi-btndraw": "Draw",
-	"geo-aoi-btnclear": "Clear",
-	"geo-geoloc-btn": "Zoom to current location",
-	"geo-geoloc-fail": "Geolocation failed. Please ensure that location services are enabled.",
-	"geo-geoloc-uncapable": "Geolocation not supported by your browser.",
+	"geo-aoi-north": "Sever",
+	"geo-aoi-east": "Východ",
+	"geo-aoi-south": "Na juh",
+	"geo-aoi-west": "Západ",
+	"geo-aoi-instructions": "Vymedziť oblasť na mape alebo zadajte údaje nižšie a potom kliknite na tlačidlo \"Kresliť\".",
+	"geo-aoi-btndraw": "Kresliť",
+	"geo-aoi-btnclear": "Odstrániť",
+	"geo-geoloc-btn": "Priblížiť sa k aktuálnej polohe",
+	"geo-geoloc-fail": "Lokalita zlyhalo. Uistite sa, že umiestnenie služby sú povolené.",
+	"geo-geoloc-uncapable": "Lokalizácia nie je podporovaná vo vašom prehliadači.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Základné HTML verzia",
 	"wb-enable": "Štandardná verzia",

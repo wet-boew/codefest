@@ -1953,15 +1953,18 @@ var pluginName = "wb-geomap",
 
 		geomap.gmap.before( "<div class='geomap-aoi panel panel-default'><div id='geomap-aoi-" + geomap.uniqueId + "' class='panel-body'></div></div>" );
 
-		var mapDiv = $("#geomap-map-" + geomap.uniqueId);
+		var mapDiv = $( "#geomap-map-" + geomap.uniqueId );
 
-		mapDiv.append( "<button id='geomap-aoi-toggle-mode-draw-" + geomap.uniqueId + "' href='#' class='btn btn-sm geomap-geoloc-aoi-btn'><i class='glyphicon glyphicon-edit'></i></button>" );
+		mapDiv.append( "<button id='geomap-aoi-toggle-mode-draw-" + geomap.uniqueId +
+			"' href='#' class='btn btn-sm geomap-geoloc-aoi-btn' title='" + i18nText.aoiBtnDraw +
+			"'><i class='glyphicon glyphicon-edit'></i><span class='wb-inv'> " +
+			i18nText.aoiBtnDraw + "</span></button>" );
 
 		$( "#geomap-aoi-" + geomap.uniqueId ).parent().hide();
 
 		$( "#geomap-aoi-" + geomap.uniqueId ).append(
-			"<div id='form-aoi-" + geomap.uniqueId + "'>" +
-				"<p><small>" + i18nText.aoiInstructions + "</small></p>" +
+			"<fieldset id='form-aoi-" + geomap.uniqueId + "'>" +
+				"<legend tabindex='-1'>" + i18nText.aoiInstructions + "</legend>" +
 				"<div class='row'>" +
 					"<div class='col-md-2'>" +
 						"<label for='geomap-aoi-maxy-" + geomap.uniqueId + "' class='input-sm control-label wb-inv'>" + i18nText.aoiNorth + "</label>" +
@@ -1998,23 +2001,27 @@ var pluginName = "wb-geomap",
 				"</div>" +
 				"<input type='hidden' id='geomap-aoi-extent-" + geomap.uniqueId + "'/>" +
 				"<input type='hidden' id='geomap-aoi-extent-lonlat-" + geomap.uniqueId + "'/>" +
-			"</form>" +
+			"</fieldset>" +
 		"</div>" +
 		"<div class='clear'></div>" );
 
 		$document.on( "click", "#geomap-aoi-toggle-mode-draw-" + geomap.uniqueId, function( evt ) {
 			evt.preventDefault();
 
-			var active = geomap.map.getControlsByClass( "OpenLayers.Control.DrawFeature" )[0].active;
+			var drawFeature = geomap.map.getControlsByClass( "OpenLayers.Control.DrawFeature" )[ 0 ],
+				active = drawFeature.active,
+				$aoiElm = $( "#geomap-aoi-" + geomap.uniqueId );
 
 			if ( active ) {
-				geomap.map.getControlsByClass( "OpenLayers.Control.DrawFeature" )[ 0 ].deactivate();
-				$( "#geomap-aoi-" + geomap.uniqueId ).parent().slideToggle();
-				$( this ).toggleClass( "active" );
+				drawFeature.deactivate();
 			} else {
-				geomap.map.getControlsByClass( "OpenLayers.Control.DrawFeature" )[ 0 ].activate();
-				$( "#geomap-aoi-" + geomap.uniqueId ).parent().slideToggle();
-				$( this ).toggleClass( "active" );
+				drawFeature.activate();
+			}
+			$aoiElm.parent().slideToggle();
+			$( this ).toggleClass( "active" );
+
+			if ( !active ) {
+				$aoiElm.find( "legend" ).trigger( "setfocus.wb" );
 			}
 
 			geomap.map.updateSize();
@@ -2108,8 +2115,8 @@ var pluginName = "wb-geomap",
 
 		mapDiv.append(
 			"<div class='geomap-geoloc form-inline'>" +
-				"<label for='wb-geomap-geocode-search-" + geomap.uniqueId + "' class='wb-invisible'>" + i18nText.geoCoderLabel + "</label>" +
-				"<input type='text' class='form-control input-sm opct-90 pull-right' name='wb-geomap-geocode-search-" + geomap.uniqueId + "' id='wb-geomap-geocode-search-" + geomap.uniqueId + "' list='wb-geomap-geocode-results-" + geomap.uniqueId + "' autocomplete='off' placeholder='" + i18nText.geoCoderPlaceholder + "'></input>" +
+				"<label for='wb-geomap-geocode-search-" + geomap.uniqueId + "' class='wb-inv'>" + i18nText.geoCoderLabel + "</label>" +
+				"<input type='text' class='form-control input-sm opct-90 pull-right' name='wb-geomap-geocode-search-" + geomap.uniqueId + "' id='wb-geomap-geocode-search-" + geomap.uniqueId + "' list='wb-geomap-geocode-results-" + geomap.uniqueId + "' autocomplete='off' placeholder='" + i18nText.geoCoderPlaceholder + "' />" +
 				"<datalist id='wb-geomap-geocode-results-" + geomap.uniqueId + "'></datalist>" +
 			"</div>"
 		);
@@ -2214,7 +2221,7 @@ var pluginName = "wb-geomap",
 			timer = setTimeout(	function() {
 				xhr = $.get( i18nText.geoLocationURL, {
 						q: val + "*"
-					 }, function( res ) {
+					}, function( res ) {
 
 					options = [ "<!--[if lte IE 9]><select><![endif]-->" ];
 
@@ -2223,10 +2230,10 @@ var pluginName = "wb-geomap",
 
 							title = res[ i ].title
 								.replace(/&/g, "&amp;")
-					            .replace(/"/g, "&quot;")
-					            .replace(/'/g, "&#39;")
-					            .replace(/</g, "&lt;")
-					            .replace(/>/g, "&gt;");
+								.replace(/"/g, "&quot;")
+								.replace(/'/g, "&#39;")
+								.replace(/</g, "&lt;")
+								.replace(/>/g, "&gt;");
 
 							bnd = res[ i ].bbox ? res[ i ].bbox[ 0 ] + ", " + res[ i ].bbox[ 1 ] + ", " + res[ i ].bbox[ 2 ] + ", " + res[ i ].bbox[ 3 ] : null;
 							ll = res[ i ].geometry && res[ i ].geometry.type === "Point" ? res[ i ].geometry.coordinates[ 0 ] + ", " + res[ i ].geometry.coordinates[ 1] : null;
@@ -2284,10 +2291,9 @@ var pluginName = "wb-geomap",
 		}),
 		geolocationPanel = new OpenLayers.Control.Panel( {
 			displayClass: "olPanelGeolocate",
-	        createControlMarkup: function() {
-	            var button = document.createElement( "button" );
-	            return button;
-	        }
+			createControlMarkup: function() {
+				return document.createElement( "button" );
+			}
 		});
 
 		geolocationPanel.addControls( [ btnGeolocate ] );

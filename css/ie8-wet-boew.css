@@ -2,7 +2,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.3 - 2014-06-18
+ * v4.0.4 - 2014-07-23
  *
  *//*
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
@@ -4314,7 +4314,7 @@ button.close {
 /*
  Global placeholders
  */
-.wb-invisible, .wb-inv, .wb-show-onfocus, .wb-sl, #wb-lng h2, #wb-glb-mn h2, #wb-srch h2, #wb-srch label, #wb-sm h2, #wb-bc h2, #wb-sec h2, #wb-info h2, #mb-pnl h3, #wb-lng h2, .wb-fnote dt, #mb-pnl .srch-pnl label {
+.wb-invisible, .wb-inv, .wb-show-onfocus, .wb-sl, #wb-lng h2, #wb-glb-mn h2, #wb-srch h2, #wb-srch label, #wb-sm h2, #wb-bc h2, #wb-sec h2, #wb-info h2, #mb-pnl h3, #wb-lng h2, .cal-days td ul, .wb-fnote dt, #mb-pnl .srch-pnl label {
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   margin: 0;
@@ -4330,11 +4330,14 @@ button.close {
   position: static;
   width: inherit; }
 
-.pagination.disabled, .pager.disabled, .pagination > li.disabled, .pager > li.disabled, [dir=rtl] .pagination [rel="prev"]:before, [dir=rtl] .pager [rel="prev"]:before, [dir=rtl] .pagination [rel="next"]:after, [dir=rtl] .pager [rel="next"]:after, .out, #mb-pnl .modal-body h2, table.dataTable thead .sorting_disabled .sorting-icons:after, table.dataTable thead .sorting_disabled .sorting-icons:before, table.dataTable thead .sorting_asc_disabled .sorting-icons:before, table.dataTable thead .sorting_desc_disabled .sorting-icons:after, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled, [dir=rtl] .dataTables_wrapper .dataTables_paginate .paginate_button.previous:before, [dir=rtl] .dataTables_wrapper .dataTables_paginate .paginate_button.next:after, [dir=rtl] .dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .wb-tabs.carousel-s1 [role="tablist"] li, .wb-tabs.carousel-s2 [role="tablist"] li {
+.pagination.disabled, .pager.disabled, .pagination > li.disabled, .pager > li.disabled, [dir=rtl] .pagination [rel="prev"]:before, [dir=rtl] .pager [rel="prev"]:before, [dir=rtl] .pagination [rel="next"]:after, [dir=rtl] .pager [rel="next"]:after, #mb-pnl .modal-body h2, table.dataTable thead .sorting_disabled .sorting-icons:after, table.dataTable thead .sorting_disabled .sorting-icons:before, table.dataTable thead .sorting_asc_disabled .sorting-icons:before, table.dataTable thead .sorting_desc_disabled .sorting-icons:after, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled, [dir=rtl] .dataTables_wrapper .dataTables_paginate .paginate_button.previous:before, [dir=rtl] .dataTables_wrapper .dataTables_paginate .paginate_button.next:after, [dir=rtl] .dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .wb-tabs.carousel-s1 [role="tablist"] li, .wb-tabs.carousel-s2 [role="tablist"] li {
   display: none; }
 
-.csstransitions .out, .wb-menu .sm.open li {
+.wb-menu .sm.open li, .wb-disable .wb-tabs > details, .wb-disable .wb-tabs > .tabpanels > details {
   display: block; }
+
+.wb-disable .wb-tabs > details[open] > summary, .wb-disable .wb-tabs > .tabpanels > details[open] > summary {
+  display: block !important; }
 
 .wb-menu .menu > li a, .wb-menu .menu > li a:hover, .wb-menu .menu > li a:focus, .wb-menu .active > a {
   text-decoration: none; }
@@ -4357,7 +4360,8 @@ button.close {
   z-index: 3; }
 
 .wb-sl {
-  padding: 5px; }
+  padding: 5px;
+  z-index: 501; }
 
 q:before, q:after {
   content: ""; }
@@ -4610,7 +4614,13 @@ blockquote {
  *	Use button border style 'outset' to give buttons depth, except when disabled
  */
 .btn {
-  border-style: outset; }
+  border-style: outset;
+  /*
+	 * These two property overrides should be recommended upstream to
+	 * Bootstrap as a fix for button wrapping (see wet-boew/wet-boew#4454)
+	 */
+  height: auto;
+  white-space: normal; }
   .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
     border-style: solid; }
 
@@ -4662,217 +4672,215 @@ blockquote {
   float: right; }
 
 /*
-* jQuery Mobile v1.3.2
-* http://jquerymobile.com
+* Based upon jQuery Mobile Transitions (http://jquerymobile.com)
 *
 * Copyright 2010, 2013 jQuery Foundation, Inc. and other contributors
 * Released under the MIT license.
 * http://jquery.org/license
 *
 */
-.in {
-  animation-duration: 350ms;
-  animation-timing-function: ease-out; }
+.pop.in, .fade.in {
+  opacity: 1;
+  visibility: visible; }
+
+.pop.out, .fade.out {
+  opacity: 0;
+  visibility: hidden; }
 
 .out {
-  animation-duration: 225ms;
-  animation-timing-function: ease-in; }
+  display: none !important; }
+
+.csstransitions .out {
+  display: block !important; }
 
 .pop {
   transform-origin: 50% 50%; }
-  .pop .in {
+  .pop.in {
     animation-duration: 350ms;
     animation-name: popin;
-    opacity: 1;
-    transform: scale(1); }
-  .pop .out {
+    transform: scale(1);
+    visibility: visible; }
+  .pop.out {
     animation-duration: 100ms;
     animation-name: fadeout;
-    opacity: 0; }
-  .pop.reverse .in {
+    visibility: hidden; }
+  .pop.reverse.in {
     animation-name: fadein; }
-  .pop.reverse .out {
+  .pop.reverse.out {
     animation-name: popout;
     transform: scale(0.8); }
 
 @keyframes popin {
-  from {
-    opacity: 0;
+  0% {
+    opacity: 1;
+    visibility: visible;
     transform: scale(0.8); }
 
-  to {
-    opacity: 1;
+  100% {
+    opacity: 0;
+    visibility: hidden;
     transform: scale(1); } }
 
 @keyframes popout {
-  from {
+  0% {
     opacity: 1;
+    visibility: visible;
     transform: scale(1); }
 
-  to {
+  100% {
     opacity: 0;
+    visibility: hidden;
     transform: scale(0.8); } }
+
+.fade.in {
+  animation-duration: 225ms;
+  animation-name: fadein; }
+.fade.out {
+  animation-duration: 125ms;
+  animation-name: fadeout; }
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    visibility: hidden; }
+
+  100% {
+    opacity: 1;
+    visibility: visible; } }
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+    visibility: visible; }
+
+  100% {
+    opacity: 0;
+    visibility: hidden; } }
+
+.slide.out, .slide.in {
+  animation-duration: 350ms;
+  animation-timing-function: ease-out; }
+.slide.out {
+  animation-name: slideouttoleft;
+  transform: translateX(-100%);
+  visibility: hidden; }
+.slide.in {
+  animation-name: slideinfromright;
+  transform: translateX(0);
+  visibility: visible; }
+.slide.reverse.out {
+  animation-name: slideouttoright;
+  transform: translateX(100%); }
+.slide.reverse.in {
+  animation-name: slideinfromleft; }
 
 /* keyframes for slidein from sides */
 @keyframes slideinfromright {
-  from {
+  0% {
     transform: translateX(100%); }
 
-  to {
+  100% {
     transform: translateX(0); } }
 
 @keyframes slideinfromleft {
-  from {
+  0% {
     transform: translateX(-100%); }
 
-  to {
+  100% {
     transform: translateX(0); } }
 
 /* keyframes for slideout to sides */
 @keyframes slideouttoleft {
-  from {
-    transform: translateX(0); }
+  0% {
+    transform: translateX(0);
+    visibility: visible; }
 
-  to {
-    transform: translateX(-100%); } }
+  99% {
+    visibility: visible; }
+
+  100% {
+    transform: translateX(-100%);
+    visibility: hidden; } }
 
 @keyframes slideouttoright {
-  from {
-    transform: translateX(0); }
+  0% {
+    transform: translateX(0);
+    visibility: visible; }
 
-  to {
-    transform: translateX(100%); } }
+  99% {
+    visibility: visible; }
 
-.slide .out, .slide .in {
-  animation-duration: 350ms;
-  animation-timing-function: ease-out; }
-.slide .out {
+  100% {
+    transform: translateX(100%);
+    visibility: hidden; } }
+
+.slidefade.out {
+  animation-duration: 225ms;
   animation-name: slideouttoleft;
   transform: translateX(-100%); }
-.slide .in {
-  animation-name: slideinfromright;
+.slidefade.in {
+  animation-duration: 200ms;
+  animation-name: fadein;
   transform: translateX(0); }
-.slide.reverse .out {
-  animation-name: slideouttoright;
-  transform: translateX(100%); }
-.slide.reverse .in {
+.slidefade.reverse.out {
   animation-name: slideouttoright;
   transform: translateX(100%); }
 
-/* slide down */
-.slidedown .out {
-  animation-duration: 100ms;
-  animation-name: fadeout; }
-.slidedown .in {
-  animation-duration: 250ms;
+/* slide up/down */
+.slidevert.out, .slidevert.in {
+  animation-duration: 350ms;
+  animation-timing-function: ease-out; }
+.slidevert.out {
+  animation-name: slideouttobottom;
+  transform: translateY(100%);
+  visibility: hidden; }
+.slidevert.in {
   animation-name: slideinfromtop;
-  transform: translateY(0); }
-.slidedown.reverse .out {
-  animation-duration: 200ms;
+  transform: translateY(0);
+  visibility: visible; }
+.slidevert.reverse.out {
   animation-name: slideouttotop;
   transform: translateY(-100%); }
-.slidedown.reverse .in {
-  animation-duration: 150ms;
-  animation-name: fadein; }
+.slidevert.reverse.in {
+  animation-name: slideinfrombottom; }
 
 @keyframes slideinfromtop {
-  from {
+  0% {
     transform: translateY(-100%); }
 
-  to {
+  100% {
     transform: translateY(0); } }
 
 @keyframes slideouttotop {
-  from {
-    transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+    visibility: visible; }
 
-  to {
-    transform: translateY(-100%); } }
+  99% {
+    visibility: visible; }
 
-@keyframes fadein {
-  from {
-    opacity: 0; }
-
-  to {
-    opacity: 1; } }
-
-@keyframes fadeout {
-  from {
-    opacity: 1; }
-
-  to {
-    opacity: 0; } }
-
-.fade .out {
-  animation-duration: 125ms;
-  animation-name: fadeout;
-  opacity: 0; }
-.fade .in {
-  animation-duration: 225ms;
-  animation-name: fadein;
-  opacity: 1; }
-
-/* keyframes for slideout to sides */
-@keyframes slideouttoleft {
-  from {
-    transform: translateX(0); }
-
-  to {
-    transform: translateX(-100%); } }
-
-@keyframes slideouttoright {
-  from {
-    transform: translateX(0); }
-
-  to {
-    transform: translateX(100%); } }
-
-.slidefade .out {
-  animation-duration: 225ms;
-  animation-name: slideouttoleft;
-  transform: translateX(-100%); }
-.slidefade .in {
-  animation-duration: 200ms;
-  animation-name: fadein;
-  transform: translateX(0); }
-.slidefade.reverse .out {
-  animation-duration: 200ms;
-  animation-name: slideouttoright;
-  transform: translateX(100%); }
-.slidefade.reverse .in {
-  animation-duration: 200ms;
-  animation-name: fadein;
-  transform: translateX(0); }
-
-/* slide up */
-.slideup .out {
-  animation-duration: 100ms;
-  animation-name: fadeout; }
-.slideup .in {
-  animation-duration: 250ms;
-  animation-name: slideinfrombottom;
-  transform: translateY(0); }
-.slideup.reverse .in {
-  animation-duration: 150ms;
-  animation-name: fadein; }
-.slideup.reverse .out {
-  animation-duration: 200ms;
-  animation-name: slideouttobottom;
-  transform: translateY(100%); }
+  100% {
+    transform: translateY(-100%);
+    visibility: hidden; } }
 
 @keyframes slideinfrombottom {
-  from {
+  0% {
     transform: translateY(100%); }
 
-  to {
+  100% {
     transform: translateY(0); } }
 
 @keyframes slideouttobottom {
-  from {
-    transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+    visibility: visible; }
 
-  to {
-    transform: translateY(100%); } }
+  99% {
+    visibility: visible; }
+
+  100% {
+    transform: translateY(100%);
+    visibility: hidden; } }
 
 /*
   WET-BOEW
@@ -5105,15 +5113,15 @@ summary {
 
 details[open] {
   padding-bottom: 1em; }
-  details[open] > * {
-    margin-left: 1.3em; }
-  details[open] > summary {
-    margin-left: auto; }
+details > * {
+  margin-left: 1.3em; }
+details > summary {
+  margin-left: auto; }
 
-[dir=rtl] details[open] > * {
+[dir=rtl] details > * {
   margin-left: auto;
   margin-right: 1.3em; }
-[dir=rtl] details[open] > summary {
+[dir=rtl] details > summary {
   margin-right: auto; }
 
 /*
@@ -5123,23 +5131,29 @@ details[open] {
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  */
-.ev-details {
+.cal-days td ul.ev-details, .cal-days td:hover ul {
   background-color: #fff;
   border: 1px solid #333;
+  clip: rect(auto, auto, auto, auto);
   color: #000;
+  height: inherit;
   list-style-type: none;
   margin: 0;
   margin-top: -0.5em;
+  overflow: inherit;
   padding: 0;
   position: absolute;
   width: 10em;
   z-index: 5; }
-  .ev-details a:hover, .ev-details a:focus {
+  .cal-days td ul.ev-details a:hover, .cal-days td:hover ul a:hover, .cal-days td ul.ev-details a:focus, .cal-days td:hover ul a:focus {
     color: #fff; }
 
 .cal-days a.cal-evt {
   background: #176ca7;
   color: #fff; }
+
+.cal-cnt-fluid.cal-cnt, .cal-cnt-fluid table.cal-cnt {
+  width: 100%; }
 
 /*
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
@@ -5325,8 +5339,11 @@ figure .pieLabel {
 .fn-lnk, .wb-fnote .fn-rtn a {
   background-color: #eee;
   border: 1px solid #ccc;
-  padding: 0 4px 1px;
+  padding: 1px 10px 2px;
   white-space: nowrap; }
+
+.fn-lnk {
+  margin-left: 5px; }
 
 .wb-fnote {
   border-color: #ccc;
@@ -5347,7 +5364,7 @@ figure .pieLabel {
       background-color: #eee;
       border-color: #555; }
   .wb-fnote p {
-    margin: 0 0 0 3.125em;
+    margin: 0 0 0 3.75em;
     padding: 0 0.375em 0.375em; }
     .wb-fnote p:first-child {
       padding-top: 0.375em; }
@@ -5358,17 +5375,17 @@ figure .pieLabel {
     padding-top: 0.375em;
     position: absolute;
     top: 0;
-    width: 2.75em; }
+    width: 3.375em; }
     .wb-fnote .fn-rtn a {
       display: inline-block;
       padding-bottom: 0; }
 
 /* Right to left (RTL) SCSS */
-[dir="rtl"] .wb-fnote p {
+[dir="rtl"] sup .fn-lnk {
   margin-left: 0;
-  margin-right: 3.125em;
-  padding-left: 0;
-  padding-right: 0.375em; }
+  margin-right: 5px; }
+[dir="rtl"] .wb-fnote p {
+  margin: 0 3.75em 0 0; }
 [dir="rtl"] .wb-fnote .fn-rtn {
   margin-right: 0;
   padding-right: 0; }
@@ -5848,14 +5865,14 @@ img.mfp-img {
   #mb-pnl nav ul li.no-sect .list-group {
     margin-bottom: 0; }
   #mb-pnl nav ul li.no-sect a {
-    margin: 0;
-    padding: 0; }
+    margin: 0 0 0 -6px; }
 #mb-pnl nav .mb-menu > li {
   padding: 10px 0 2px; }
 #mb-pnl nav a {
   display: inline-block;
   margin: 6px 0 6px -6px;
-  padding: 0 6px; }
+  padding: 0 6px;
+  width: 100%; }
 #mb-pnl nav summary {
   margin-left: -3px;
   padding-left: 3px; }
@@ -6288,6 +6305,60 @@ ol.linenums {
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  */
+.shr-pg .bitly:before, .shr-pg .blogger:before, .shr-pg .delicious:before, .shr-pg .digg:before, .shr-pg .diigo:before, .shr-pg .facebook:before, .shr-pg .feed:before, .shr-pg .gmail:before, .shr-pg .googleplus:before, .shr-pg .linkedin:before, .shr-pg .myspace:before, .shr-pg .pinterest:before, .shr-pg .reddit:before, .shr-pg .stumbleupon:before, .shr-pg .tumblr:before, .shr-pg .twitter:before, .shr-pg .yahoomail:before {
+  background: url("../assets/sprites_share.png") no-repeat; }
+
+.shr-pg .bitly:before {
+  background-position: 0 0; }
+
+.shr-pg .blogger:before {
+  background-position: 0 -32px; }
+
+.shr-pg .delicious:before {
+  background-position: 0 -64px; }
+
+.shr-pg .digg:before {
+  background-position: 0 -96px; }
+
+.shr-pg .diigo:before {
+  background-position: 0 -128px; }
+
+.shr-pg .facebook:before {
+  background-position: 0 -160px; }
+
+.shr-pg .feed:before {
+  background-position: 0 -192px; }
+
+.shr-pg .gmail:before {
+  background-position: 0 -224px; }
+
+.shr-pg .googleplus:before {
+  background-position: 0 -256px; }
+
+.shr-pg .linkedin:before {
+  background-position: 0 -288px; }
+
+.shr-pg .myspace:before {
+  background-position: 0 -320px; }
+
+.shr-pg .pinterest:before {
+  background-position: 0 -352px; }
+
+.shr-pg .reddit:before {
+  background-position: 0 -384px; }
+
+.shr-pg .stumbleupon:before {
+  background-position: 0 -416px; }
+
+.shr-pg .tumblr:before {
+  background-position: 0 -448px; }
+
+.shr-pg .twitter:before {
+  background-position: 0 -480px; }
+
+.shr-pg .yahoomail:before {
+  background-position: 0 -512px; }
+
 .shr-opn span {
   padding-right: 0.2em; }
 
@@ -6308,63 +6379,12 @@ ol.linenums {
     width: 32px; }
 .shr-pg .shr-dscl {
   padding-bottom: 0; }
-.shr-pg .bitly:before {
-  background: url("../assets/sprites_share.png") no-repeat;
-  background-position: 0 0; }
-.shr-pg .blogger:before {
-  background: url("../assets/sprites_share.png") no-repeat;
-  background-position: 0 -32px; }
-.shr-pg .delicious:before {
-  background: url("../assets/sprites_share.png") no-repeat;
-  background-position: 0 -64px; }
-.shr-pg .digg:before {
-  background: url("../assets/sprites_share.png") no-repeat;
-  background-position: 0 -96px; }
-.shr-pg .diigo:before {
-  background: url("../assets/sprites_share.png") no-repeat;
-  background-position: 0 -128px; }
 .shr-pg .email:before {
   content: "\2709";
   display: inline-block;
   font-family: "Glyphicons Halflings";
   font-size: 32px;
   margin-right: 0.3em; }
-.shr-pg .facebook:before {
-  background: url("../assets/sprites_share.png") no-repeat;
-  background-position: 0 -160px; }
-.shr-pg .feed:before {
-  background: url("../assets/sprites_share.png") no-repeat;
-  background-position: 0 -192px; }
-.shr-pg .gmail:before {
-  background: url("../assets/sprites_share.png") no-repeat;
-  background-position: 0 -224px; }
-.shr-pg .googleplus:before {
-  background: url("../assets/sprites_share.png") no-repeat;
-  background-position: 0 -256px; }
-.shr-pg .linkedin:before {
-  background: url("../assets/sprites_share.png") no-repeat;
-  background-position: 0 -288px; }
-.shr-pg .myspace:before {
-  background: url("../assets/sprites_share.png") no-repeat;
-  background-position: 0 -320px; }
-.shr-pg .pinterest:before {
-  background: url("../assets/sprites_share.png") no-repeat;
-  background-position: 0 -352px; }
-.shr-pg .reddit:before {
-  background: url("../assets/sprites_share.png") no-repeat;
-  background-position: 0 -384px; }
-.shr-pg .stumbleupon:before {
-  background: url("../assets/sprites_share.png") no-repeat;
-  background-position: 0 -416px; }
-.shr-pg .tumblr:before {
-  background: url("../assets/sprites_share.png") no-repeat;
-  background-position: 0 -448px; }
-.shr-pg .twitter:before {
-  background: url("../assets/sprites_share.png") no-repeat;
-  background-position: 0 -480px; }
-.shr-pg .yahoomail:before {
-  background: url("../assets/sprites_share.png") no-repeat;
-  background-position: 0 -512px; }
 .shr-pg .shr-pg {
   text-align: left; }
 .shr-pg ul {
@@ -6664,10 +6684,9 @@ table.dataTable {
 .wb-tabs.carousel-s1 figure, .wb-tabs.carousel-s2 figure {
   background: #243850;
   background: rgba(36, 56, 80, 0.9); }
-
-.wb-tabs.carousel-s1 figure img, .wb-tabs.carousel-s2 figure img {
-  height: auto;
-  width: 100%; }
+  .wb-tabs.carousel-s1 figure img, .wb-tabs.carousel-s2 figure img {
+    height: auto;
+    width: 100%; }
 
 .wb-tabs.carousel-s1 figcaption, .wb-tabs.carousel-s2 figcaption {
   bottom: 0;
@@ -6677,9 +6696,8 @@ table.dataTable {
   position: relative;
   right: 0;
   z-index: 101; }
-
-.wb-tabs.carousel-s1 figcaption a, .wb-tabs.carousel-s2 figcaption a {
-  color: #fff; }
+  .wb-tabs.carousel-s1 figcaption a, .wb-tabs.carousel-s2 figcaption a {
+    color: #fff; }
 
 .wb-tabs.carousel-s2 [role="tablist"] li.prv, .wb-tabs.carousel-s2 [role="tablist"] li.nxt {
   background: none;
@@ -6833,9 +6851,6 @@ table.dataTable {
             margin-top: 0.4em;
             margin-right: 0.65em;
             padding: 8px 10px 4px; }
-
-.wb-disable .wb-tabs > details > summary, .wb-disable .wb-tabs > .tabpanels > details > summary {
-  display: block !important; }
 
 .wb-disable .csstransitions .wb-tabs [role="tabpanel"].out {
   position: static;
@@ -7055,7 +7070,7 @@ table.dataTable {
  * GeoMap
  */
 .wb-geomap-map {
-  margin-bottom: 30px;
+  margin: 0 15px 30px;
   outline: 1px solid #ccc;
   position: relative; }
   .wb-geomap-map.active {
@@ -7088,6 +7103,11 @@ table.dataTable {
   .geomap-geoloc input[type="text"] {
     width: 80%; }
 
+.geomap-aoi legend {
+  border: 0;
+  font-size: 1em;
+  margin-bottom: 1em; }
+
 button.geomap-geoloc-aoi-btn {
   background-color: #fff;
   border-color: #eee;
@@ -7119,6 +7139,47 @@ button.geomap-geoloc-aoi-btn {
 
 .wb-zebra-col-hover col.table-hover {
   background-color: #f0f0f0; }
+
+/*
+ * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+ * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+ */
+.feeds-cont.waiting:after, .feeds-cont.waiting:before {
+  bottom: 0;
+  content: " ";
+  height: 50px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px; }
+
+#details-facebook .tgl-panel, #details-flickr .tgl-panel, #details-youtube .tgl-panel {
+  margin-left: 0; }
+#details-facebook .feeds-cont, #details-flickr .feeds-cont, #details-youtube .feeds-cont {
+  border: 0; }
+  #details-facebook .feeds-cont li, #details-flickr .feeds-cont li, #details-youtube .feeds-cont li {
+    border: 0; }
+    #details-facebook .feeds-cont li:nth-child(even), #details-flickr .feeds-cont li:nth-child(even), #details-youtube .feeds-cont li:nth-child(even) {
+      background-color: #f9f9f9; }
+#details-facebook[open] summary, #details-flickr[open] summary, #details-youtube[open] summary {
+  border-bottom: 1px solid #eee; }
+
+.feeds-cont.waiting {
+  min-height: 100px;
+  min-width: 100px; }
+  .feeds-cont.waiting:after {
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-name: spin;
+    animation-timing-function: linear;
+    background: url("../assets/loading.png") center center no-repeat;
+    background-size: 30px 30px;
+    z-index: 2; }
+  .feeds-cont.waiting:before {
+    background: rgba(0, 0, 0, 0);
+    z-index: 1; }
 
 /*
  Polyfills
@@ -7259,7 +7320,9 @@ details:not([open]) > * {
     /* Only for backwards compatibility. Should be removed in v4.1. */
     border-radius: 4px;
     border-top: 1px solid #adadad;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    padding-left: 0;
+    padding-right: 0; }
     .wb-tabs.tabs-acc > ul {
       display: none; } }
 
@@ -7356,6 +7419,10 @@ details:not([open]) > * {
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  */
+  /*
+ * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+ * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+ */
   [dir=rtl] main.col-md-push-3 {
     left: auto; }
   [dir=rtl] #wb-sec.col-md-pull-9 {
@@ -7382,6 +7449,9 @@ details:not([open]) > * {
     position: absolute;
     bottom: 0;
     top: auto; }
+  #details-facebook, #details-flickr, #details-youtube {
+    padding-left: 0;
+    padding-right: 0; }
   .wb-tabs > details, .wb-tabs > .tabpanels > details {
     border: 1px solid #ccc;
     display: none; }
@@ -7586,9 +7656,12 @@ details:not([open]) > * {
     display: none !important; }
   .wb-tabs [role="tabpanel"] {
     display: block !important;
-    opacity: 1 !important; }
+    opacity: 1 !important;
+    position: static !important; }
     .wb-tabs [role="tabpanel"] figcaption {
-      position: static; } }
+      position: static; }
+    .wb-tabs [role="tabpanel"] summary {
+      display: block !important; } }
 
 /*
   WET-BOEW
@@ -7597,10 +7670,12 @@ details:not([open]) > * {
 @media print {
   .lt-ie9 abbr[title]:after {
     content: ""; }
-  .lt-ie9 .pagination > li > a, .lt-ie9 .pagination > li > span, .lt-ie9 .pager > li > a, .lt-ie9 .pager > li > span {
-    cursor: hand; }
-  .lt-ie9 .pagination > li.active > a, .lt-ie9 .pagination > li.active > span, .lt-ie9 .pager > li.active > a, .lt-ie9 .pager > li.active > span {
-    cursor: default; } }
+  .lt-ie9 .pagination, .lt-ie9 .pager {
+    width: 100%; }
+    .lt-ie9 .pagination > li > a, .lt-ie9 .pagination > li > span, .lt-ie9 .pager > li > a, .lt-ie9 .pager > li > span {
+      cursor: hand; }
+    .lt-ie9 .pagination > li.active > a, .lt-ie9 .pagination > li.active > span, .lt-ie9 .pager > li.active > a, .lt-ie9 .pager > li.active > span {
+      cursor: default; } }
 
 /*
  Plugins

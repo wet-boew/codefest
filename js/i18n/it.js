@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.3 - 2014-06-18
+ * v4.0.4 - 2014-07-23
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /*
@@ -43,7 +43,7 @@ wb.i18nDict = {
 	"mins-ago": {
 		mixin: "[MIXIN] Minuti fa"
 	},
-	"hour-ago": "un\\'ora fa",
+	"hour-ago": "un'ora fa",
 	"hours-ago": {
 		mixin: "[MIXIN] ore fa"
 	},
@@ -58,7 +58,7 @@ wb.i18nDict = {
 	"prv-l": "Precedente (tasto freccia sinistra)",
 	first: "Primo",
 	last: "Ultimo",
-	menu: "Menu",
+	"srch-menus": "Ricerca e menu",
 	email: "E-mail",
 	"menu-close": "Chiudere il menu",
 	"overlay-close": "Chiudere la sovrapposizione",
@@ -134,8 +134,8 @@ wb.i18nDict = {
 	],
 	cal: "Calendario",
 	currDay: "(Giorno attuale)",
-	"cal-goToLnk": "Vai ad un<span class=\"wb-inv\"> mese dell\\'anno</span>",
-	"cal-goToTtl": "Vai al mese dell\\'anno",
+	"cal-goToLnk": "Vai ad un<span class=\"wb-inv\"> mese dell'anno</span>",
+	"cal-goToTtl": "Vai al mese dell'anno",
 	"cal-goToMnth": "Mese:",
 	"cal-goToYr": "Anno:",
 	"cal-goToBtn": "Andare",
@@ -175,12 +175,12 @@ wb.i18nDict = {
 	"geo-mapctrl": "@geo-mapctrl@",
 	"geo-zmin": "Zoom avanti",
 	"geo-zmout": "Zoom indietro",
-	"geo-zmwrld": "Zoom sull\\'estensione della mappa",
-	"geo-zmfeat": "Zoom sull\\'elemento",
+	"geo-zmwrld": "Zoom sull'estensione della mappa",
+	"geo-zmfeat": "Zoom sull'elemento",
 	"geo-sclln": "scala mappa",
 	"geo-msepos": "Latitudine e longitudine del cursore del mouse",
 	"geo-ariamap": "Oggetto della mappa. Le descrizioni delle caratteristiche della mappa sono nella tabella qui sotto.",
-	"geo-ally": "<strong>Gli utenti della tastiera:</strong> Quando la mappa è a fuoco, utilizzare i tasti freccia per scorrere la mappa e i tasti più e meno per lo zoom. I tasti freccia non scorreranno la mappa quando lo zoom è sull\\'intera estensione della mappa.",
+	"geo-ally": "<strong>Gli utenti della tastiera:</strong> Quando la mappa è a fuoco, utilizzare i tasti freccia per scorrere la mappa e i tasti più e meno per lo zoom. I tasti freccia non scorreranno la mappa quando lo zoom è sull'intera estensione della mappa.",
 	"geo-allyttl": "Istruzioni: come navigare sulla mappa",
 	"geo-tgllyr": "Alternare la visualizzazione del livello",
 	"geo-hdnlyr": "Questo livello è attualmente nascosto.",
@@ -190,20 +190,20 @@ wb.i18nDict = {
 	"geo-attrlnk": "http://geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - Canada mappa di base (inglese o francese)",
 	"geo-sel": "Selezionare",
-	"geo-lblsel": "Controllare per selezionare l\\'elemento sulla mappa",
+	"geo-lblsel": "Controllare per selezionare l'elemento sulla mappa",
 	"geo-locurl-geogratis": "http://geogratis.gc.ca/services/geolocation/en/locate",
-	"geo-loc-placeholder": "Enter placename&#44; postal code&#44; street address&#44; NTS number...",
+	"geo-loc-placeholder": "Indicare il nome della località&#44; CAP&#44; indirizzo (postale)&#44; il numero di NTS ...",
 	"geo-loc-label": "Posizione",
-	"geo-aoi-north": "North",
-	"geo-aoi-east": "East",
-	"geo-aoi-south": "South",
-	"geo-aoi-west": "West",
-	"geo-aoi-instructions": "Draw box on map or enter coordinates below and click the <em>Draw</em> button.",
-	"geo-aoi-btndraw": "Draw",
-	"geo-aoi-btnclear": "Clear",
-	"geo-geoloc-btn": "Zoom to current location",
-	"geo-geoloc-fail": "Geolocation failed. Please ensure that location services are enabled.",
-	"geo-geoloc-uncapable": "Geolocation not supported by your browser.",
+	"geo-aoi-north": "Nord",
+	"geo-aoi-east": "Oriente",
+	"geo-aoi-south": "Sud",
+	"geo-aoi-west": "Occidente",
+	"geo-aoi-instructions": "Delineare un'area sulla mappa o inserire i dati qui sotto e fare clic sul pulsante \"Disegnare\".",
+	"geo-aoi-btndraw": "Disegnare",
+	"geo-aoi-btnclear": "Rimuovere",
+	"geo-geoloc-btn": "Zoom alla posizione corrente",
+	"geo-geoloc-fail": "Posizione non riuscita. Assicurarsi che i servizi di localizzazione sono abilitati.",
+	"geo-geoloc-uncapable": "La localizzazione non è supportato dal browser.",
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Versione HTML di base",
 	"wb-enable": "Versione standard",

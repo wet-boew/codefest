@@ -301,7 +301,7 @@ $document.on( "click vclick touchstart focusin", function( event ) {
 	}
 });
 
-$document.on( "keydown displayed.wb-cal", "#" + containerName, function( event, year, month, $days ) {
+$document.on( "keydown displayed.wb-cal", "#" + containerName, function( event, year, month, $days, day ) {
 	var $container = $( this ),
 		eventType = event.type,
 		which = event.which,
@@ -318,9 +318,14 @@ $document.on( "keydown displayed.wb-cal", "#" + containerName, function( event, 
 		break;
 
 	case "displayed":
-		addLinksToCalendar( fieldId, year, month, $days );
-		setSelectedDate( fieldId, year, month, $days );
-		$container.trigger( setFocusEvent );
+		if ( event.namespace === "wb-cal" ) {
+			addLinksToCalendar( fieldId, year, month, $days );
+			setSelectedDate( fieldId, year, month, $days );
+			( day ?
+				$container.find( ".cal-index-" + day + " a" ) :
+				$container
+			).trigger( setFocusEvent );
+		}
 		break;
 
 	case "click":
