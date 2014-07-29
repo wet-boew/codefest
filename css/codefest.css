@@ -361,8 +361,32 @@ h4.twitter-handle {
     color: gray;
 }
 
+.map-styling {
+	position: relative;
+	padding-bottom: 30%;
+	padding-top: 50px;
+	height: 0;
+	overflow: hidden;
+}
 
+.map-styling iframe {
+	position: absolute;
+	right: 0px;
+	width: 100% !important;
+	height: 100% !important;
+}
 
+@media all and (max-width: 992px){
+	.map-styling{
+	padding-bottom: 35%;
+	}    
+}
+
+@media all and (max-width: 768px){
+	.map-styling{
+	padding-bottom: 45%;
+	}    
+}
 
 /*
  *  Media queries
