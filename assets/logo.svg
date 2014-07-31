@@ -5,7 +5,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 <defs>
     <style type="text/css">
         .wxt_logo {fill:#000;}
-        @media screen {.wxt_logo {fill: #FFF;}}
+        @media screen {.wxt_logo {fill: #3e3e3e;}}
     </style>
 </defs>
 <g transform="matrix(1,0,0,0.99999897,-9.6901386,-462.70603)">

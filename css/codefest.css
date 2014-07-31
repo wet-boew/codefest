@@ -376,9 +376,9 @@ h4.twitter-handle {
 }
 @media all and (max-width: 500px){
    .media-object{
-      
-  }   
-    
+
+  }
+
 }
 
 /*
@@ -505,4 +505,17 @@ details[open] > * {
 .wxtmenulink {
     position:fixed;
     margin: 20px 10px 30px 25px;
+}
+
+.btn-primary {
+	color: #3e3e3e; 
+}
+
+.btn-primary:visited {
+	color: #3e3e3e; 
+}
+
+.btn-primary:hover {
+	background-color: #9de7c1;
+	color: #3e3e3e;
 }
