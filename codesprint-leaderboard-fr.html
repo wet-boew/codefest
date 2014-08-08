@@ -7,7 +7,7 @@
 		<meta charset="utf-8" />
 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-		<title>FestiCode 2014</title>
+		<title>Tableau de pointage - Sprint de codage et atelier | FestiCode 2014</title>
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
 		<!-- Meta data -->
 		<meta name="description" content="" />
@@ -60,50 +60,12 @@
                 <div class="col-sm-12 col-md-9 col-md-push-3 col-lg-10 col-lg-push-2">
                     <main role="main" property="mainContentOfPage" id="content-area">
                         <div class="row">
-                            <div id="announcements" class="col-xs-12">
-                                <p>
-                                    <span class="glyphicon glyphicon-comment"></span>
-                                    Les sessions de l'après-midi seront dirigées par les participants.
-                                    Vous voulez partager vos connaissances et votre expertise ?
-								    <a href="proposal-fr.html"><strong>Dirigez une session.</strong></a>
-							    </p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div id="intro" class="col-md-8 col-sm-12">
-                                 <h1 class="wb-inv">
-								    FestiCode de la Boîte à outils de l'expérience Web 2014
-							     </h1>
-
-							     <p>
-                                     <span class="home-title">
-								        Piqué d'intérêt pour la création de solutions innovantes et centrées sur l'utilisateur ?
-                                     </span>
-							     </p>
-
-							     <p>
-								    Que vous soyez <span class="job-titles">développeur</span>, <span class="job-titles">designer</span> ou <span class="job-titles">communicateur</span>, nous avons besoin de votre expertise.
-							     </p>
-
-							     <p>
-							         Joignez-nous pour la troisième édition du <span class="job-titles">FestiCode de la Boîte à outils de l'expérience Web !</span>
-							     </p>
-
-                                <ul>
-                                    <li>Des orateurs en matinée, pour présenter des concepts et idées de haut-niveau pour le développement de solutions Web innovatrices et axées sur l'utilisateur.</li>
-                                    <li>Des sessions dirigées par la communauté en aprés-midi, pour se remonter les manches et aborder des sujets et apprendre des techniques particuliers.</li>
-                                    <li>Un design jam de deux jours sur un sujet à être annoncé.</li>
-                                </ul>
-
-                                <p>
-							          Le FestiCode est <span class="job-titles">gratuit</span> pour tous les participants ! <a href="http://codefest-festicode2014.eventbrite.ca" class="btn btn-info" id="homepage-btn">Incrivez-vous dès maintenant</a>
-							    </p>
-                            </div>
-
-                            <div class="wb-twitter col-md-4 col-sm-12">
-                            	<a class="twitter-timeline" href="https://twitter.com/hashtag/FestiCode2014" data-widget-id="496734277128581120">Gazouillis au sujet du #FestiCode2014 de la #BOEW</a>
-                            </div>
-                        </div>
+                            <div class="col-xs-12">
+                                <h1 id="wb-cont">Tableau de pointage - Sprint de codage</h1>
+                                <p><a href="codesprint-points-fr.html">Comment gagner des points</a></p>
+								<div id="leaderboard"></div>
+							</div>
+						</div>
                     </main>
 
                     <footer role="contentinfo" id="footer">
@@ -132,15 +94,15 @@
                 <nav role="navigation" id="site-menu" class="col-sm-12 col-md-3 col-md-pull-9 col-lg-2 col-lg-pull-10" typeof="SiteNavigationElement">
                     <h2 class="wb-inv">Menu des sujets</h2>
                     <ul class="list-group list-unstyled">
-                        <li><span class="list-group-item item-selected"><span class="glyphicon glyphicon-home"></span>   Accueil</span></li>
+                        <li><a class="list-group-item" href="index-fr.html"><span class="glyphicon glyphicon-home"></span> Accueil</a></li>
                         <li><a class="list-group-item" href="about-fr.html"><span class="glyphicon glyphicon-info-sign glyth-yellow"></span> Au sujet de</a></li>
-                        <li><a class="list-group-item" href="schedule-fr.html"><span class="glyphicon glyphicon-time"></span> Horaire</a></li>
+                        <li><span class="list-group-item item-selected"><span class="glyphicon glyphicon-time"></span>   Horaire</span></li>
                         <li><a class="list-group-item" href="location-fr.html"><span class="glyphicon glyphicon-map-marker"></span> Lieu</a></li>
                         <li><a class="list-group-item" href="speakers-fr.html"><span class="glyphicon glyphicon-user"></span> Conférenciers</a></li>
                         <li><a class="list-group-item" href="sessions-fr.html"><span class="glyphicon glyphicon-bullhorn"></span>   Ateliers</a></li>
                         <li><a class="list-group-item" href="designjam-fr.html"><span class="glyphicon glyphicon-pencil"></span> Design jam</a></li>
                         <li><a class="list-group-item" href="proposal-fr.html"><span class="glyphicon glyphicon-hand-up"></span> Dirigez un atelier</a></li>
-                        <li><a lang="en" hreflang="en" class="list-group-item menu-util" href="./index-en.html"><span class="glyphicon glyphicon-share-alt menu-util"></span> English</a></li>
+                        <li><a lang="en" hreflang="en" class="list-group-item menu-util" href="./codesprint-leaderboard-en.html"><span class="glyphicon glyphicon-share-alt menu-util"></span> English</a></li>
                     </ul>
                 </nav>
             </div>
@@ -162,5 +124,6 @@
 		<!--[if lt IE 9]>
 			<script src=" ./wet-boew/js/ie8-wet-boew.min2.js"></script>
 		<![endif]-->
+			<script src="./theme/js/leaderboard.js"></script>
 	</body>
 </html>

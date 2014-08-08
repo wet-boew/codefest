@@ -32,7 +32,10 @@
 				<a class="wb-sl" href="#wb-cont">Skip to main content</a>
 			</li>
 			<li class="wb-slc">
-				<a class="wb-sl" href="#site-menu">Skip to site menu</a>
+				<a class="wb-sl" href="#wb-info">Skip to "About this site"</a>
+			</li>
+			<li class="wb-slc">
+				<a class="wb-sl" href="#site-menu">Skip to topics menu</a>
 			</li>
 		</ul>
 
@@ -58,7 +61,7 @@
 					<main role="main" property="mainContentOfPage" id="content-area">
 					<div class="row">
 						<div class="col-sm-12 col-md-6">
-						<h1>Location</h1>
+						<h1 id="wb-cont">Location</h1>
 							<p>Carleton University, in Ottawa, Ontario <br>
 								1125 Colonel By Drive, Ottawa, ON</p>
 							<p>Activities will take place in Southam Hall (SA) and the Human Computer Interaction building (HC). Both are near the Colonel By entrance.</p>
@@ -109,37 +112,40 @@
 					</div>
 					</main>
 
-					<footer role="contentinfo" id="footer">
-						<div id="footer-contact" class="row">
-							<div class="col-xs-12">
-								<p>Have any questions? <a href="mailto:ws-nw@tbs-sct.gc.ca">Contact Us</a></p>
+                    <footer role="contentinfo" id="footer">
+						<section>
+							<h2 id="wb-info" class="wb-inv">About this site</h2>
+							<div id="footer-contact" class="row">
+								<div class="col-xs-12">
+									<p>Have any questions? <a href="mailto:ws-nw@tbs-sct.gc.ca">Contact Us</a></p>
+								</div>
 							</div>
-						</div>
 
-						<div id="footer-hosts" class="row">
-							<div class="col-xs-12">
-								<p>CodeFest 2014 is jointly hosted by:</p>
-								<ul id="host-list">
-									<li><img src="./theme/assets/wet-logo.png" alt="Web Experience Toolkit" /></li>
-									<li><img src="./theme/assets/1125-at-Carleton.png" alt="1125@Carleton" /></li>
-								</ul>
+							<div id="footer-hosts" class="row">
+								<div class="col-xs-12">
+									<p>CodeFest 2014 is jointly hosted by:</p>
+									<ul id="host-list">
+										<li><a href="http://wet-boew.github.io/wet-boew/index-en.html"><img src="./theme/assets/wet-logo.png" alt="Web Experience Toolkit" /></a></li>
+										<li><a href="http://www.carleton.ca/1125/"><img src="./theme/assets/1125-at-Carleton.png" alt="1125@Carleton" /></a></li>
+									</ul>
+								</div>
 							</div>
-						</div>
-					</footer>
+						</section>
+                    </footer>
 				</div>
 
 				<nav role="navigation" id="site-menu" class="col-sm-12 col-md-3 col-md-pull-9 col-lg-2 col-lg-pull-10" typeof="SiteNavigationElement">
-					<h2 class="wb-inv">Site menu</h2>
+					<h2 class="wb-inv">Topics menu</h2>
 					<ul class="list-group list-unstyled">
-						<li><a class="list-group-item" href="index-en.html"><span class="glyphicon glyphicon-home"></span>   Home</a></li>
-						<li><a class="list-group-item" href="about-en.html"><span class="glyphicon glyphicon-info-sign glyth-yellow"></span>   About</a></li>
-						<li><a class="list-group-item" href="schedule-en.html"><span class="glyphicon glyphicon-time"></span>   Schedule</a></li>
+						<li><a class="list-group-item" href="index-en.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+						<li><a class="list-group-item" href="about-en.html"><span class="glyphicon glyphicon-info-sign glyth-yellow"></span> About</a></li>
+						<li><a class="list-group-item" href="schedule-en.html"><span class="glyphicon glyphicon-time"></span> Schedule</a></li>
 						<li><span class="list-group-item item-selected"><span class="glyphicon glyphicon-map-marker"></span>   Location</span></li>
-						<li><a class="list-group-item" href="speakers-en.html"><span class="glyphicon glyphicon-user"></span>   Speakers</a></li>
+						<li><a class="list-group-item" href="speakers-en.html"><span class="glyphicon glyphicon-user"></span> Speakers</a></li>
 						<li><a class="list-group-item" href="sessions-en.html"><span class="glyphicon glyphicon-bullhorn"></span>   Sessions</a></li>
-						<li><a class="list-group-item" href="designjam-en.html"><span class="glyphicon glyphicon-pencil"></span>   Design jam</a></li>
-						<li><a class="list-group-item" href="proposal-en.html"><span class="glyphicon glyphicon-hand-up"></span>   Lead a session</a></li>
-						<li><a lang="fr" hreflang="fr" class="list-group-item menu-util" href="./location-fr.html"><span class="glyphicon glyphicon-share-alt menu-util"></span>   Français</a></li>
+						<li><a class="list-group-item" href="designjam-en.html"><span class="glyphicon glyphicon-pencil"></span> Design jam</a></li>
+						<li><a class="list-group-item" href="proposal-en.html"><span class="glyphicon glyphicon-hand-up"></span> Lead a session</a></li>
+						<li><a lang="fr" hreflang="fr" class="list-group-item menu-util" href="./location-fr.html"><span class="glyphicon glyphicon-share-alt menu-util"></span> Français</a></li>
 					</ul>
 				</nav>
 			</div>
