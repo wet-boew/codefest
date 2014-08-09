@@ -11,12 +11,12 @@ var $document = wb.doc,
 	display = function() {
 		var $leaderboard = $( "#leaderboard" ).empty();
 
-		$( "<table class='wb-tables table table-bordered table-striped' data-wb-tables='{\"order\": [[ 2, \"desc\" ]]'></table>" )
+		$( "<table class='wb-tables table table-bordered table-striped' data-wb-tables='{\"order\": [[ 2, \"desc\" ]]}'></table>" )
 			.sheetrock({
 				url: "https://docs.google.com/spreadsheets/d/1IuFFuJQ3GUunynj4sw-8DfgHzsy_5Cn9a3-P3mCCuAI/gid=892764133",
 				headers: 1,
 				labels: [
-					isFrench ? "GitHub user name" : "Nom d'utilisateur GitHub",
+					isFrench ? "Nom d'utilisateur GitHub" : "GitHub user name",
 					isFrench ? "Type de contributeur" : "Contributor type",
 					"Points"
 				],
