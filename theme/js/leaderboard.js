@@ -9,7 +9,7 @@
 var $document = wb.doc,
 	isFrench = document.documentElement.lang === "fr",
 	display = function() {
-		var $leaderboard = $( "#leaderboard" ).empty(),
+		var $leaderboard = $( "#leaderboard" ).empty();
 
 		$( "<table class='wb-tables table table-bordered table-striped' data-wb-tables='{\"order\": [[ 2, \"desc\" ]]'></table>" )
 			.sheetrock({
