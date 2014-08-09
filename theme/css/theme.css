@@ -92,6 +92,10 @@
   margin: 9px 15px 9px 0;
   width: 3.25em; }
 
+#site-menu .glyphicon {
+	margin-right: 5px;
+}
+
 [dir=rtl] #wb-lng > ul, [dir=rtl] #wb-glb-mn > ul {
   float: left; }
 [dir=rtl] #wb-glb-mn .pnl-btn {
