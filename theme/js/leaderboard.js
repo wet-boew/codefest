@@ -16,8 +16,8 @@ var $document = wb.doc,
 				url: "https://docs.google.com/spreadsheets/d/1IuFFuJQ3GUunynj4sw-8DfgHzsy_5Cn9a3-P3mCCuAI/gid=892764133",
 				headers: 1,
 				labels: [
-					isFrench ? "GitHub user name",
-					isFrenchfr" ? "Type de contributeur",
+					isFrench ? "GitHub user name" : "Nom d'utilisateur GitHub",
+					isFrench ? "Type de contributeur" : "Contributor type",
 					"Points"
 				],
 				resetStatus: true,
