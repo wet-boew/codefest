@@ -3,11 +3,10 @@
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  */
 /*jshint unused: false*/
-(function( $, wb ) {
+(function( $ ) {
 "use strict";
 
-var $document = wb.doc,
-	table = "<table class='wb-tables table table-bordered table-striped'></table>",
+var table = "<table class='wb-tables table table-bordered table-striped'></table>",
 	isFrench = document.documentElement.lang === "fr",
 	display = function() {
 		var $bounties = $( "#bounties" ).empty(),
@@ -49,12 +48,7 @@ var $document = wb.doc,
 			.appendTo( $bonuses );
 	};
 
-Modernizr.load({
-	load: "site!deps/jquery.sheetrock" + wb.getMode() + ".js",
-	complete: function() {
-		display();
-		//setInterval( display, 300000 );
-	}			
-});
+display();
+//setInterval( display, 300000 );
 
-})( jQuery, wb );
+})( jQuery );

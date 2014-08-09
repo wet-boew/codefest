@@ -3,11 +3,10 @@
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  */
 /*jshint unused: false*/
-(function( $, wb ) {
+(function( $ ) {
 "use strict";
 
-var $document = wb.doc,
-	isFrench = document.documentElement.lang === "fr",
+var isFrench = document.documentElement.lang === "fr",
 	display = function() {
 		var $leaderboard = $( "#leaderboard" ).empty();
 
@@ -31,12 +30,7 @@ var $document = wb.doc,
 			.appendTo( $leaderboard );
 	};
 
-Modernizr.load({
-	load: "site!deps/jquery.sheetrock" + wb.getMode() + ".js",
-	complete: function() {
-		display();
-		//setInterval( display, 300000 );
-	}			
-});
+display();
+//setInterval( display, 300000 );
 
-})( jQuery, wb );
+})( jQuery );
