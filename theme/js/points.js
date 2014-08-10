@@ -36,7 +36,7 @@ var table = "<table class='table table-bordered table-striped'></table>",
 				}
 			});
 
-		$( table )
+		$bonusesTable
 			.sheetrock({
 				url: "https://docs.google.com/spreadsheets/d/1IuFFuJQ3GUunynj4sw-8DfgHzsy_5Cn9a3-P3mCCuAI/gid=1113086746",
 				header: 1,
