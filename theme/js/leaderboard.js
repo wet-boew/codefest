@@ -11,7 +11,9 @@ var isFrench = document.documentElement.lang === "fr",
 	table = "<table class='table table-bordered table-striped' data-wb-tables='{\"order\": [[ 2, \"desc\" ]]}'></table>",
 
 	display = function() {
-		var $leaderboardTable = $bounties.html( table ).children( "table" );
+		var $leaderboardTable = $( table );
+
+		$leaderboard.empty().append( $leaderboardTable );
 
 		$leaderboardTable
 			.sheetrock({
