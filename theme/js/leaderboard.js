@@ -27,18 +27,20 @@ var isFrench = document.documentElement.lang === "fr",
 				],
 				resetStatus: true,
 				userCallback: function() {
-					var $tableBody = $leaderboardTable.children( "tbody" ).detach(),
-						firstColumnTd = $tableBody.find( "td:first-child" ).get(),
+					var $tableBody = $leaderboardTable.children( "tbody" ),
+						$firstColumnTd = $tableBody.find( "td:first-child" ),
 						len = firstColumnTd,
-						tdHtml, i;
+						td, tdHtml, i;
 
 					// Make user names into links
 					for ( i = 0; i !== len; i += 1 ) {
-						tdHtml = firstColumnTd[ i ].innerHTML;
-						firstColumnTd[ i ].innerHTML = "<a href='https://github.com/" + tdHtml + "'>" + tdHtml + "</a>";
+						td = $firstColumnTd[ i ];
+						if ( td ) {
+							tdHtml = td.innerHTML;
+							td.innerHTML = "<a href='https://github.com/" + tdHtml + "'>" + tdHtml + "</a>";
+						}	
 					}
 					$leaderboardTable
-						.append( $tableBody )
 						.addClass( "wb-tables" )
 						.trigger( "wb-init.wb-tables" );
 				}
