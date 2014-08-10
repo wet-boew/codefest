@@ -27,7 +27,20 @@ var isFrench = document.documentElement.lang === "fr",
 				],
 				resetStatus: true,
 				userCallback: function() {
-					$leaderboardTable.addClass( "wb-tables" ).trigger( "wb-init.wb-tables" );
+					var $tableBody = $leaderboardTable.children( "tbody" ).detach(),
+						firstColumnTd = $tableBody.find( "td:first-child" ).get(),
+						len = firstColumnTd,
+						tdHtml, i;
+
+					// Make user names into links
+					for ( i = 0; i !== len; i += 1 ) {
+						tdHtml = firstColumnTd[ i ].innerHTML;
+						firstColumnTd[ i ].innerHTML = "<a href='https://github.com/" + tdHtml + "'>" + tdHtml + "</a>";
+					}
+					$leaderboardTable
+						.append( $tableBody )
+						.addClass( "wb-tables" )
+						.trigger( "wb-init.wb-tables" );
 				}
 			});
 	};

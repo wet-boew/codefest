@@ -29,10 +29,24 @@ var table = "<table class='table table-bordered table-striped'></table>",
 				],
 				resetStatus: true,
 				userCallback: function() {
+					var $tableBody = $bountiesTable.children( "tbody" ).detach(),
+						lastColumnTd = $tableBody.find( "td:last-child" ).get(),
+						len = lastColumnTd,
+						tdHtml, i;
+
 					if ( isFrench ) {
-						$bountiesTable.children( "tbody" ).attr( "lang", "en" );
+						$tableBody.attr( "lang", "en" );
 					}
-					$bountiesTable.addClass( "wb-tables" ).trigger( "wb-init.wb-tables" );
+
+					// Make user names into links
+					for ( i = 0; i !== len; i += 1 ) {
+						tdHtml = lastColumnTd[ i ].innerHTML;
+						lastColumnTd[ i ].innerHTML = "<a href='https://github.com/" + tdHtml + "'>" + tdHtml + "</a>";
+					}
+					$bountiesTable
+						.append( $tableBody )
+						.addClass( "wb-tables" )
+						.trigger( "wb-init.wb-tables" );
 				}
 			});
 
