@@ -27,9 +27,6 @@ var isFrench = document.documentElement.lang === "fr",
 				],
 				resetStatus: true,
 				userCallback: function() {
-					if ( isFrench ) {
-						$leaderboardTable.find( "tbody" ).attr( "lang", "en" );
-					}
 					$leaderboardTable.addClass( "wb-tables" ).trigger( "wb-init.wb-tables" );
 				}
 			});
