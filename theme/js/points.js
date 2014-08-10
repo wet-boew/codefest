@@ -11,8 +11,11 @@ var table = "<table class='table table-bordered table-striped'></table>",
 	$bounties, $bonuses,
 
 	display = function() {
-		var $bountiesTable = $bounties.html( table ).children( "table" ),
-			$bonusesTable = $bonuses.html( table ).children( "table" );
+		var $bountiesTable = $( table ),
+			$bonusesTable = $( table );
+
+		$bounties.empty().append( $bountiesTable );
+		$bonuses.empty().append( $bonusesTable );
 
 		$bountiesTable
 			.sheetrock({
