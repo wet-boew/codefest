@@ -31,7 +31,7 @@ var table = "<table class='table table-bordered table-striped'></table>",
 				userCallback: function() {
 					var $tableBody = $bountiesTable.children( "tbody" ),
 						$lastColumnTd = $tableBody.find( "td:last-child" ),
-						len = lastColumnTd,
+						len = $lastColumnTd,
 						td, tdHtml, i;
 
 					if ( isFrench ) {
