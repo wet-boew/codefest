@@ -18,7 +18,7 @@ var isFrench = document.documentElement.lang === "fr",
 		$leaderboardTable
 			.sheetrock({
 				url: "https://docs.google.com/spreadsheets/d/1IuFFuJQ3GUunynj4sw-8DfgHzsy_5Cn9a3-P3mCCuAI/gid=892764133",
-				sql: "select A," + ( isFrench ?  ) + "C" : "B" ) + ",D order by D desc",
+				sql: "select A," + ( isFrench ?  "C" : "B" ) + ",D order by D desc",
 				headers: 1,
 				labels: [
 					isFrench ? "Nom d'utilisateur GitHub" : "GitHub user name",
