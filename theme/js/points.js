@@ -54,7 +54,7 @@ var table = "<table class='table table-bordered table-striped'></table>",
 			});
 	};
 
-wb.doc.on( "wb-ready.wb", "#points-tabs", function() {
+wb.doc.on( "wb-ready.wb", function() {
 	$bounties = $( "#bounties" );
 	$bonuses = $( "#bonuses" );
 
