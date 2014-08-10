@@ -29,22 +29,25 @@ var table = "<table class='table table-bordered table-striped'></table>",
 				],
 				resetStatus: true,
 				userCallback: function() {
-					var $tableBody = $bountiesTable.children( "tbody" ).detach(),
-						lastColumnTd = $tableBody.find( "td:last-child" ).get(),
+					var $tableBody = $bountiesTable.children( "tbody" ),
+						$lastColumnTd = $tableBody.find( "td:last-child" ),
 						len = lastColumnTd,
-						tdHtml, i;
+						td, tdHtml, i;
 
 					if ( isFrench ) {
 						$tableBody.attr( "lang", "en" );
 					}
 
+
 					// Make user names into links
 					for ( i = 0; i !== len; i += 1 ) {
-						tdHtml = lastColumnTd[ i ].innerHTML;
-						lastColumnTd[ i ].innerHTML = "<a href='https://github.com/" + tdHtml + "'>" + tdHtml + "</a>";
+						td = $lastColumnTd[ i ];
+						if ( td ) {
+							tdHtml = td.innerHTML;
+							td.innerHTML = "<a href='https://github.com/" + tdHtml + "'>" + tdHtml + "</a>";
+						}
 					}
 					$bountiesTable
-						.append( $tableBody )
 						.addClass( "wb-tables" )
 						.trigger( "wb-init.wb-tables" );
 				}
