@@ -29,7 +29,7 @@ var isFrench = document.documentElement.lang === "fr",
 				userCallback: function() {
 					var $tableBody = $leaderboardTable.children( "tbody" ),
 						$firstColumnTd = $tableBody.find( "td:first-child" ),
-						len = $firstColumnTd,
+						len = $firstColumnTd.length,
 						td, tdHtml, i;
 
 					// Make user names into links
