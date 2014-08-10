@@ -3,16 +3,18 @@
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  */
 /*jshint unused: false*/
-(function( $ ) {
+(function( $, wb ) {
 "use strict";
 
-var table = "<table class='wb-tables table table-bordered table-striped'></table>",
+var table = "<table class='table table-bordered table-striped'></table>",
 	isFrench = document.documentElement.lang === "fr",
-	display = function() {
-		var $bounties = $( "#bounties" ).empty(),
-			$bonuses = $( "#bonuses" );
+	$bounties, $bonuses,
 
-		$( table )
+	display = function() {
+		var $bountiesTable = $bounties.html( table ).children( "table" ),
+			$bonusesTable = $bonuses.html( table ).children( "table" );
+
+		$bountiesTable
 			.sheetrock({
 				url: "https://docs.google.com/spreadsheets/d/1IuFFuJQ3GUunynj4sw-8DfgHzsy_5Cn9a3-P3mCCuAI/gid=0",
 				headers: 1,
@@ -24,31 +26,37 @@ var table = "<table class='wb-tables table table-bordered table-striped'></table
 				],
 				resetStatus: true,
 				userCallback: function() {
-					$bounties.find( ".wb-tables" ).trigger( "wb-init.wb-tables" );
 					if ( isFrench ) {
-						$leaderboard.find( "tbody" ).attr( "lang", "en" );
+						$bountiesTable.children( "tbody" ).attr( "lang", "en" );
 					}
+					$bountiesTable.addClass( "wb-tables" ).trigger( "wb-init.wb-tables" );
 				}
-			})
-			.appendTo( $bounties );
+			});
 
 		$( table )
 			.sheetrock({
 				url: "https://docs.google.com/spreadsheets/d/1IuFFuJQ3GUunynj4sw-8DfgHzsy_5Cn9a3-P3mCCuAI/gid=1113086746",
 				header: 1,
 				labels: [
-					"Task",
+					isFrench ? "Tache" : "Task",
 					"Points"
 				],
 				resetStatus: true,
 				userCallback: function() {
-					$bonuses.find( ".wb-tables" ).trigger( "wb-init.wb-tables" );
+					if ( isFrench ) {
+						$bonusesTable.children( "tbody" ).attr( "lang", "en" );
+					}
+					$bonusesTable.addClass( "wb-tables" ).trigger( "wb-init.wb-tables" );
 				}
-			})
-			.appendTo( $bonuses );
+			});
 	};
 
-display();
-//setInterval( display, 300000 );
+wb.doc.on( "wb-ready.wb", "#points-tabs", function() {
+	$bounties = $( "#bounties" );
+	$bonuses = $( "#bonuses" );
 
-})( jQuery );
+	display();
+	//setInterval( display, 300000 );
+});
+
+})( jQuery, wb );
