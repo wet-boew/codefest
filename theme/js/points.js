@@ -53,6 +53,7 @@ var table = "<table class='table table-bordered table-striped'></table>",
 				sql: "select " + ( isFrench ?  "B,D" : "A,C" ) + ",E order by " + ( isFrench ?  "B" : "A" ),
 				labels: [
 					isFrench ? "Tache" : "Task",
+					"Type",
 					"Points"
 				],
 				resetStatus: true,
