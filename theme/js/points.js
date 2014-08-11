@@ -6,8 +6,25 @@
 (function( $, wb ) {
 "use strict";
 
-var table = "<table class='table table-bordered table-striped'></table>",
-	isFrench = document.documentElement.lang === "fr",
+var	isFrench = document.documentElement.lang === "fr",
+	bountiesUrl = "https://docs.google.com/spreadsheets/d/",
+	bountiesSql = "select " + ( isFrench ?  "B,D" : "A,C" ) + ",E,F order by " + ( isFrench ?  "B" : "A" ),
+	bonusesUrl = bountiesUrl,
+	bonusesSql = "select " + ( isFrench ?  "B,D" : "A,C" ) + ",E order by " + ( isFrench ?  "B" : "A" ),
+	table = "<table class='table table-bordered table-striped' " +
+		"data-wb-tables='{\"lengthMenu\": [[10, 25, 100, -1], [10, 25, 100, " +
+		( isFrench ? "Toutes les" : "All" ) + "\"]], \"pageLength\": -1}'></table>",
+	bountiesLabels = [
+		isFrench ? "Tache" : "Task",
+		"Type",
+		"Points",
+		isFrench ? "Réclamé par" : "Claimed by"
+	],
+	bonusesLabes = [
+		isFrench ? "Tache" : "Task",
+		"Type",
+		"Points"
+	],
 	$bounties, $bonuses,
 
 	display = function() {
@@ -19,14 +36,9 @@ var table = "<table class='table table-bordered table-striped'></table>",
 
 		$bountiesTable
 			.sheetrock({
-				url: "https://docs.google.com/spreadsheets/d/1IuFFuJQ3GUunynj4sw-8DfgHzsy_5Cn9a3-P3mCCuAI/gid=0",
-				sql: "select " + ( isFrench ?  "B,D" : "A,C" ) + ",E,F order by " + ( isFrench ?  "B" : "A" ),
-				labels: [
-					isFrench ? "Tache" : "Task",
-					"Type",
-					"Points",
-					isFrench ? "Réclamé par" : "Claimed by"
-				],
+				url: bountiesUrl,
+				sql: bountiesSql,
+				labels: bountiesLabels,
 				resetStatus: true,
 				userCallback: function() {
 					var $lastColumnTd = $bountiesTable.children( "tbody" ).find( "td:last-child" ),
@@ -49,13 +61,9 @@ var table = "<table class='table table-bordered table-striped'></table>",
 
 		$bonusesTable
 			.sheetrock({
-				url: "https://docs.google.com/spreadsheets/d/1IuFFuJQ3GUunynj4sw-8DfgHzsy_5Cn9a3-P3mCCuAI/gid=1113086746",
-				sql: "select " + ( isFrench ?  "B,D" : "A,C" ) + ",E order by " + ( isFrench ?  "B" : "A" ),
-				labels: [
-					isFrench ? "Tache" : "Task",
-					"Type",
-					"Points"
-				],
+				url: bonusesUrl,
+				sql: bonusesSql,
+				labels: bonusesLabels,
 				resetStatus: true,
 				userCallback: function() {
 					$bonusesTable.addClass( "wb-tables" ).trigger( "wb-init.wb-tables" );
@@ -65,7 +73,9 @@ var table = "<table class='table table-bordered table-striped'></table>",
 
 wb.doc.on( "wb-ready.wb", function() {
 	$bounties = $( "#bounties" );
+	bountiesUrl += $bounties.data( "gss" );
 	$bonuses = $( "#bonuses" );
+	bonusesUrl += $bonuses.data( "gss" );
 
 	display();
 	//setInterval( display, 300000 );
