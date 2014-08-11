@@ -12,7 +12,7 @@ var isFrench = document.documentElement.lang === "fr",
 	sql = "select A,B," + ( isFrench ?  "D,F" : "C,E" ) + " order by A,B desc",
 	table = "<table class='table table-bordered table-striped' " +
 		"data-wb-tables='{\"order\": [[ 0, \"asc\" ], [ 1, \"asc\" ]], " + 
-		"\"lengthMenu\": [[10, 25, 100, -1], [10, 25, 100, " +
+		"\"lengthMenu\": [[10, 25, 100, -1], [10, 25, 100, \"" +
 		( isFrench ? "Toutes les" : "All" ) + "\"]], \"pageLength\": -1}'></table>",
 	labels = [
 		"Date",

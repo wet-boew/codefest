@@ -12,7 +12,7 @@ var	isFrench = document.documentElement.lang === "fr",
 	bonusesUrl = bountiesUrl,
 	bonusesSql = "select " + ( isFrench ?  "B,D" : "A,C" ) + ",E order by " + ( isFrench ?  "B" : "A" ),
 	table = "<table class='table table-bordered table-striped' " +
-		"data-wb-tables='{\"lengthMenu\": [[10, 25, 100, -1], [10, 25, 100, " +
+		"data-wb-tables='{\"lengthMenu\": [[10, 25, 100, -1], [10, 25, 100, \"" +
 		( isFrench ? "Toutes les" : "All" ) + "\"]], \"pageLength\": -1}'></table>",
 	bountiesLabels = [
 		isFrench ? "Tache" : "Task",
@@ -20,7 +20,7 @@ var	isFrench = document.documentElement.lang === "fr",
 		"Points",
 		isFrench ? "Réclamé par" : "Claimed by"
 	],
-	bonusesLabes = [
+	bonusesLabels = [
 		isFrench ? "Tache" : "Task",
 		"Type",
 		"Points"
