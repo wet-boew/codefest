@@ -20,6 +20,7 @@ var table = "<table class='table table-bordered table-striped'></table>",
 		$bountiesTable
 			.sheetrock({
 				url: "https://docs.google.com/spreadsheets/d/1IuFFuJQ3GUunynj4sw-8DfgHzsy_5Cn9a3-P3mCCuAI/gid=0",
+				sql: "select " + ( isFrench ?  "B,D" : "A,C" ) + ",E,F order by " + ( isFrench ?  "B" : "A" ),
 				labels: [
 					isFrench ? "Tache" : "Task",
 					"Type",
@@ -28,15 +29,9 @@ var table = "<table class='table table-bordered table-striped'></table>",
 				],
 				resetStatus: true,
 				userCallback: function() {
-					var $tableBody = $bountiesTable.children( "tbody" ),
-						$lastColumnTd = $tableBody.find( "td:last-child" ),
+					var $lastColumnTd = $bountiesTable.children( "tbody" ).find( "td:last-child" ),
 						len = $lastColumnTd.length,
 						td, tdHtml, i;
-
-					if ( isFrench ) {
-						$tableBody.attr( "lang", "en" );
-					}
-
 
 					// Make user names into links
 					for ( i = 0; i !== len; i += 1 ) {
@@ -55,15 +50,13 @@ var table = "<table class='table table-bordered table-striped'></table>",
 		$bonusesTable
 			.sheetrock({
 				url: "https://docs.google.com/spreadsheets/d/1IuFFuJQ3GUunynj4sw-8DfgHzsy_5Cn9a3-P3mCCuAI/gid=1113086746",
+				sql: "select " + ( isFrench ?  "B,D" : "A,C" ) + ",E order by " + ( isFrench ?  "B" : "A" ),
 				labels: [
 					isFrench ? "Tache" : "Task",
 					"Points"
 				],
 				resetStatus: true,
 				userCallback: function() {
-					if ( isFrench ) {
-						$bonusesTable.children( "tbody" ).attr( "lang", "en" );
-					}
 					$bonusesTable.addClass( "wb-tables" ).trigger( "wb-init.wb-tables" );
 				}
 			});
