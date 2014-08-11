@@ -8,7 +8,7 @@
 
 var isFrench = document.documentElement.lang === "fr",
 	$updates = $( "#updates" ),
-	table = "<table class='table table-bordered table-striped' data-wb-tables='{\"order\": [[ 0, \"asc\" ], [[ 1, \"asc\" ]]]}'></table>",
+	table = "<table class='table table-bordered table-striped' data-wb-tables='{\"order\": [[ 0, \"asc\" ], [ 1, \"asc\" ]]}'></table>",
 
 	display = function() {
 		var $updatesTable = $( table );
@@ -28,6 +28,18 @@ var isFrench = document.documentElement.lang === "fr",
 				],
 				resetStatus: true,
 				userCallback: function() {
+					var $tableBody = $updatesTable.children( "tbody" ),
+						$firstColumnTd = $tableBody.find( "td:first-child" ),
+						len = $firstColumnTd.length,
+						td, i;
+
+					// Fix formatting of the date
+					for ( i = 0; i !== len; i += 1 ) {
+						td = $firstColumnTd[ i ];
+						if ( td ) {
+							td.innerHTML = ( new Date( td.innerHTML ) ).toISOString().substring( 0, 10 );
+						}
+					}
 					$updatesTable
 						.addClass( "wb-tables" )
 						.trigger( "wb-init.wb-tables" );
