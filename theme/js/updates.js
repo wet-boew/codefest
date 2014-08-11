@@ -8,7 +8,18 @@
 
 var isFrench = document.documentElement.lang === "fr",
 	$updates = $( "#updates" ),
-	table = "<table class='table table-bordered table-striped' data-wb-tables='{\"order\": [[ 0, \"asc\" ], [ 1, \"asc\" ]]}'></table>",
+	url = "https://docs.google.com/spreadsheets/d/" + $updates.data( "gss" ),
+	sql = "select A,B," + ( isFrench ?  "D,F" : "C,E" ) + " order by A,B desc",
+	table = "<table class='table table-bordered table-striped' " +
+		"data-wb-tables='{\"order\": [[ 0, \"asc\" ], [ 1, \"asc\" ]], " + 
+		"\"lengthMenu\": [[10, 25, 100, -1], [10, 25, 100, " +
+		( isFrench ? "Toutes les" : "All" ) + "\"]], \"pageLength\": -1}'></table>",
+	labels = [
+		"Date",
+		isFrench ? "Heure" : "Time",
+		"Type",
+		isFrench ? "Nouvelles" : "Updates"
+	],
 
 	display = function() {
 		var $updatesTable = $( table );
@@ -17,15 +28,10 @@ var isFrench = document.documentElement.lang === "fr",
 
 		$updatesTable
 			.sheetrock({
-				url: "https://docs.google.com/spreadsheets/d/1IuFFuJQ3GUunynj4sw-8DfgHzsy_5Cn9a3-P3mCCuAI/gid=1067524417",
-				sql: "select A,B," + ( isFrench ?  "D,F" : "C,E" ) + " order by A,B desc",
+				url: url,
+				sql: sql,
 				headers: 1,
-				labels: [
-					"Date",
-					isFrench ? "Heure" : "Time",
-					"Type",
-					isFrench ? "Nouvelles" : "Updates"
-				],
+				labels: labels,
 				resetStatus: true,
 				userCallback: function() {
 					var $tableBody = $updatesTable.children( "tbody" ),

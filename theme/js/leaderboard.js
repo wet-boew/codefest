@@ -8,7 +8,17 @@
 
 var isFrench = document.documentElement.lang === "fr",
 	$leaderboard = $( "#leaderboard" ),
-	table = "<table class='table table-bordered table-striped' data-wb-tables='{\"order\": [[ 2, \"desc\" ]]}'></table>",
+	url = "https://docs.google.com/spreadsheets/d/" + $leaderboard.data( "gss" ),
+	sql = "select A," + ( isFrench ?  "C" : "B" ) + ",D order by D desc",
+	table = "<table class='table table-bordered table-striped' " +
+		"data-wb-tables='{\"order\": [[ 2, \"desc\" ]], "
+		"\"lengthMenu\": [[10, 25, 100, -1], [10, 25, 100, " +
+		( isFrench ? "Toutes les" : "All" ) + "\"]], \"pageLength\": -1}'></table>",
+	labels = [
+		isFrench ? "Nom d'utilisateur GitHub" : "GitHub user name",
+		isFrench ? "Type de contributeur" : "Contributor type",
+		"Points"
+	],
 
 	display = function() {
 		var $leaderboardTable = $( table );
@@ -17,14 +27,10 @@ var isFrench = document.documentElement.lang === "fr",
 
 		$leaderboardTable
 			.sheetrock({
-				url: "https://docs.google.com/spreadsheets/d/1IuFFuJQ3GUunynj4sw-8DfgHzsy_5Cn9a3-P3mCCuAI/gid=892764133",
-				sql: "select A," + ( isFrench ?  "C" : "B" ) + ",D order by D desc",
+				url: url,
+				sql: sql,
 				headers: 1,
-				labels: [
-					isFrench ? "Nom d'utilisateur GitHub" : "GitHub user name",
-					isFrench ? "Type de contributeur" : "Contributor type",
-					"Points"
-				],
+				labels: labels,
 				resetStatus: true,
 				userCallback: function() {
 					var $tableBody = $leaderboardTable.children( "tbody" ),
