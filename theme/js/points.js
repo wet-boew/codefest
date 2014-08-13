@@ -7,78 +7,61 @@
 "use strict";
 
 var	isFrench = document.documentElement.lang === "fr",
-	bountiesUrl = "https://docs.google.com/spreadsheets/d/",
-	bountiesSql = "select " + ( isFrench ?  "B,D" : "A,C" ) + ",E,F order by " + ( isFrench ?  "B" : "A" ),
-	bonusesUrl = bountiesUrl,
-	bonusesSql = "select " + ( isFrench ?  "B,D" : "A,C" ) + ",E order by " + ( isFrench ?  "B" : "A" ),
+	$elm = $( "#bounties, #bonuses" ),
+	isBounties = $elm.attr( "id" ) === "bounties",
+	url = "https://docs.google.com/spreadsheets/d/" + $elm.data( "gss" ),
+	sql = "select " + ( isFrench ?  "B,D" : "A,C" ) + ",E" +
+		( isBounties ? ",F" : "" ) + " order by " +
+		( isFrench ?  "B" : "A" ),
 	table = "<table class='table table-bordered table-striped' " +
 		"data-wb-tables='{\"lengthMenu\": [[10, 25, 100, -1], [10, 25, 100, \"" +
 		( isFrench ? "Toutes les" : "All" ) + "\"]], \"pageLength\": -1}'></table>",
-	bountiesLabels = [
-		isFrench ? "Tache" : "Task",
-		"Type",
-		"Points",
-		isFrench ? "Réclamé par" : "Claimed by"
-	],
-	bonusesLabels = [
+	labels = [
 		isFrench ? "Tache" : "Task",
 		"Type",
 		"Points"
 	],
-	$bounties, $bonuses,
+	extraBountiesLabel = isFrench ? "Réclamé par" : "Claimed by",
 
 	display = function() {
-		var $bountiesTable = $( table ),
-			$bonusesTable = $( table );
+		var $table = $( table );
 
-		$bounties.empty().append( $bountiesTable );
-		$bonuses.empty().append( $bonusesTable );
+		$elm.empty().append( $table );
 
-		$bountiesTable
+		$table
 			.sheetrock({
-				url: bountiesUrl,
-				sql: bountiesSql,
-				labels: bountiesLabels,
+				url: url,
+				sql: sql,
+				labels: labels,
 				resetStatus: true,
 				userCallback: function() {
-					var $lastColumnTd = $bountiesTable.children( "tbody" ).find( "td:last-child" ),
-						len = $lastColumnTd.length,
-						td, tdHtml, i;
+					if ( isBounties ) {
+						var $lastColumnTd = $table.children( "tbody" ).find( "td:last-child" ),
+							len = $lastColumnTd.length,
+							td, tdHtml, i;
 
-					// Make user names into links
-					for ( i = 0; i !== len; i += 1 ) {
-						td = $lastColumnTd[ i ];
-						if ( td ) {
-							tdHtml = td.innerHTML;
-							td.innerHTML = "<a href='https://github.com/" + tdHtml + "'>" + tdHtml + "</a>";
+						// Make user names into links
+						for ( i = 0; i !== len; i += 1 ) {
+							td = $lastColumnTd[ i ];
+							if ( td ) {
+								tdHtml = td.innerHTML;
+								td.innerHTML = "<a href='https://github.com/" + tdHtml + "'>" + tdHtml + "</a>";
+							}
 						}
 					}
-					$bountiesTable
+
+					$table
 						.addClass( "wb-tables" )
 						.trigger( "wb-init.wb-tables" );
 				}
 			});
-
-		$bonusesTable
-			.sheetrock({
-				url: bonusesUrl,
-				sql: bonusesSql,
-				labels: bonusesLabels,
-				resetStatus: true,
-				userCallback: function() {
-					$bonusesTable.addClass( "wb-tables" ).trigger( "wb-init.wb-tables" );
-				}
-			});
 	};
 
-wb.doc.on( "wb-ready.wb", function() {
-	$bounties = $( "#bounties" );
-	bountiesUrl += $bounties.data( "gss" );
-	$bonuses = $( "#bonuses" );
-	bonusesUrl += $bonuses.data( "gss" );
+if ( isBounties ) {
+	labels.push( extraBountiesLabel );
+}
 
-	display();
-	//setInterval( display, 300000 );
-});
+display();
+//setInterval( display, 300000 );
 
 })( jQuery, wb );
