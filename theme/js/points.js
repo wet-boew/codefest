@@ -62,6 +62,6 @@ if ( isBounties ) {
 }
 
 display();
-//setInterval( display, 300000 );
+setInterval( display, 300000 );
 
 })( jQuery, wb );
