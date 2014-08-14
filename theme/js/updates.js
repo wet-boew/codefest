@@ -54,6 +54,6 @@ var isFrench = document.documentElement.lang === "fr",
 	};
 
 display();
-//setInterval( display, 300000 );
+setInterval( display, 300000 );
 
 })( jQuery );
