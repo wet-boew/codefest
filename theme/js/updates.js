@@ -11,7 +11,7 @@ var isFrench = document.documentElement.lang === "fr",
 	url = "https://docs.google.com/spreadsheets/d/" + $updates.data( "gss" ),
 	sql = "select A,B," + ( isFrench ?  "D,F" : "C,E" ) + " order by A,B desc",
 	table = "<table class='table table-bordered table-striped' " +
-		"data-wb-tables='{\"order\": [[ 0, \"asc\" ], [ 1, \"asc\" ]], " + 
+		"data-wb-tables='{\"order\": [[ 0, \"desc\" ], [ 1, \"desc\" ]], " + 
 		"\"lengthMenu\": [[10, 25, 100, -1], [10, 25, 100, \"" +
 		( isFrench ? "Toutes les" : "All" ) + "\"]], \"pageLength\": -1}'></table>",
 	labels = [
