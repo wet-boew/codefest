@@ -1,4 +1,4 @@
-codefest2104
+codefest4
 ============
 
-The website for the Web Experience Toolkit's Codefest 2014
+The website for the Web Experience Toolkit's Codefest 4
