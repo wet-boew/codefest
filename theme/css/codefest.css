@@ -409,7 +409,16 @@ h4.twitter-handle {
 /*
  *	Schedule page
  */
-.table.schedule-morning > thead {
+ 
+ /*
+ *  Bootstrap overrides
+ */
+.table-hover > tbody > tr:hover > td, .table-hover > tbody > tr:hover > th {
+    background-color: rgba(23,107,166,.1)!important;
+}
+ /**/
+ 
+ .table.schedule-morning > thead {
 	clip: rect(1px, 1px, 1px, 1px);
 	height: 1px;
 	margin: 0;
@@ -461,6 +470,7 @@ h4.twitter-handle {
 		padding: 8px;
 	}
 }
+
 
 .talk-title {
 	font-weight: bold;
