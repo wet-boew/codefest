@@ -1,185 +1,189 @@
 <!DOCTYPE html>
-<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
-<!--[if gt IE 8]><!-->
 <html class="no-js" lang="fr" dir="ltr">
-<!--<![endif]--><head>
+	<head>
 		<meta charset="utf-8" />
 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-		<title>Présentations principale | FestiCode 4</title>
+		<title>Présentations principales | FestiCode 5</title>
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
-		<!-- Meta data -->
 		<meta name="description" content="" />
-		<!-- Meta data-->
-		<!--[if gte IE 9 | !IE ]><!-->
-			<link href="./wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon" />
-			<link rel="stylesheet" href="./wet-boew/css/wet-boew.min.css" />
-			<!--<![endif]-->
-			<link rel="stylesheet" href="./theme/css/theme.css" />
-			<link rel="stylesheet" href="./theme/css/codefest.css" />
-		<!--[if lt IE 9]>
-			<link href="./wet-boew/assets/favicon.ico" rel="shortcut icon" />
-			<link rel="stylesheet" href=" ./wet-boew/css/ie8-wet-boew.min.css" />
-			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
-			<script src="./wet-boew/js/ie8-wet-boew.min.js"></script>
-		<![endif]-->
-		
+		<link href="./wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon" />
+		<link rel="stylesheet" href="./wet-boew/theme-wet-boew/css/theme.min.css" />
+		<link rel="stylesheet" href="./theme/css/theme.css" />
+		<link rel="stylesheet" href="./theme/css/codefest.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<noscript><link rel="stylesheet" href="./wet-boew/css/noscript.min.css" /></noscript>
 	</head>
 	<body vocab="http://schema.org/" typeof="WebPage">
-		<ul id="wb-tphp">
-			<li class="wb-slc">
-				<a class="wb-sl" href="#wb-cont">Passer au contenu principal</a>
-			</li>
-			<li class="wb-slc">
-				<a class="wb-sl" href="#wb-info">Passer à « À propos de ce site »</a>
-			</li>
-			<li class="wb-slc">
-				<a class="wb-sl" href="#site-menu">Passer au menu des sujets</a>
-			</li>
-		</ul>
+		<nav>
+			<ul id="wb-tphp">
+				<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Passer au contenu principal</a></li>
+				<li class="wb-slc"><a class="wb-sl" href="#wb-info">Passer à « À propos de ce site »</a></li>
+				<li class="wb-slc"><a class="wb-sl" href="#site-menu">Passer au menu des sujets</a></li>
+			</ul>
+		</nav>
 
 		<div class="container-fluid">
-			<header role="banner" class="row" id="banner">
-				<div id="banner-logo" class="col-sm-12 col-md-3 col-lg-2">
+			<header class="row" id="banner">
+				<div id="banner-logo" class="col-sm-12 col-md-6 col-lg-5">
 					<a href="./index-fr.html">
-						<object type="image/svg+xml" tabindex="-1" data="./theme/assets/wxt-festicode-logo-tagline-white.svg"></object><span class="wb-inv"> FestiCode 4 de la Boîte à outils de l'expérience Web, Ensemble pour un meilleur Web (Retourner à la page d'accueil).</span>
+						<img src="./theme/assets/WXT5-Logo-FR.png" alt="Logo de FestiCode 5" id="wet-logo" /><span class="wb-inv">FestiCode 5 de la Boîte à outils de l'expérience Web, Ensemble pour un meilleur Web (Retourner à la page d'accueil).</span>
 					</a>
 				</div>
 
-				<div id="banner-date-location" class="col-sm-12 col-md-7 col-lg-8">
-					<span id="banner-date">Le 18 et 19 février 2016</span>
-					<span id="banner-location">Université d'Ottawa, Ottawa, Ontario</span>
-				</div>
-
-				<div id="banner-register" class="col-xs-12 col-sm-6 col-md-2">
-					<a class="btn btn-block btn-warning enabled" href="https://www.eventbrite.ca/e/billets-festicode-4-2016-20089083991">Liste d'attente disponible</a>
+				<div id="banner-date-location" class="col-sm-12 col-md-6 col-lg-7">
+					<span id="banner-date">Août 2019</span>
+					<span id="banner-location">Université Carleton, Ottawa, Ontario</span>
+					<div id="banner-register">
+						<a class="btn btn-block btn-warning disabled" href="https://www.eventbrite.ca/e/billets-festicode-4-2016-20089083991">Procurer des billets (à venir bientôt)</a>
+					</div>
 				</div>
 			</header>
+
 			<div class="row wb-eqht">
-				<div class="col-sm-12 col-md-9 col-md-push-3 col-lg-10 col-lg-push-2">
+				<nav id="site-menu" class="col-sm-12 col-md-3 col-md-pull-9 col-lg-2" typeof="SiteNavigationElement">
+					<h2 class="wb-inv">Menu des sujets</h2>
+					<ul class="list-group list-unstyled">
+						<li><a class="list-group-item" href="index-fr.html"><span class="glyphicon glyphicon-home"></span> Accueil</a></li>
+						<li><a class="list-group-item" href="about-fr.html"><span class="glyphicon glyphicon-info-sign glyth-yellow"></span> Au sujet de</a></li>
+						<li><a class="list-group-item" href="schedule-fr.html"><span class="glyphicon glyphicon-time"></span> Horaire</a></li>
+						<li><a class="list-group-item" href="location-fr.html"><span class="glyphicon glyphicon-map-marker"></span> Lieu</a></li>
+                        <li><a class="list-group-item" href="panel-fr.html"><span class="glyphicon glyphicon-bookmark"></span> Panel</a></li>
+                        <li><span class="list-group-item item-selected"><span class="glyphicon glyphicon-user"></span> Présentations principales</span></li>
+						<li><a class="list-group-item" href="sessions-fr.html"><span class="glyphicon glyphicon-bullhorn"></span> Ateliers</a></li>
+						<!-- <li><a class="list-group-item" href="designjam-fr.html"><span class="glyphicon glyphicon-pencil"></span> Design jam</a></li> -->
+						<li><a class="list-group-item" href="proposal-fr.html"><span class="glyphicon glyphicon-hand-up"></span> Dirigez un atelier</a></li>
+						<li><a class="list-group-item" href="http://wet-boew.github.io/codefest/codefest4/index-fr.html"><span class="glyphicon glyphicon glyphicon-link"></span> FestiCode 4</a></li>
+						<li><a lang="en" hreflang="en" class="list-group-item menu-util" href="./speakers-en.html"><span class="glyphicon glyphicon-share-alt menu-util"></span> English</a></li>
+					</ul>
+				</nav>
+				<div id="main" class="col-sm-12 col-md-9 col-md-push-3 col-lg-10">
 					<main role="main" property="mainContentOfPage" id="content-area">
 						<h1 id="wb-cont">Présentations principales</h1>
-						<div class="row">
-							<div class="col-sm-6">
-                            	<div class="well">
-                                    <h2 class="mrgn-bttm-lg mrgn-tp-0" id="bonito">L'avenir de la Boîte à outils de l'expérience Web</h2>
-                                    <div class="col-md-5">
-                                        <img class="media-object img-responsive img-thumbnail" src="./assets/mario-photo.jpg" alt="Mario Bonito" />
-                                       <p><a title="Twitter de Mario Bonito" href="https://twitter.com/masterbee_">@masterbee_</a></p>
-                                    </div>
-                                    <h3 class="mrgn-tp-sm">Mario Bonito</h3>
-                                    <p class="h3 mrgn-tp-0"><span class="speaker-job">Chef d'équipe du développement pour Canada.ca <span class="workplace">Service Canada</span></span></p>
-                                    <div class="clearfix"></div>
-											<p><br>L'un de nos animateurs les plus populaires de 2013 est de retour! Comptant parmi les créateurs de la Boîte à outils de l'expérience Web, Mario Bonito nous fera part de son point de vue sur la suite des choses. Apprenez en quoi vous pouvez influencer l'orientation de cette collaboration multidisciplinaire et interministérielle novatrice.</p>
-                                       <p><a href="panel-fr.html#details-panel1">Au sujet de Mario</a></p>
-								</div>
-                            </div>
-                             <div class="col-sm-6">
-                           	   <div class="well">
-                                    <h2 class="mrgn-bttm-lg mrgn-tp-0" id="stark">L'accessibilité, l'inclusion et la diversité</h2>
-                                    <div class="col-md-5">
-                                        <img class="media-object img-responsive img-thumbnail" src="./assets/jeffstark-photo.jpg" alt="Jeff Stark" /><!--
-                                        <p class="twitter-handle"><a href="https://twitter.com/masterbee_" title="Mario Bonito Twitter">@masterbee_</a></p>-->
-                                    </div>
-                                    <h3 class="mrgn-tp-sm">Jeffrey D. Stark</h3>
-                                    <p class="h3 mrgn-tp-0"><span class="speaker-job">Programme d'accessibilité, d'adaptations et de technologie informatique adaptée  <span class="workplace">Service Canada</span></span></p>
-                                    <div class="clearfix"></div>
+						
+						<p>À venir bientôt</p>
+						
+						
+						<!-- <div class="row"> -->
+							<!-- <div class="col-sm-6"> -->
+                            	<!-- <div class="well"> -->
+                                    <!-- <h2 class="mrgn-bttm-lg mrgn-tp-0" id="bonito">L'avenir de la Boîte à outils de l'expérience Web</h2> -->
+                                    <!-- <div class="col-md-5"> -->
+                                        <!-- <img class="media-object img-responsive img-thumbnail" src="./assets/mario-photo.jpg" alt="Mario Bonito" /> -->
+                                       <!-- <p><a title="Twitter de Mario Bonito" href="https://twitter.com/masterbee_">@masterbee_</a></p> -->
+                                    <!-- </div> -->
+                                    <!-- <h3 class="mrgn-tp-sm">Mario Bonito</h3> -->
+                                    <!-- <p class="h3 mrgn-tp-0"><span class="speaker-job">Chef d'équipe du développement pour Canada.ca <span class="workplace">Service Canada</span></span></p> -->
+                                    <!-- <div class="clearfix"></div> -->
+											<!-- <p><br>L'un de nos animateurs les plus populaires de 2013 est de retour! Comptant parmi les créateurs de la Boîte à outils de l'expérience Web, Mario Bonito nous fera part de son point de vue sur la suite des choses. Apprenez en quoi vous pouvez influencer l'orientation de cette collaboration multidisciplinaire et interministérielle novatrice.</p> -->
+                                       <!-- <p><a href="panel-fr.html#details-panel1">Au sujet de Mario</a></p> -->
+								<!-- </div> -->
+                            <!-- </div> -->
+                             <!-- <div class="col-sm-6"> -->
+                           	   <!-- <div class="well"> -->
+                                    <!-- <h2 class="mrgn-bttm-lg mrgn-tp-0" id="stark">L'accessibilité, l'inclusion et la diversité</h2> -->
+                                    <!-- <div class="col-md-5"> -->
+                                        <!-- <img class="media-object img-responsive img-thumbnail" src="./assets/jeffstark-photo.jpg" alt="Jeff Stark" /><!-- -->
+                                        <!-- <p class="twitter-handle"><a href="https://twitter.com/masterbee_" title="Mario Bonito Twitter">@masterbee_</a></p>-->
+                                    <!-- </div> -->
+                                    <!-- <h3 class="mrgn-tp-sm">Jeffrey D. Stark</h3> -->
+                                    <!-- <p class="h3 mrgn-tp-0"><span class="speaker-job">Programme d'accessibilité, d'adaptations et de technologie informatique adaptée  <span class="workplace">Service Canada</span></span></p> -->
+                                    <!-- <div class="clearfix"></div> -->
                               
                                     	
-                                        <p>Des centaines d'aides pour logiciels, plus de dix mille aides périphériques et une corne d'abondance de solutions existent pour répondre aux besoins des personnes handicapées. Comment faire en sorte que ces gens sont inclus? Des conseils pratiques sur la façon d'aborder l'inclusion par design, l'intégration des exigences en matière d'accessibilité à différents stades d'un projet et veiller à ce que les diverses exigences de la vision, audition, physiques et les exigences cognitives d'utilisateur sont remplies.</p>
-                                         <p><a href="panel-fr.html#details-panel3">Au sujet de Jeffrey</a></p>
+                                        <!-- <p>Des centaines d'aides pour logiciels, plus de dix mille aides périphériques et une corne d'abondance de solutions existent pour répondre aux besoins des personnes handicapées. Comment faire en sorte que ces gens sont inclus? Des conseils pratiques sur la façon d'aborder l'inclusion par design, l'intégration des exigences en matière d'accessibilité à différents stades d'un projet et veiller à ce que les diverses exigences de la vision, audition, physiques et les exigences cognitives d'utilisateur sont remplies.</p> -->
+                                         <!-- <p><a href="panel-fr.html#details-panel3">Au sujet de Jeffrey</a></p> -->
                                         
                                         
-								</div>
-                            </div>
+								<!-- </div> -->
+                            <!-- </div> -->
                             
                            
                             
                             
                             
-						</div>
+						<!-- </div> -->
 						
-						<div class="clearfix"></div>
-  <div class="row">
+						<!-- <div class="clearfix"></div> -->
+  <!-- <div class="row"> -->
 							
                             
-                            <div class="col-sm-6">
-                            	<div class="well">
-                                    <h2 class="mrgn-bttm-lg mrgn-tp-0" id="fast">Design basé sur des données&nbsp;: Comment les Canadiens perçoivent la BOEW</h2>
-                                    <div class="col-md-5">
-                                        <img class="media-object img-responsive img-thumbnail" src="./assets/lisafast-photo.jpg" alt="Lisa Fast" />
-                                        <p class="twitter-handle"><a href="https://twitter.com/NeoInsight" title="Twitter de NeoInsight">@NeoInsight</a></p>
-                                    </div>
-                                    <h3 class="mrgn-tp-sm">Lisa Fast</h3>
-                                    <p class="h3 mrgn-tp-0"><span class="speaker-job">Partenaire principale, Recherche et stratégie relatives à l'expérience des utilisateurs <span lang="en" class="workplace">NeoInsight</span></span></p>
-                                    <div class="clearfix"></div>
+                            <!-- <div class="col-sm-6"> -->
+                            	<!-- <div class="well"> -->
+                                    <!-- <h2 class="mrgn-bttm-lg mrgn-tp-0" id="fast">Design basé sur des données&nbsp;: Comment les Canadiens perçoivent la BOEW</h2> -->
+                                    <!-- <div class="col-md-5"> -->
+                                        <!-- <img class="media-object img-responsive img-thumbnail" src="./assets/lisafast-photo.jpg" alt="Lisa Fast" /> -->
+                                        <!-- <p class="twitter-handle"><a href="https://twitter.com/NeoInsight" title="Twitter de NeoInsight">@NeoInsight</a></p> -->
+                                    <!-- </div> -->
+                                    <!-- <h3 class="mrgn-tp-sm">Lisa Fast</h3> -->
+                                    <!-- <p class="h3 mrgn-tp-0"><span class="speaker-job">Partenaire principale, Recherche et stratégie relatives à l'expérience des utilisateurs <span lang="en" class="workplace">NeoInsight</span></span></p> -->
+                                    <!-- <div class="clearfix"></div> -->
                                         
-                                        <p>Lisa partagera des preuves de tests d'utilisabilité de la BOEW et Canada.ca avec plus de 180 Canadiens sur des ordinateurs, téléphones et tablettes. Des Canadiens ont aussi fait des tests plugiciels et correctifs de la BOEW dans une conception de formulaire interactif, avec des changements en cours de route. Lisa se ​​concentrera sur les types de contenu que les gens sautent sur ​​le web - comme des instructions, des photos, des champs de formulaire, les formats de date - et comment vous pouvez contourner ces comportements pour produire des designs de services centrés sur l'utilisateur qui fonctionnent avec la BOEW.</p>
+                                        <!-- <p>Lisa partagera des preuves de tests d'utilisabilité de la BOEW et Canada.ca avec plus de 180 Canadiens sur des ordinateurs, téléphones et tablettes. Des Canadiens ont aussi fait des tests plugiciels et correctifs de la BOEW dans une conception de formulaire interactif, avec des changements en cours de route. Lisa se ​​concentrera sur les types de contenu que les gens sautent sur ​​le web - comme des instructions, des photos, des champs de formulaire, les formats de date - et comment vous pouvez contourner ces comportements pour produire des designs de services centrés sur l'utilisateur qui fonctionnent avec la BOEW.</p> -->
                                         
-                                        <p><a href="panel-fr.html#details-panel2">Au sujet de Lisa</a></p>
+                                        <!-- <p><a href="panel-fr.html#details-panel2">Au sujet de Lisa</a></p> -->
                                    
-								</div>
-                            </div>
+								<!-- </div> -->
+                            <!-- </div> -->
                           
                             
-                              <div class="col-sm-6">
-                            	<div class="well">
-                                  <h2 class="mrgn-bttm-lg mrgn-tp-0" id="derek">Conception accessible: Que voulez-vous dire par « tout le monde » ?</h2>
-                                    <div class="col-md-5">
-                                      <img class="media-object img-responsive img-thumbnail" src="./assets/derek-featherstone-photo.jpg" alt="Derek Featherstone" /> <p class="twitter-handle"><a href="https://twitter.com/feather" title="Twitter de Derek Featherstone">@Feather</a></p>
-                                    </div>
-                                    <h3 class="mrgn-tp-sm">Derek Featherstone</h3>
-                                   <p class="h3 mrgn-tp-0"><span class="speaker-job">Consultant principal en accessibilité, formateur et confirencier <span class="workplace">Simply Accessible</span></span></p>
-                                    <div class="clearfix"></div>
+                              <!-- <div class="col-sm-6"> -->
+                            	<!-- <div class="well"> -->
+                                  <!-- <h2 class="mrgn-bttm-lg mrgn-tp-0" id="derek">Conception accessible: Que voulez-vous dire par « tout le monde » ?</h2> -->
+                                    <!-- <div class="col-md-5"> -->
+                                      <!-- <img class="media-object img-responsive img-thumbnail" src="./assets/derek-featherstone-photo.jpg" alt="Derek Featherstone" /> <p class="twitter-handle"><a href="https://twitter.com/feather" title="Twitter de Derek Featherstone">@Feather</a></p> -->
+                                    <!-- </div> -->
+                                    <!-- <h3 class="mrgn-tp-sm">Derek Featherstone</h3> -->
+                                   <!-- <p class="h3 mrgn-tp-0"><span class="speaker-job">Consultant principal en accessibilité, formateur et confirencier <span class="workplace">Simply Accessible</span></span></p> -->
+                                    <!-- <div class="clearfix"></div> -->
                               
                                     	
-                                        <p>Vous pensez que l'accessibilité signifie faire fonctionner votre site avec un lecteur d'écran?
+                                        <!-- <p>Vous pensez que l'accessibilité signifie faire fonctionner votre site avec un lecteur d'écran? -->
 
-Détrompez-vous.
+<!-- Détrompez-vous. -->
 
-Ou plutôt, penser plus grand. Beaucoup plus grand. 
-
-
-Dans cette présentation, Derek élargit notre esprit (et notre cœur) à considérer tous les niveaux des utilisateurs, y compris les autres cultures, les gens avec différents niveaux d'expertise technique et ceux de la population vieillissante. 
+<!-- Ou plutôt, penser plus grand. Beaucoup plus grand.  -->
 
 
-Vous repartirez avec des outils pratiques pour vous aider à concevoir et à construire des sites qui vont bien au-delà de la compatibilité avec les lecteurs d'écran. Vous aller comprendre pourquoi et comment bâtir un web pour tous les types de « tout le monde ».
-</p>
-                                         <details><summary>Au sujet de Derek</summary>
-                                         <p>Derek Featherstone travail dans le domaine de web depuis 1999. Il est un conférencier de renommée internationale et une autorité sur l'accessibilité et la conception web. Il dirige l'équipe de Simply accessible, basé à Ottawa, Canada.
+<!-- Dans cette présentation, Derek élargit notre esprit (et notre cœur) à considérer tous les niveaux des utilisateurs, y compris les autres cultures, les gens avec différents niveaux d'expertise technique et ceux de la population vieillissante.  -->
 
 
-Derek met toujours l'utilisateur d'abord et cherche à faire du Web un endroit meilleur en concevant des expériences qui sont faciles à utiliser pour tout le monde, y compris les personnes ayant des handicaps. L'expérience accessible idéal pour Derek est une combinaison du contenu attrayant et riche avec un design extraordinaire et l'excellence de développement technique. Cette orientation centrée sur l'utilisateur fixe le cap pour Simply accessible et surtout leurs clients.
-</p></details>
+<!-- Vous repartirez avec des outils pratiques pour vous aider à concevoir et à construire des sites qui vont bien au-delà de la compatibilité avec les lecteurs d'écran. Vous aller comprendre pourquoi et comment bâtir un web pour tous les types de « tout le monde ». -->
+<!-- </p> -->
+                                         <!-- <details><summary>Au sujet de Derek</summary> -->
+                                         <!-- <p>Derek Featherstone travail dans le domaine de web depuis 1999. Il est un conférencier de renommée internationale et une autorité sur l'accessibilité et la conception web. Il dirige l'équipe de Simply accessible, basé à Ottawa, Canada. -->
+
+
+<!-- Derek met toujours l'utilisateur d'abord et cherche à faire du Web un endroit meilleur en concevant des expériences qui sont faciles à utiliser pour tout le monde, y compris les personnes ayant des handicaps. L'expérience accessible idéal pour Derek est une combinaison du contenu attrayant et riche avec un design extraordinaire et l'excellence de développement technique. Cette orientation centrée sur l'utilisateur fixe le cap pour Simply accessible et surtout leurs clients. -->
+<!-- </p></details> -->
                                         
                                         
-								</div>
-                            </div>                         
+								<!-- </div> -->
+                            <!-- </div>                          -->
                             
-						</div>
+						<!-- </div> -->
 						
-						<div class="clearfix"></div>                      
-                        <div class="row">
-                        <div class="col-xs-12">
-                          <div class="panel panel-default">
-                            <div class="panel-heading">
-                              <h2 class="panel-title">Rencontrer notre maître de cérémonie, Laurent Goderre</h2>
-                            </div>
-                            <div class="panel-body"> 
-                            	<div class="col-md-3"><img src="./assets/laurent-photo.jpg" alt="" class="img-responsive thumbnail" /><p class="twitter-handle"><a href="https://twitter.com/LaurentGoderre" title="Twitter de Laurent Goderre">@LaurentGoderre</a></p></div>
-                                <div class="col-md-9">
-<p>Laurent Goderre travail sur la Boîte à outils de l’expérience Web depuis sa création et a dirigé le développement de la dernière version. Laurent a également dirigé l'élaboration des rapports de conformité à la Norme sur l’accessibilité des sites Web à la suite de la décision de la Cour fédérale dans le cas de Jodhan. Laurent est très actif au sein de la collectivité des sources ouvertes et travaille avec ses pairs pour un meilleur Web, plus accessible. Laurent est aussi un passionné de la bière artisanale et est brasseur maison accompli.</p>
+						<!-- <div class="clearfix"></div>                       -->
+                        <!-- <div class="row"> -->
+                        <!-- <div class="col-xs-12"> -->
+                          <!-- <div class="panel panel-default"> -->
+                            <!-- <div class="panel-heading"> -->
+                              <!-- <h2 class="panel-title">Rencontrer notre maître de cérémonie, Laurent Goderre</h2> -->
+                            <!-- </div> -->
+                            <!-- <div class="panel-body">  -->
+                            	<!-- <div class="col-md-3"><img src="./assets/laurent-photo.jpg" alt="" class="img-responsive thumbnail" /><p class="twitter-handle"><a href="https://twitter.com/LaurentGoderre" title="Twitter de Laurent Goderre">@LaurentGoderre</a></p></div> -->
+                                <!-- <div class="col-md-9"> -->
+<!-- <p>Laurent Goderre travail sur la Boîte à outils de l’expérience Web depuis sa création et a dirigé le développement de la dernière version. Laurent a également dirigé l'élaboration des rapports de conformité à la Norme sur l’accessibilité des sites Web à la suite de la décision de la Cour fédérale dans le cas de Jodhan. Laurent est très actif au sein de la collectivité des sources ouvertes et travaille avec ses pairs pour un meilleur Web, plus accessible. Laurent est aussi un passionné de la bière artisanale et est brasseur maison accompli.</p> -->
                               
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        </div>
-						 <div class="clearfix"></div>
+                              <!-- </div> -->
+                            <!-- </div> -->
+                          <!-- </div> -->
+                        <!-- </div> -->
+                        <!-- </div> -->
+						 <!-- <div class="clearfix"></div> -->
 					</main>
 
-					<footer role="contentinfo" id="footer">
+					<footer id="footer">
 						<section>
 							<h2 id="wb-info" class="wb-inv">À propos de ce site</h2>
 							<div id="footer-contact" class="row">
@@ -190,54 +194,20 @@ Derek met toujours l'utilisateur d'abord et cherche à faire du Web un endroit m
 
 							<div id="footer-hosts" class="row">
 								<div class="col-xs-12">
-
-									<p>Le FestiCode 4 est tenu conjointement par  :</p>
+									<p>Le FestiCode 4 est tenu conjointement par :</p>
 									<ul id="host-list">
 										<li><a href="http://wet-boew.github.io/wet-boew/index-fr.html"><img src="./theme/assets/boew-logo.png" alt="la Boîte à outils de l'expérience Web" /></a></li>
 										<li><a href="http://www.uottawa.ca"><img src="./theme/assets/uottawa-logo.png" alt="uOttawa" /></a></li>
-                                        <li><a href="http://www.cic.gc.ca"><img src="./theme/assets/ircc-fip-f.png" alt="Immigration, Refugiés et Citoyenneté Canada" /></a></li>
+                                        <li><a href="http://www.cic.gc.ca"><img src="./theme/assets/ircc-fip-f.png"  class="img-responsive" alt="Immigration, Refugiés et Citoyenneté Canada" /></a></li>
 									</ul>
 								</div>
 							</div>
 						</section>
 					</footer>
 				</div>
-
-				<nav role="navigation" id="site-menu" class="col-sm-12 col-md-3 col-md-pull-9 col-lg-2 col-lg-pull-10" typeof="SiteNavigationElement">
-					<h2 class="wb-inv">Menu des sujets</h2>
-					<ul class="list-group list-unstyled">
-						<li><a class="list-group-item" href="index-fr.html"><span class="glyphicon glyphicon-home"></span> Accueil</a></li>
-						<li><a class="list-group-item" href="about-fr.html"><span class="glyphicon glyphicon-info-sign glyth-yellow"></span> Au sujet de</a></li>
-						<li><a class="list-group-item" href="schedule-fr.html"><span class="glyphicon glyphicon-time"></span> Horaire</a></li>
-						<li><a class="list-group-item" href="location-fr.html"><span class="glyphicon glyphicon-map-marker"></span> Lieu</a></li>
-						
-                        <li><a class="list-group-item" href="panel-fr.html"><span class="glyphicon glyphicon-bookmark"></span> Panel</a></li>
-                        <li><span class="list-group-item item-selected"><span class="glyphicon glyphicon-user"></span> Présentations principales</span></li>
-                        <li><a class="list-group-item" href="sessions-fr.html"><span class="glyphicon glyphicon-bullhorn"></span> Ateliers</a></li>
-						<li><a class="list-group-item" href="designjam-fr.html"><span class="glyphicon glyphicon-pencil"></span> Design jam</a></li>
-						<!--<li><a class="list-group-item" href="codesprint-fr.html"><span class="glyphicon glyphicon-wrench"></span> Sprint de codage</a></li>-->
-						<li><a class="list-group-item" href="proposal-fr.html"><span class="glyphicon glyphicon-hand-up"></span> Dirigez un atelier</a></li>
-						<li><a lang="en" hreflang="en" class="list-group-item menu-util" href="./speakers-en.html"><span class="glyphicon glyphicon-share-alt menu-util"></span> English</a></li>
-					</ul>
-				</nav>
 			</div>
 		</div>
-		<!--[if gte IE 9 | !IE ]><!-->
-			<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
-			<script src="./wet-boew/js/wet-boew.min.js"></script>
-			<script>
-				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-				ga('create', 'UA-52036019-1', 'auto');
-				ga('set', 'anonymizeIp', true);
-				ga('send', 'pageview');
-			</script>
-		<!--<![endif]-->
-		<!--[if lt IE 9]>
-			<script src="./wet-boew/js/ie8-wet-boew2.min.js"></script>
-		<![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="./wet-boew/wet-boew/js/wet-boew.min.js"></script>
 	</body>
 </html>

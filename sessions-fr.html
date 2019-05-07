@@ -1,386 +1,386 @@
 <!DOCTYPE html>
-<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
-<!--[if gt IE 8]><!-->
 <html class="no-js" lang="fr" dir="ltr">
-<!--<![endif]--><head>
+	<head>
 		<meta charset="utf-8" />
 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-		<title>Ateliers | FestiCode 4</title>
+		<title>Ateliers | FestiCode 5</title>
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
-		<!-- Meta data -->
 		<meta name="description" content="" />
-		<!-- Meta data-->
-		<!--[if gte IE 9 | !IE ]><!-->
-			<link href="./wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon" />
-			<link rel="stylesheet" href="./wet-boew/css/wet-boew.min.css" />
-			<!--<![endif]-->
-			<link rel="stylesheet" href="./theme/css/theme.css" />
-			<link rel="stylesheet" href="./theme/css/codefest.css" />
-		<!--[if lt IE 9]>
-			<link href="./wet-boew/assets/favicon.ico" rel="shortcut icon" />
-			<link rel="stylesheet" href=" ./wet-boew/css/ie8-wet-boew.min.css" />
-			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
-			<script src="./wet-boew/js/ie8-wet-boew.min.js"></script>
-		<![endif]-->
-		
+		<link href="./wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon" />
+		<link rel="stylesheet" href="./wet-boew/theme-wet-boew/css/theme.min.css" />
+		<link rel="stylesheet" href="./theme/css/theme.css" />
+		<link rel="stylesheet" href="./theme/css/codefest.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<noscript><link rel="stylesheet" href="./wet-boew/css/noscript.min.css" /></noscript>
 	</head>
 	<body vocab="http://schema.org/" typeof="WebPage">
-		<ul id="wb-tphp">
-			<li class="wb-slc">
-				<a class="wb-sl" href="#wb-cont">Passer au contenu principal</a>
-			</li>
-			<li class="wb-slc">
-				<a class="wb-sl" href="#wb-info">Passer à « À propos de ce site »</a>
-			</li>
-			<li class="wb-slc">
-				<a class="wb-sl" href="#site-menu">Passer au menu des sujets</a>
-			</li>
-		</ul>
+		<nav>
+			<ul id="wb-tphp">
+				<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Passer au contenu principal</a></li>
+				<li class="wb-slc"><a class="wb-sl" href="#wb-info">Passer à « À propos de ce site »</a></li>
+				<li class="wb-slc"><a class="wb-sl" href="#site-menu">Passer au menu des sujets</a></li>
+			</ul>
+		</nav>
 
 		<div class="container-fluid">
-			<header role="banner" class="row" id="banner">
-				<div id="banner-logo" class="col-sm-12 col-md-3 col-lg-2">
+			<header class="row" id="banner">
+				<div id="banner-logo" class="col-sm-12 col-md-6 col-lg-5">
 					<a href="./index-fr.html">
-						<object type="image/svg+xml" tabindex="-1" data="./theme/assets/wxt-festicode-logo-tagline-white.svg"></object><span class="wb-inv"> FestiCode 4 de la Boîte à outils de l'expérience Web, Ensemble pour un meilleur Web (Retourner à la page d'accueil).</span>
+						<img src="./theme/assets/WXT5-Logo-FR.png" alt="Logo de FestiCode 5" id="wet-logo" /><span class="wb-inv">FestiCode 5 de la Boîte à outils de l'expérience Web, Ensemble pour un meilleur Web (Retourner à la page d'accueil).</span>
 					</a>
 				</div>
 
-				<div id="banner-date-location" class="col-sm-12 col-md-7 col-lg-8">
-					<span id="banner-date">Le 18 et 19 février 2016</span>
-					<span id="banner-location">Université d'Ottawa, Ottawa, Ontario</span>
-				</div>
-
-				<div id="banner-register" class="col-xs-12 col-sm-4 col-md-2">
-					<a class="btn btn-block btn-warning enabled" href="https://www.eventbrite.ca/e/billets-festicode-4-2016-20089083991">Liste d'attente disponible</a>
+				<div id="banner-date-location" class="col-sm-12 col-md-6 col-lg-7">
+					<span id="banner-date">Août 2019</span>
+					<span id="banner-location">Université Carleton, Ottawa, Ontario</span>
+					<div id="banner-register">
+						<a class="btn btn-block btn-warning disabled" href="https://www.eventbrite.ca/e/billets-festicode-4-2016-20089083991">Procurer des billets (à venir bientôt)</a>
+					</div>
 				</div>
 			</header>
 
 			<div class="row wb-eqht">
-				<div class="col-sm-12 col-md-9 col-md-push-3 col-lg-10 col-lg-push-2">
+				<nav id="site-menu" class="col-sm-12 col-md-3 col-md-pull-9 col-lg-2" typeof="SiteNavigationElement">
+					<h2 class="wb-inv">Menu des sujets</h2>
+					<ul class="list-group list-unstyled">
+						<li><a class="list-group-item" href="index-fr.html"><span class="glyphicon glyphicon-home"></span> Accueil</a></li>
+						<li><a class="list-group-item" href="about-fr.html"><span class="glyphicon glyphicon-info-sign glyth-yellow"></span> Au sujet de</a></li>
+						<li><a class="list-group-item" href="schedule-fr.html"><span class="glyphicon glyphicon-time"></span> Horaire</a></li>
+						<li><a class="list-group-item" href="location-fr.html"><span class="glyphicon glyphicon-map-marker"></span> Lieu</a></li>
+                        <li><a class="list-group-item" href="panel-fr.html"><span class="glyphicon glyphicon-bookmark"></span> Panel</a></li>
+                        <li><a class="list-group-item" href="speakers-fr.html"><span class="glyphicon glyphicon-user"></span> Présentations principales</a></li>
+						<li><span class="list-group-item item-selected"><span class="glyphicon glyphicon-bullhorn"></span> Ateliers</span></li>
+						<!-- <li><a class="list-group-item" href="designjam-fr.html"><span class="glyphicon glyphicon-pencil"></span> Design jam</a></li> -->
+						<li><a class="list-group-item" href="proposal-fr.html"><span class="glyphicon glyphicon-hand-up"></span> Dirigez un atelier</a></li>
+						<li><a class="list-group-item" href="http://wet-boew.github.io/codefest/codefest4/index-fr.html"><span class="glyphicon glyphicon glyphicon-link"></span> FestiCode 4</a></li>
+						<li><a lang="en" hreflang="en" class="list-group-item menu-util" href="./sessions-en.html"><span class="glyphicon glyphicon-share-alt menu-util"></span> English</a></li>
+					</ul>
+				</nav>
+				<div id="main" class="col-sm-12 col-md-9 col-md-push-3 col-lg-10">
 					<main role="main" property="mainContentOfPage" id="content-area">
 						<h1 id="wb-cont">Ateliers</h1>
                         
-                                
+                                <p>À venir bientôt</p>
+						
                         
-                        <ul>
-                            <li><a href="#sbeiti1">10 tests rapides pour améliorer l'accessibilité de votre site par Toufic Sbeiti</a></li>
-                            <li><a href="#dubois">Améliorer votre site Web basé sur une fondation d'accessibilité par Pierre Dubois</a></li>
-                            <li><a href="#gifford1">Collaboration ouverte et innovation par Mike Gifford</a></li>
-                            <li><a href="#galipeau">Comment implémenter et maintenir un processus d'AQ pour l'accessibilité du Web par Louis Galipeau</a></li>
-							<li><a href="#dubois1">Comment simplifier vos tableaux et à les coder pour des appareils mobiles. par Pierre Dubois</a></li>
-						  <li><a href="#ryan">Conception au gouvernement fédéral par Ryan Hum</a></li>                           
-                          <li><a href="#mccrone1">Créer du contenu accessible par Amanda McCrone</a></li>
-                            <li><a href="#mccrone2">Écrire pour le Web et médias sociaux par Amanda McCrone</a></li>
-                            <li><a href="#white">Filtrer par institution sur Canada.ca par Eileen White</a></li>                           
-                            <li><a href="#thompson1">gh-pages sur Github.com par Shawn Thompson</a></li>
-                            <li><a href="#gomaa">L'accessibilité des formulaires Web par Rabab Gomaa</a></li>
-                            <li><a href="#gifford2">L'accessibilité du Web, ATAG et Drupal 8 par Mike Gifford</a></li>
-                            <li><a href="#oconnor">L'accessibilité: Qu'est ce que ca veut dire? Le côté pratique! par Peter O'Connor</a></li>
-                            <li><a href="#regimbal">Le futur des applications Web par Marc Regimbal</a></li>
-                            <li><a href="#souster">Mettre en oeuvre et à jour la BOEW sur votre site Web par Brad Souster</a></li>
-                            <li><a href="#brads">Outils gratuits pour tester les pages Web par Brad Souster</a></li>
-                            <li><a href="#dgervais">Pattes en avant ! La compréhension de la vie d’un chien guide par Daniel L. Gervais et Léo</a></li>
-                            <li><a href="#dmacdonald">Quoi de neuf au sujet de WCAG pour l'accessibilité mobile et plus par David MacDonald</a></li>
-                            <li><a href="#heroux">Réseau de diffusion de contenu et Gabarit Web GC par Patrick Heroux</a></li>
-                            <li><a href="#hc">Santé Canada développe des applications mobile! par Kristina Aston, Sean Kibbee, and Jeremy Sivaneswaran</a></li>
-                            <li><a href="#thompson2">Sublime Text 3 par Shawn Thompson</a></li>
-                            <li><a href="#sbeiti2">Une image vaut mille mots, mais... par Toufic Sbeiti</a></li>
-                            <li><a href="#burt">Utiliser l’analytique pour prendre des décisions fondées sur des données probantes pour un site Web par Patrick Burt</a></li>
-                            <li><a href="#macdonald">Vérifié l'accessibilité d'un site Web avec un iPhone par David MacDonald</a></li>
-                            <li><a href="#tierney">Vérifier l'accessibilité avant le développement: Revues de maquettes fonctionnelles et prototypes par Aidan Tierney</a></li>
-                            <li><a href="#atz">Zone de démonstration des technologies adaptées</a></li>
-                        </ul>
-                        <hr/>
-						<h2 class="h4" id="sbeiti1">10 tests rapides pour améliorer l'accessibilité de votre site par Toufic Sbeiti</h2>
-                        <dl class="dl-horizontal">
-                          <dt>Description</dt>
-                          <dd>Je vais présenter 10 tests rapides qui peuvent être effectués rapidement pour vérifier l'accessibilité d'une page Web. Si vous êtes développeur, vous pouvez faire les corrections avant de publier. Si vous êtes chef de projet ou un client, vous pouvez assurer le niveau d'accessibilité sans connaissances approfondi de la programmation.</dd>
-                          <dt>Public cible</dt>
-                          <dd>Concepteurs d'interactions, chefs de projets, concepteusr visuels, information architects, architectes de l'information, développeurs, AQ</dd>
-                          <dt>Langue</dt>
-                          <dd>Français et anglais</dd>
-                        </dl>
+                        <!-- <ul> -->
+                            <!-- <li><a href="#sbeiti1">10 tests rapides pour améliorer l'accessibilité de votre site par Toufic Sbeiti</a></li> -->
+                            <!-- <li><a href="#dubois">Améliorer votre site Web basé sur une fondation d'accessibilité par Pierre Dubois</a></li> -->
+                            <!-- <li><a href="#gifford1">Collaboration ouverte et innovation par Mike Gifford</a></li> -->
+                            <!-- <li><a href="#galipeau">Comment implémenter et maintenir un processus d'AQ pour l'accessibilité du Web par Louis Galipeau</a></li> -->
+							<!-- <li><a href="#dubois1">Comment simplifier vos tableaux et à les coder pour des appareils mobiles. par Pierre Dubois</a></li> -->
+						  <!-- <li><a href="#ryan">Conception au gouvernement fédéral par Ryan Hum</a></li>                            -->
+                          <!-- <li><a href="#mccrone1">Créer du contenu accessible par Amanda McCrone</a></li> -->
+                            <!-- <li><a href="#mccrone2">Écrire pour le Web et médias sociaux par Amanda McCrone</a></li> -->
+                            <!-- <li><a href="#white">Filtrer par institution sur Canada.ca par Eileen White</a></li>                            -->
+                            <!-- <li><a href="#thompson1">gh-pages sur Github.com par Shawn Thompson</a></li> -->
+                            <!-- <li><a href="#gomaa">L'accessibilité des formulaires Web par Rabab Gomaa</a></li> -->
+                            <!-- <li><a href="#gifford2">L'accessibilité du Web, ATAG et Drupal 8 par Mike Gifford</a></li> -->
+                            <!-- <li><a href="#oconnor">L'accessibilité: Qu'est ce que ca veut dire? Le côté pratique! par Peter O'Connor</a></li> -->
+                            <!-- <li><a href="#regimbal">Le futur des applications Web par Marc Regimbal</a></li> -->
+                            <!-- <li><a href="#souster">Mettre en oeuvre et à jour la BOEW sur votre site Web par Brad Souster</a></li> -->
+                            <!-- <li><a href="#brads">Outils gratuits pour tester les pages Web par Brad Souster</a></li> -->
+                            <!-- <li><a href="#dgervais">Pattes en avant ! La compréhension de la vie d’un chien guide par Daniel L. Gervais et Léo</a></li> -->
+                            <!-- <li><a href="#dmacdonald">Quoi de neuf au sujet de WCAG pour l'accessibilité mobile et plus par David MacDonald</a></li> -->
+                            <!-- <li><a href="#heroux">Réseau de diffusion de contenu et Gabarit Web GC par Patrick Heroux</a></li> -->
+                            <!-- <li><a href="#hc">Santé Canada développe des applications mobile! par Kristina Aston, Sean Kibbee, and Jeremy Sivaneswaran</a></li> -->
+                            <!-- <li><a href="#thompson2">Sublime Text 3 par Shawn Thompson</a></li> -->
+                            <!-- <li><a href="#sbeiti2">Une image vaut mille mots, mais... par Toufic Sbeiti</a></li> -->
+                            <!-- <li><a href="#burt">Utiliser l’analytique pour prendre des décisions fondées sur des données probantes pour un site Web par Patrick Burt</a></li> -->
+                            <!-- <li><a href="#macdonald">Vérifié l'accessibilité d'un site Web avec un iPhone par David MacDonald</a></li> -->
+                            <!-- <li><a href="#tierney">Vérifier l'accessibilité avant le développement: Revues de maquettes fonctionnelles et prototypes par Aidan Tierney</a></li> -->
+                            <!-- <li><a href="#atz">Zone de démonstration des technologies adaptées</a></li> -->
+                        <!-- </ul> -->
+                        <!-- <hr/> -->
+						<!-- <h2 class="h4" id="sbeiti1">10 tests rapides pour améliorer l'accessibilité de votre site par Toufic Sbeiti</h2> -->
+                        <!-- <dl class="dl-horizontal"> -->
+                          <!-- <dt>Description</dt> -->
+                          <!-- <dd>Je vais présenter 10 tests rapides qui peuvent être effectués rapidement pour vérifier l'accessibilité d'une page Web. Si vous êtes développeur, vous pouvez faire les corrections avant de publier. Si vous êtes chef de projet ou un client, vous pouvez assurer le niveau d'accessibilité sans connaissances approfondi de la programmation.</dd> -->
+                          <!-- <dt>Public cible</dt> -->
+                          <!-- <dd>Concepteurs d'interactions, chefs de projets, concepteusr visuels, information architects, architectes de l'information, développeurs, AQ</dd> -->
+                          <!-- <dt>Langue</dt> -->
+                          <!-- <dd>Français et anglais</dd> -->
+                        <!-- </dl> -->
                         
-                        <h2 class="h4" id="dubois">Améliorer votre site Web basé sur une fondation d'accessibilité par Pierre Dubois</h2>
-                        <dl class="dl-horizontal">
-                          <dt>Description</dt>
-                          <dd>Voir comment les règles pour l'accessibilité des contenus Web (WCAG) est une base de référence pour tous activités de facilité d'emploi et dépasser en portée votre optimisation pour les moteurs de recherche.</dd>
-                          <dt>Public cible</dt>
-                          <dd>Développeurs, concepteurs</dd>
-                          <dt>Langue</dt>
-                          <dd>Anglais and French</dd>
-                        </dl>
+                        <!-- <h2 class="h4" id="dubois">Améliorer votre site Web basé sur une fondation d'accessibilité par Pierre Dubois</h2> -->
+                        <!-- <dl class="dl-horizontal"> -->
+                          <!-- <dt>Description</dt> -->
+                          <!-- <dd>Voir comment les règles pour l'accessibilité des contenus Web (WCAG) est une base de référence pour tous activités de facilité d'emploi et dépasser en portée votre optimisation pour les moteurs de recherche.</dd> -->
+                          <!-- <dt>Public cible</dt> -->
+                          <!-- <dd>Développeurs, concepteurs</dd> -->
+                          <!-- <dt>Langue</dt> -->
+                          <!-- <dd>Anglais and French</dd> -->
+                        <!-- </dl> -->
                         						
-                        <h2 class="h4" id="gifford1">Collaboration ouverte et innovation par Mike Gifford</h2>
-                        <dl class="dl-horizontal">
-                          <dt>Description</dt>
-                          <dd>Les normes ouvertes, sources ouvertes, données ouvertes, gouvernements ouverts, dialogues ouverts commence a être une réalité avec le Web ouvert. Ceci représente un vrai décalage envers la transparence qui permet aux citoyens de devenir engagés et peut donner pouvoir aux fonctionnaires.</dd>
-                          <dt>Public cible</dt>
-                          <dd>Développeurs, concepteurs</dd>
-                          <dt>Langue</dt>
-                          <dd>Anglais</dd>
-                        </dl>
+                        <!-- <h2 class="h4" id="gifford1">Collaboration ouverte et innovation par Mike Gifford</h2> -->
+                        <!-- <dl class="dl-horizontal"> -->
+                          <!-- <dt>Description</dt> -->
+                          <!-- <dd>Les normes ouvertes, sources ouvertes, données ouvertes, gouvernements ouverts, dialogues ouverts commence a être une réalité avec le Web ouvert. Ceci représente un vrai décalage envers la transparence qui permet aux citoyens de devenir engagés et peut donner pouvoir aux fonctionnaires.</dd> -->
+                          <!-- <dt>Public cible</dt> -->
+                          <!-- <dd>Développeurs, concepteurs</dd> -->
+                          <!-- <dt>Langue</dt> -->
+                          <!-- <dd>Anglais</dd> -->
+                        <!-- </dl> -->
                         
-                        <h2 class="h4" id="galipeau">Comment implémenter et maintenir un processus d'AQ pour l'accessibilité du Web par Louis Galipeau</h2>
-                        <dl class="dl-horizontal">
-                          <dt>Description</dt>
-                          <dd><p>Une présentation pour expliquer comment l'équipe Web à IRCC a développé une boite à outil qui permet</p>
-                          <ol>
-                            <li>aux développeurs Web et aux codeurs HTML de valider leurs pages rapidement et efficacement (WCAG2 et Normes Web du gouvernement du Canada) et</li>
-                            <li>à la gestion de confirmer la validation des pages et d'apporter des corrections si nécessaire.</li>
-                          </ol></dd>
-                          <dt>Public cible</dt>
-                          <dd>Développeurs, AQ</dd>
-                          <dt>Langue</dt>
-                          <dd>Français et anglais</dd>
-                        </dl>
+                        <!-- <h2 class="h4" id="galipeau">Comment implémenter et maintenir un processus d'AQ pour l'accessibilité du Web par Louis Galipeau</h2> -->
+                        <!-- <dl class="dl-horizontal"> -->
+                          <!-- <dt>Description</dt> -->
+                          <!-- <dd><p>Une présentation pour expliquer comment l'équipe Web à IRCC a développé une boite à outil qui permet</p> -->
+                          <!-- <ol> -->
+                            <!-- <li>aux développeurs Web et aux codeurs HTML de valider leurs pages rapidement et efficacement (WCAG2 et Normes Web du gouvernement du Canada) et</li> -->
+                            <!-- <li>à la gestion de confirmer la validation des pages et d'apporter des corrections si nécessaire.</li> -->
+                          <!-- </ol></dd> -->
+                          <!-- <dt>Public cible</dt> -->
+                          <!-- <dd>Développeurs, AQ</dd> -->
+                          <!-- <dt>Langue</dt> -->
+                          <!-- <dd>Français et anglais</dd> -->
+                        <!-- </dl> -->
 
-						<h2 class="h4" id="dubois1">Comment simplifier vos tableaux et à les coder pour des appareils mobiles. par Pierre Dubois</h2>
-						<dl class="dl-horizontal">
-                          <dt>Description</dt>
-                          <dd>Découvrez une méthode structurée afin de simplifier vos tableaux en améliorant vos connaissances à propos d'éléments tabulaires sous-exploités. Cela vous aidera à optimiser vos tableaux pour des appareils mobiles.</dd>
-                          <dt>Public cible</dt>
-                          <dd>Développeurs, AQ</dd>
-                          <dt>Langue</dt>
-                          <dd>Français et anglais</dd>
-                        </dl>
+						<!-- <h2 class="h4" id="dubois1">Comment simplifier vos tableaux et à les coder pour des appareils mobiles. par Pierre Dubois</h2> -->
+						<!-- <dl class="dl-horizontal"> -->
+                          <!-- <dt>Description</dt> -->
+                          <!-- <dd>Découvrez une méthode structurée afin de simplifier vos tableaux en améliorant vos connaissances à propos d'éléments tabulaires sous-exploités. Cela vous aidera à optimiser vos tableaux pour des appareils mobiles.</dd> -->
+                          <!-- <dt>Public cible</dt> -->
+                          <!-- <dd>Développeurs, AQ</dd> -->
+                          <!-- <dt>Langue</dt> -->
+                          <!-- <dd>Français et anglais</dd> -->
+                        <!-- </dl> -->
 
-                        <h2 class="h4" id="ryan">Conception au gouvernement fédéral</h2>
-                         <dl class="dl-horizontal">
-                           <dt>Description</dt>
-                          <dd><p>On demande de plus en plus que le secteur public fasse preuve d'innovation, ce qui nous donne l'occasion de revoir la façon dont les services gouvernementaux sont conçus. La conception axée sur l'utilisateur ou la « pensée créatrice », qui repose sur de la recherche ethnographique structurée et des outils visuels, est une façon de trouver de nouvelles idées en misant sur une meilleure compréhension des utilisateurs et du contexte.</p>
+                        <!-- <h2 class="h4" id="ryan">Conception au gouvernement fédéral</h2> -->
+                         <!-- <dl class="dl-horizontal"> -->
+                           <!-- <dt>Description</dt> -->
+                          <!-- <dd><p>On demande de plus en plus que le secteur public fasse preuve d'innovation, ce qui nous donne l'occasion de revoir la façon dont les services gouvernementaux sont conçus. La conception axée sur l'utilisateur ou la « pensée créatrice », qui repose sur de la recherche ethnographique structurée et des outils visuels, est une façon de trouver de nouvelles idées en misant sur une meilleure compréhension des utilisateurs et du contexte.</p> -->
 
-<p>Les participants à cette séance découvriront quelques-unes des nouvelles techniques, comme la conception axée sur l'utilisateur, que les gouvernements avant-gardistes peuvent utiliser pour améliorer leurs services. Ils examineront les avantages que ces techniques peuvent offrir, mais aussi les pièges qu'elles peuvent comporter, le tout illustré par des exemples représentatifs.</p></dd>
-                          <dt>Public cible</dt>
-                          <dd>Tout le monde</dd>
-                          <dt>Langue</dt>
-                          <dd>Anglais</dd>
-                        </dl>
+<!-- <p>Les participants à cette séance découvriront quelques-unes des nouvelles techniques, comme la conception axée sur l'utilisateur, que les gouvernements avant-gardistes peuvent utiliser pour améliorer leurs services. Ils examineront les avantages que ces techniques peuvent offrir, mais aussi les pièges qu'elles peuvent comporter, le tout illustré par des exemples représentatifs.</p></dd> -->
+                          <!-- <dt>Public cible</dt> -->
+                          <!-- <dd>Tout le monde</dd> -->
+                          <!-- <dt>Langue</dt> -->
+                          <!-- <dd>Anglais</dd> -->
+                        <!-- </dl> -->
                        
                         
-                      <h2 class="h4" id="mccrone1">Créer du contenu accessible par Amanda McCrone</h2>
-                        <dl class="dl-horizontal">
-                          <dt>Description</dt>
-                          <dd>Créer du contenu qui est accessible à tous les utilisateurs n'est pas seulement une bonne idée - c'est la bonne chose à faire. Cet atelier va enseigner aux créateurs de contenu des points fondamentaux sur l'accessibilité pour vous assurer que tous les utilisateurs peuvent trouver et utiliser leur contenu, indépendamment de comment et par où ils accèdent au Web.</dd>
-                          <dt>Public cible</dt>
-                          <dd>Rédacteurs</dd>
-                          <dt>Langue</dt>
-                          <dd>Anglais</dd>
-                        </dl>
+                      <!-- <h2 class="h4" id="mccrone1">Créer du contenu accessible par Amanda McCrone</h2> -->
+                        <!-- <dl class="dl-horizontal"> -->
+                          <!-- <dt>Description</dt> -->
+                          <!-- <dd>Créer du contenu qui est accessible à tous les utilisateurs n'est pas seulement une bonne idée - c'est la bonne chose à faire. Cet atelier va enseigner aux créateurs de contenu des points fondamentaux sur l'accessibilité pour vous assurer que tous les utilisateurs peuvent trouver et utiliser leur contenu, indépendamment de comment et par où ils accèdent au Web.</dd> -->
+                          <!-- <dt>Public cible</dt> -->
+                          <!-- <dd>Rédacteurs</dd> -->
+                          <!-- <dt>Langue</dt> -->
+                          <!-- <dd>Anglais</dd> -->
+                        <!-- </dl> -->
                         
-                        <h2 class="h4" id="mccrone2">Écrire pour le Web et médias sociaux par Amanda McCrone</h2>
-                        <dl class="dl-horizontal">
-                          <dt>Description</dt>
-                          <dd>Alors que nous avançons avec le renouvellement de Web, les communicateurs sont de plus en plus demandés à écrire du contenu qui est claire, concis et axé sur l'utilisateur - peu importe que ce soit sur ​​un site Web d'un  ministère, Canada.ca ou Twitter. Cet atelier donnera aux participants des conseils pratiques sur la façon de transformer leur contenu web en quelque chose que les utilisateurs seront en mesure de facilement trouver, analyser et comprendre; ainsi que des conseils et les meilleures pratiques pour le développement de contenu pour Twitter, Facebook et YouTube.</dd>
-                          <dt>Public cible</dt>
-                          <dd>Rédacteurs</dd>
-                          <dt>Langue</dt>
-                          <dd>Anglais</dd>
-                        </dl>
+                        <!-- <h2 class="h4" id="mccrone2">Écrire pour le Web et médias sociaux par Amanda McCrone</h2> -->
+                        <!-- <dl class="dl-horizontal"> -->
+                          <!-- <dt>Description</dt> -->
+                          <!-- <dd>Alors que nous avançons avec le renouvellement de Web, les communicateurs sont de plus en plus demandés à écrire du contenu qui est claire, concis et axé sur l'utilisateur - peu importe que ce soit sur ​​un site Web d'un  ministère, Canada.ca ou Twitter. Cet atelier donnera aux participants des conseils pratiques sur la façon de transformer leur contenu web en quelque chose que les utilisateurs seront en mesure de facilement trouver, analyser et comprendre; ainsi que des conseils et les meilleures pratiques pour le développement de contenu pour Twitter, Facebook et YouTube.</dd> -->
+                          <!-- <dt>Public cible</dt> -->
+                          <!-- <dd>Rédacteurs</dd> -->
+                          <!-- <dt>Langue</dt> -->
+                          <!-- <dd>Anglais</dd> -->
+                        <!-- </dl> -->
                         
-                        <h2 class="h4" id="white">Filtrer par institution sur Canada.ca par Eileen White</h2>
-                        <dl class="dl-horizontal">
-                          <dt>Description</dt>
-                          <dd>Cet atelier offre aux participants l'occasion de discuter et de donner leur avis sur une solution proposé pour filtrer le contenu spécifique à une institution sur Canada.ca.</dd>
-                          <dt>Public cible</dt>
-                          <dd>Communications, TI</dd>
-                          <dt>Langue</dt>
-                          <dd>Anglais</dd>
-                        </dl>
+                        <!-- <h2 class="h4" id="white">Filtrer par institution sur Canada.ca par Eileen White</h2> -->
+                        <!-- <dl class="dl-horizontal"> -->
+                          <!-- <dt>Description</dt> -->
+                          <!-- <dd>Cet atelier offre aux participants l'occasion de discuter et de donner leur avis sur une solution proposé pour filtrer le contenu spécifique à une institution sur Canada.ca.</dd> -->
+                          <!-- <dt>Public cible</dt> -->
+                          <!-- <dd>Communications, TI</dd> -->
+                          <!-- <dt>Langue</dt> -->
+                          <!-- <dd>Anglais</dd> -->
+                        <!-- </dl> -->
                         
-                         <h2 class="h4" id="thompson1">gh-pages sur Github.com par Shawn Thompson</h2>
-                        <dl class="dl-horizontal">
-                          <dt>Description</dt>
-                          <dd>Shawn Thompson va démontrer comment utiliser Github et une branche gh-pages pour héberger un site Web HTML. Très utile pour le prototypage rapide de pages Web.</dd>
-                          <dt>Public cible</dt>
-                          <dd>Développeurs</dd>
-                          <dt>Langue</dt>
-                          <dd>Anglais</dd>
-                        </dl>
+                         <!-- <h2 class="h4" id="thompson1">gh-pages sur Github.com par Shawn Thompson</h2> -->
+                        <!-- <dl class="dl-horizontal"> -->
+                          <!-- <dt>Description</dt> -->
+                          <!-- <dd>Shawn Thompson va démontrer comment utiliser Github et une branche gh-pages pour héberger un site Web HTML. Très utile pour le prototypage rapide de pages Web.</dd> -->
+                          <!-- <dt>Public cible</dt> -->
+                          <!-- <dd>Développeurs</dd> -->
+                          <!-- <dt>Langue</dt> -->
+                          <!-- <dd>Anglais</dd> -->
+                        <!-- </dl> -->
                         
-                        <h2 class="h4" id="buckthought">Introduction à WAI-ARIA par Mike Buckthought</h2>
-                        <dl class="dl-horizontal">
-                          <dt>Description</dt>
-                          <dd>Qu'est ce WAI-ARIA et comment on peut utiliser cette technologie Web pour souligner l'accessibilité de sites Web? En utilisant la norme <em lang="en">Web Accessibility Initiative's Accessible Rich Internet Applications</em> (WAI-ARIA), on peut concevoir des pages Web qui fonctionnent avec des technologies d'assistance. Les rôles, attributs et propriétés d'ARIA fournit de l'information au lecteur d'écran utilisé par les personnes avec des déficiences visuelles.</dd>
-                          <dt>Public cible</dt>
-                          <dd>Concepteurs, développeurs</dd>
-                          <dt>Langue</dt>
-                          <dd>Anglais</dd>
-                        </dl>
+                        <!-- <h2 class="h4" id="buckthought">Introduction à WAI-ARIA par Mike Buckthought</h2> -->
+                        <!-- <dl class="dl-horizontal"> -->
+                          <!-- <dt>Description</dt> -->
+                          <!-- <dd>Qu'est ce WAI-ARIA et comment on peut utiliser cette technologie Web pour souligner l'accessibilité de sites Web? En utilisant la norme <em lang="en">Web Accessibility Initiative's Accessible Rich Internet Applications</em> (WAI-ARIA), on peut concevoir des pages Web qui fonctionnent avec des technologies d'assistance. Les rôles, attributs et propriétés d'ARIA fournit de l'information au lecteur d'écran utilisé par les personnes avec des déficiences visuelles.</dd> -->
+                          <!-- <dt>Public cible</dt> -->
+                          <!-- <dd>Concepteurs, développeurs</dd> -->
+                          <!-- <dt>Langue</dt> -->
+                          <!-- <dd>Anglais</dd> -->
+                        <!-- </dl> -->
                         
-                        <h2 class="h4" id="gomaa">L'accessibilité des formulaires Web par Rabab Gomaa</h2>
-                        <dl class="dl-horizontal">
-                          <dt>Description</dt>
-                          <dd>Les formulaires Web sont une façon facile d'accéder et recueillir de l'information. Par conter, les formulaires Web peuvent être une obstacle pour les utilisateurs avec des déficiences lorsqu'ils ne sont pas développés pour être accessible. Dans cette session, nous allons passer à travers différentes considérations pour assurer l'accessibilité de votre formulaire Web tel que : l'étiquetage, placement et regroupement des contrôles, validation des entrées de l'utilisateur, fournir des instructions et la manipulation des formulaires à plusieurs pages. Ces considérations seront démontrées par un lecteur d'écran.</dd>
-                          <dt>Public cible</dt>
-                          <dd>Développeurs, concepteurs</dd>
-                          <dt>Langue</dt>
-                          <dd>Français et anglais</dd>
-                        </dl>
+                        <!-- <h2 class="h4" id="gomaa">L'accessibilité des formulaires Web par Rabab Gomaa</h2> -->
+                        <!-- <dl class="dl-horizontal"> -->
+                          <!-- <dt>Description</dt> -->
+                          <!-- <dd>Les formulaires Web sont une façon facile d'accéder et recueillir de l'information. Par conter, les formulaires Web peuvent être une obstacle pour les utilisateurs avec des déficiences lorsqu'ils ne sont pas développés pour être accessible. Dans cette session, nous allons passer à travers différentes considérations pour assurer l'accessibilité de votre formulaire Web tel que : l'étiquetage, placement et regroupement des contrôles, validation des entrées de l'utilisateur, fournir des instructions et la manipulation des formulaires à plusieurs pages. Ces considérations seront démontrées par un lecteur d'écran.</dd> -->
+                          <!-- <dt>Public cible</dt> -->
+                          <!-- <dd>Développeurs, concepteurs</dd> -->
+                          <!-- <dt>Langue</dt> -->
+                          <!-- <dd>Français et anglais</dd> -->
+                        <!-- </dl> -->
                         
-                        <h2 class="h4" id="gifford2">L'accessibilité du Web, ATAG et Drupal 8 par Mike Gifford</h2>
-                        <dl class="dl-horizontal">
-                          <dt>Description</dt>
-                          <dd>Drupal 8 a été lancer en décembre dernier et il fournit par défault de l'accesbilité qui est « tête et épaules » au-dessus de tout autre SGCW. Pour les 8 dernières années, nous travaillons à implémenter des défault qui profitent à tous. Ceci est seulement possible si on pensent au système dans lequel votre site Web réside.</dd>
-                          <dt>Public cible</dt>
-                          <dd>Développeurs</dd>
-                          <dt>Langue</dt>
-                          <dd>Anglais</dd>
-                        </dl>
+                        <!-- <h2 class="h4" id="gifford2">L'accessibilité du Web, ATAG et Drupal 8 par Mike Gifford</h2> -->
+                        <!-- <dl class="dl-horizontal"> -->
+                          <!-- <dt>Description</dt> -->
+                          <!-- <dd>Drupal 8 a été lancer en décembre dernier et il fournit par défault de l'accesbilité qui est « tête et épaules » au-dessus de tout autre SGCW. Pour les 8 dernières années, nous travaillons à implémenter des défault qui profitent à tous. Ceci est seulement possible si on pensent au système dans lequel votre site Web réside.</dd> -->
+                          <!-- <dt>Public cible</dt> -->
+                          <!-- <dd>Développeurs</dd> -->
+                          <!-- <dt>Langue</dt> -->
+                          <!-- <dd>Anglais</dd> -->
+                        <!-- </dl> -->
                         
-                        <h2 class="h4" id="oconnor">L'accessibilité: Qu'est ce que ca veut dire? Le côté pratique! par Peter O'Connor</h2>
-                        <dl class="dl-horizontal">
-                          <dt>Description</dt>
-                          <dd>Une présentation démontrant comment les utilisateurs d'un lecteur d'écran lit, navigue et utilise n'importe quel logiciel sur leur ordinateur. Ainsi que comment l'information devrait être présentée pour tous les utilisateurs afin d'avoir le message des créateurs de ce logiciel compris par le plus d'utilisateur possible.</dd>
-                          <dt>Public cible</dt>
-                          <dd>Développeurs, AQ, concepteurs</dd>
-                          <dt>Langue</dt>
-                          <dd>Anglais</dd>
-                        </dl>
+                        <!-- <h2 class="h4" id="oconnor">L'accessibilité: Qu'est ce que ca veut dire? Le côté pratique! par Peter O'Connor</h2> -->
+                        <!-- <dl class="dl-horizontal"> -->
+                          <!-- <dt>Description</dt> -->
+                          <!-- <dd>Une présentation démontrant comment les utilisateurs d'un lecteur d'écran lit, navigue et utilise n'importe quel logiciel sur leur ordinateur. Ainsi que comment l'information devrait être présentée pour tous les utilisateurs afin d'avoir le message des créateurs de ce logiciel compris par le plus d'utilisateur possible.</dd> -->
+                          <!-- <dt>Public cible</dt> -->
+                          <!-- <dd>Développeurs, AQ, concepteurs</dd> -->
+                          <!-- <dt>Langue</dt> -->
+                          <!-- <dd>Anglais</dd> -->
+                        <!-- </dl> -->
                         
-                        <h2 class="h4" id="regimbal">Le futur des applications Web par Marc Regimbal</h2>
-                        <dl class="dl-horizontal">
-                          <dt>Description</dt>
-                          <dd>Cet atelier regardera comment les applications Web peuvent profiter de déploiement centralisée des systèmes de gestion de contenu Web. L'idée de briser les composantes communs trouvés dans toutes les applications Web permet aux applications d'être facilement construites et déployées tout en répondant à tous les standards du Web que le public s'attend de sites bâtit professionnellement.</dd>
-                          <dt>Public cible</dt>
-                          <dd>Éditeur sur le Web, développeurs, gestionnaires</dd>
-                          <dt>Langue</dt>
-                          <dd>Anglais</dd>
-                        </dl>
+                        <!-- <h2 class="h4" id="regimbal">Le futur des applications Web par Marc Regimbal</h2> -->
+                        <!-- <dl class="dl-horizontal"> -->
+                          <!-- <dt>Description</dt> -->
+                          <!-- <dd>Cet atelier regardera comment les applications Web peuvent profiter de déploiement centralisée des systèmes de gestion de contenu Web. L'idée de briser les composantes communs trouvés dans toutes les applications Web permet aux applications d'être facilement construites et déployées tout en répondant à tous les standards du Web que le public s'attend de sites bâtit professionnellement.</dd> -->
+                          <!-- <dt>Public cible</dt> -->
+                          <!-- <dd>Éditeur sur le Web, développeurs, gestionnaires</dd> -->
+                          <!-- <dt>Langue</dt> -->
+                          <!-- <dd>Anglais</dd> -->
+                        <!-- </dl> -->
                         
-                        <h2 class="h4" id="souster">Mettre en oeuvre et à jour la BOEW sur votre site Web par Brad Souster</h2>
-                        <dl class="dl-horizontal">
-                          <dt>Description</dt>
-                          <dd>Sauter dans le processus et les défis d'implémenter et mettre à jour la dernière version de la BOEW. Apprenez comment choisir le bon gabarit, définir l'étendue de voter projet, évaluer et gérer les risques et exécuter sans défaut le lancement d'un gabarit sur un site de moyenne à grande taille. Le présentateur discutera du processus dans le contexte d'implémenter et mettre à jour les gabarits de la BOEW version 3 à version 4 du site Web d'Immigration, Réfugiés et Citoyenneté Canada, ainsi que les défis rencontrés lors de la mise à jour d'un grand site opérationnel et comment les surmonter.</dd>
-                          <dt>Public cible</dt>
-                          <dd>Développeurs, gestionnaires</dd>
-                          <dt>Langue</dt>
-                          <dd>Anglais</dd>
-                        </dl>
+                        <!-- <h2 class="h4" id="souster">Mettre en oeuvre et à jour la BOEW sur votre site Web par Brad Souster</h2> -->
+                        <!-- <dl class="dl-horizontal"> -->
+                          <!-- <dt>Description</dt> -->
+                          <!-- <dd>Sauter dans le processus et les défis d'implémenter et mettre à jour la dernière version de la BOEW. Apprenez comment choisir le bon gabarit, définir l'étendue de voter projet, évaluer et gérer les risques et exécuter sans défaut le lancement d'un gabarit sur un site de moyenne à grande taille. Le présentateur discutera du processus dans le contexte d'implémenter et mettre à jour les gabarits de la BOEW version 3 à version 4 du site Web d'Immigration, Réfugiés et Citoyenneté Canada, ainsi que les défis rencontrés lors de la mise à jour d'un grand site opérationnel et comment les surmonter.</dd> -->
+                          <!-- <dt>Public cible</dt> -->
+                          <!-- <dd>Développeurs, gestionnaires</dd> -->
+                          <!-- <dt>Langue</dt> -->
+                          <!-- <dd>Anglais</dd> -->
+                        <!-- </dl> -->
 
- 					<h2 class="h4" id="brads">Outils gratuits pour tester les pages Web par Brad Souster</h2>
-                        <dl class="dl-horizontal">
-                          <dt>Description</dt>
-                          <dd>Dan cette session, des outils gratuits qui peuvent être utilisés pour valider les pages Web et identifier les problèmes d'accessibilité seront présentés. Rejoignez-nous dans cette session pour apprendre comment utiliser le bars d’outils WAVE , Web Developer , Juicy studio et Jim Thatcher.</dd>
-                          <dt>Public cible</dt>
-                          <dd>Concepteurs, développeurs, AQ</dd>
-                          <dt>Langue</dt>
-                          <dd>Anglais</dd>
-                        </dl>
+ 					<!-- <h2 class="h4" id="brads">Outils gratuits pour tester les pages Web par Brad Souster</h2> -->
+                        <!-- <dl class="dl-horizontal"> -->
+                          <!-- <dt>Description</dt> -->
+                          <!-- <dd>Dan cette session, des outils gratuits qui peuvent être utilisés pour valider les pages Web et identifier les problèmes d'accessibilité seront présentés. Rejoignez-nous dans cette session pour apprendre comment utiliser le bars d’outils WAVE , Web Developer , Juicy studio et Jim Thatcher.</dd> -->
+                          <!-- <dt>Public cible</dt> -->
+                          <!-- <dd>Concepteurs, développeurs, AQ</dd> -->
+                          <!-- <dt>Langue</dt> -->
+                          <!-- <dd>Anglais</dd> -->
+                        <!-- </dl> -->
 
-<<<<<<< HEAD
-					<h2 class="h4" id="dgervais">Pattes en avant ! La compréhension de la vie d’un chien guide par Daniel L. Gervais et Léo</h2>
-                        <dl class="dl-horizontal">
-                          <dt>Description</dt>
-                          <dd>Avez-vous déjà vu ces merveilleux animaux travailler autour de la ville et demandiez-vous comment ils le font ?  Joindre à moi sous le harnais lorsque nous discutons de la vie et la formation d’un chien guide d’aujourd’hui.</dd>
-                          <dt>Public cible</dt>
-                          <dd>Tout le monde</dd>
-                          <dt>Langue</dt>
-                          <dd>Français et anglais</dd>
-                        </dl>                        
+<!-- <<<<<<< HEAD -->
+					<!-- <h2 class="h4" id="dgervais">Pattes en avant ! La compréhension de la vie d’un chien guide par Daniel L. Gervais et Léo</h2> -->
+                        <!-- <dl class="dl-horizontal"> -->
+                          <!-- <dt>Description</dt> -->
+                          <!-- <dd>Avez-vous déjà vu ces merveilleux animaux travailler autour de la ville et demandiez-vous comment ils le font ?  Joindre à moi sous le harnais lorsque nous discutons de la vie et la formation d’un chien guide d’aujourd’hui.</dd> -->
+                          <!-- <dt>Public cible</dt> -->
+                          <!-- <dd>Tout le monde</dd> -->
+                          <!-- <dt>Langue</dt> -->
+                          <!-- <dd>Français et anglais</dd> -->
+                        <!-- </dl>                         -->
                               
                               
- 					<h2 class="h4" id="brads">Quoi de neuf au sujet de WCAG pour l'accessibilité mobile et plus par David MacDonald</h2>
-=======
- 					<h2 class="h4" id="dmacdonald">Quoi de neuf au sujet de WCAG pour l'accessibilité mobile et plus par David MacDonald</h2>
->>>>>>> origin/codefest2015
-                        <dl class="dl-horizontal">
-                          <dt>Description</dt>
-                          <dd>WCAG 2 est une norme complexe , que ce soit en anglais ou la traduction française. Dans cet exposé, nous allons vous donner un aperçu des principes, lignes directrices et des critères de succès WCAG . Nous allons discuter les prochaines étapes du WCAG , le Groupe de travail mobile , et ce que nous faisons pour aider à assurer que les auteurs de contenus mobiles peuvent produire des documents et des applications mobiles accessibles . Quelles sont les choses importantes à considérer lors de la création de contenu accessible pour appareils mobiles ?  L'animateur, David MacDonald est un membre de longue date du Groupe de travail WCAG du W3C
-</dd>
-                          <dt>Public cible</dt>
-                          <dd>Concepteurs, développeurs, AQ</dd>
-                          <dt>Langue</dt>
-                          <dd>Anglais</dd>
-                        </dl>                        
+ 					<!-- <h2 class="h4" id="brads">Quoi de neuf au sujet de WCAG pour l'accessibilité mobile et plus par David MacDonald</h2> -->
+<!-- ======= -->
+ 					<!-- <h2 class="h4" id="dmacdonald">Quoi de neuf au sujet de WCAG pour l'accessibilité mobile et plus par David MacDonald</h2> -->
+<!-- >>>>>>> origin/codefest2015 -->
+                        <!-- <dl class="dl-horizontal"> -->
+                          <!-- <dt>Description</dt> -->
+                          <!-- <dd>WCAG 2 est une norme complexe , que ce soit en anglais ou la traduction française. Dans cet exposé, nous allons vous donner un aperçu des principes, lignes directrices et des critères de succès WCAG . Nous allons discuter les prochaines étapes du WCAG , le Groupe de travail mobile , et ce que nous faisons pour aider à assurer que les auteurs de contenus mobiles peuvent produire des documents et des applications mobiles accessibles . Quelles sont les choses importantes à considérer lors de la création de contenu accessible pour appareils mobiles ?  L'animateur, David MacDonald est un membre de longue date du Groupe de travail WCAG du W3C -->
+<!-- </dd> -->
+                          <!-- <dt>Public cible</dt> -->
+                          <!-- <dd>Concepteurs, développeurs, AQ</dd> -->
+                          <!-- <dt>Langue</dt> -->
+                          <!-- <dd>Anglais</dd> -->
+                        <!-- </dl>                         -->
                                                 
-                        <h2 class="h4" id="heroux">Réseau de diffusion de contenu et Gabarit Web GC par Patrick Heroux</h2>
-                        <dl class="dl-horizontal">
-                          <dt>Description</dt>
-                          <dd>Explorez le RDC et les gabarits Web GC (.Net et Java) créés par EDSC, maintenant disponibles aux autres ministères.  Voir comment le RDC modernise votre infrastructure Web, centralise la gestion des actifs Web, réduit les coûts et assure la durabilité de la BOEW mandaté par SCT. Prenez de l'avance avec votre développement Web et l'implémentation du RDC avec les gabarit Web du GC. Ces projets utilisent le RDC, fournissent des gabarits standard au GC et des extraits commun de code et logique en .NET et Java dans un effort de réduire la duplication et le temps passé à développer vos applications.</dd>
-                          <dt>Public cible</dt>
-                          <dd>Développeurs</dd>
-                          <dt>Langue</dt>
-                          <dd>Anglais</dd>
-                        </dl>
+                        <!-- <h2 class="h4" id="heroux">Réseau de diffusion de contenu et Gabarit Web GC par Patrick Heroux</h2> -->
+                        <!-- <dl class="dl-horizontal"> -->
+                          <!-- <dt>Description</dt> -->
+                          <!-- <dd>Explorez le RDC et les gabarits Web GC (.Net et Java) créés par EDSC, maintenant disponibles aux autres ministères.  Voir comment le RDC modernise votre infrastructure Web, centralise la gestion des actifs Web, réduit les coûts et assure la durabilité de la BOEW mandaté par SCT. Prenez de l'avance avec votre développement Web et l'implémentation du RDC avec les gabarit Web du GC. Ces projets utilisent le RDC, fournissent des gabarits standard au GC et des extraits commun de code et logique en .NET et Java dans un effort de réduire la duplication et le temps passé à développer vos applications.</dd> -->
+                          <!-- <dt>Public cible</dt> -->
+                          <!-- <dd>Développeurs</dd> -->
+                          <!-- <dt>Langue</dt> -->
+                          <!-- <dd>Anglais</dd> -->
+                        <!-- </dl> -->
                         
                         
-                        <h2 class="h4" id="hc">Santé Canada développe des applications mobile! par Kristina Aston, Sean Kibbee, and Jeremy Sivaneswaran</h2>
-                        <dl class="dl-horizontal">
-                          <dt>Description</dt>
-                          <dd>Pour les trois dernières années, Santé Canada à lancer des applications mobiles sur plusieures plateformes dans des les magasins d'applications pour Amazon, Apple, Android et Windows. Dans cet atelier, nous allons couvrir la création de l'équipe mobile de Santé Canada, les meilleures pratiques actuelles pour le processus de développement d'applications mobiles et nous regarderons vers l'avenir où ce dirige les applications mobiles dans le GC. De plus, nous allons parler de la façon dont nous travaillons au sein de la politique du gouvernement, efforçons d'être par défaut ouverts, concevoir et développer avec des contraintes bureaucratiques considérables et veiller à ce que nos processus de développement d'applications sont durables.</dd>
-                          <dt>Public cible</dt>
-                          <dd>Tout le monde</dd>
-                          <dt>Language</dt>
-                          <dd>Anglais</dd>
-                        </dl>
+                        <!-- <h2 class="h4" id="hc">Santé Canada développe des applications mobile! par Kristina Aston, Sean Kibbee, and Jeremy Sivaneswaran</h2> -->
+                        <!-- <dl class="dl-horizontal"> -->
+                          <!-- <dt>Description</dt> -->
+                          <!-- <dd>Pour les trois dernières années, Santé Canada à lancer des applications mobiles sur plusieures plateformes dans des les magasins d'applications pour Amazon, Apple, Android et Windows. Dans cet atelier, nous allons couvrir la création de l'équipe mobile de Santé Canada, les meilleures pratiques actuelles pour le processus de développement d'applications mobiles et nous regarderons vers l'avenir où ce dirige les applications mobiles dans le GC. De plus, nous allons parler de la façon dont nous travaillons au sein de la politique du gouvernement, efforçons d'être par défaut ouverts, concevoir et développer avec des contraintes bureaucratiques considérables et veiller à ce que nos processus de développement d'applications sont durables.</dd> -->
+                          <!-- <dt>Public cible</dt> -->
+                          <!-- <dd>Tout le monde</dd> -->
+                          <!-- <dt>Language</dt> -->
+                          <!-- <dd>Anglais</dd> -->
+                        <!-- </dl> -->
                         
-                        <h2 class="h4" id="thompson2">Sublime Text 3 par Shawn Thompson</h2>
-                        <dl class="dl-horizontal">
-                          <dt>Description</dt>
-                          <dd>Apprenez comment programmé un site Web frontale utilisant un éditeur texte sophistiqué tel que Sublime Text 3.  Shawn Thompson va démontrer des  fonctionnalité pratiques et des touches directe qu'il utilise à tous les jours lorsqu'il travail sur Canada.Ca.</dd>
-                          <dt>Public cible</dt>
-                          <dd>Développeurs</dd>
-                          <dt>Language</dt>
-                          <dd>Anglais</dd>
-                        </dl>
+                        <!-- <h2 class="h4" id="thompson2">Sublime Text 3 par Shawn Thompson</h2> -->
+                        <!-- <dl class="dl-horizontal"> -->
+                          <!-- <dt>Description</dt> -->
+                          <!-- <dd>Apprenez comment programmé un site Web frontale utilisant un éditeur texte sophistiqué tel que Sublime Text 3.  Shawn Thompson va démontrer des  fonctionnalité pratiques et des touches directe qu'il utilise à tous les jours lorsqu'il travail sur Canada.Ca.</dd> -->
+                          <!-- <dt>Public cible</dt> -->
+                          <!-- <dd>Développeurs</dd> -->
+                          <!-- <dt>Language</dt> -->
+                          <!-- <dd>Anglais</dd> -->
+                        <!-- </dl> -->
                         
-                        <h2 class="h4" id="sbeiti2">Une image vaut mille mots, mais... par Toufic Sbeiti</h2>
-                        <dl class="dl-horizontal">
-                          <dt>Description</dt>
-                          <dd>« Une image vaut mille mots », mais qu'est qui en a-t-il si vos clients ne peuvent pas voir l'image? À l'échelle du monde, il y a 39 millions de personnes qui sont aveugles et 246 millions qui ont une basse vision. Comment pouvez-vous afficher des images sur votre site Web et encore atteindre à tout le monde? Dans cet atelier, je vais vous montrer comment rendre conforme différents types d'images aux normes de WCAG. Je vais aussi partager une variété d'outils gratuits pour validé vos images.</dd>
-                          <dt>Public cible</dt>
-                          <dd>Développeurs</dd>
-                          <dt>Langue</dt>
-                          <dd>Français et anglais</dd>
-                        </dl>
+                        <!-- <h2 class="h4" id="sbeiti2">Une image vaut mille mots, mais... par Toufic Sbeiti</h2> -->
+                        <!-- <dl class="dl-horizontal"> -->
+                          <!-- <dt>Description</dt> -->
+                          <!-- <dd>« Une image vaut mille mots », mais qu'est qui en a-t-il si vos clients ne peuvent pas voir l'image? À l'échelle du monde, il y a 39 millions de personnes qui sont aveugles et 246 millions qui ont une basse vision. Comment pouvez-vous afficher des images sur votre site Web et encore atteindre à tout le monde? Dans cet atelier, je vais vous montrer comment rendre conforme différents types d'images aux normes de WCAG. Je vais aussi partager une variété d'outils gratuits pour validé vos images.</dd> -->
+                          <!-- <dt>Public cible</dt> -->
+                          <!-- <dd>Développeurs</dd> -->
+                          <!-- <dt>Langue</dt> -->
+                          <!-- <dd>Français et anglais</dd> -->
+                        <!-- </dl> -->
 						
-						<h2 class="h4" id="burt">Utiliser l’analytique pour prendre des décisions fondées sur des données probantes pour un site Web par Patrick Burt</h2>
-						<dl class="dl-horizontal">
-						 <dt>Description</dt>
-						 <dd>Présentation d’applications concrètes de concepts relatifs à l’analytique permettant de prendre de meilleures décisions en matière de contenu, d’architecture de l’information, de conception et de marketing.</dd>
-						 <dt>Public cible</dt>
-                         <dd>Concepteurs d'interactions, chefs de projets, concepteusr visuels, information architects, architectes de l'information, développeurs, AQ</dd>
-						 <dt>Langue</dt>
-                         <dd>Français et anglais</dd>
-						</dl>
+						<!-- <h2 class="h4" id="burt">Utiliser l’analytique pour prendre des décisions fondées sur des données probantes pour un site Web par Patrick Burt</h2> -->
+						<!-- <dl class="dl-horizontal"> -->
+						 <!-- <dt>Description</dt> -->
+						 <!-- <dd>Présentation d’applications concrètes de concepts relatifs à l’analytique permettant de prendre de meilleures décisions en matière de contenu, d’architecture de l’information, de conception et de marketing.</dd> -->
+						 <!-- <dt>Public cible</dt> -->
+                         <!-- <dd>Concepteurs d'interactions, chefs de projets, concepteusr visuels, information architects, architectes de l'information, développeurs, AQ</dd> -->
+						 <!-- <dt>Langue</dt> -->
+                         <!-- <dd>Français et anglais</dd> -->
+						<!-- </dl> -->
                         
-                        <h2 class="h4" id="macdonald">Vérifié l'accessibilité d'un site Web avec un iPhone par David MacDonald</h2>
-                        <dl class="dl-horizontal">
-                          <dt>Description</dt>
-                          <dd>Dans cet atelier nous allons apprendre comment utiliser VoiceOver, le lecteur d'écran gratuit qui comprend des configurations d'accessibilité d'iOS. Nous allons apprendre comment naviguer une page et ciblé des composantes spécifiques et s'assurer qu'ils peuvent être perceptibles, utilisables et compréhensibles par un lecteur d'écran sur un iPhone et conformé aux normes WCAG sur cette plateforme. L'animateur, David MacDonald est un membre de longue date du Groupe de travail WCAG du W3C, et a consulté le Conseil du Trésor sur l'affaire Jodhan Donna qui a mandaté WCAG au sein du gouvernement. (Apporter vos écouteurs)</dd>
-                          <dt>Public cible</dt>
-                          <dd>Testeur de WCAG, développeurs, utilisateur de technologie d'assistance</dd>
-                          <dt>Langue</dt>
-                          <dd>Anglais</dd>
-                        </dl>
+                        <!-- <h2 class="h4" id="macdonald">Vérifié l'accessibilité d'un site Web avec un iPhone par David MacDonald</h2> -->
+                        <!-- <dl class="dl-horizontal"> -->
+                          <!-- <dt>Description</dt> -->
+                          <!-- <dd>Dans cet atelier nous allons apprendre comment utiliser VoiceOver, le lecteur d'écran gratuit qui comprend des configurations d'accessibilité d'iOS. Nous allons apprendre comment naviguer une page et ciblé des composantes spécifiques et s'assurer qu'ils peuvent être perceptibles, utilisables et compréhensibles par un lecteur d'écran sur un iPhone et conformé aux normes WCAG sur cette plateforme. L'animateur, David MacDonald est un membre de longue date du Groupe de travail WCAG du W3C, et a consulté le Conseil du Trésor sur l'affaire Jodhan Donna qui a mandaté WCAG au sein du gouvernement. (Apporter vos écouteurs)</dd> -->
+                          <!-- <dt>Public cible</dt> -->
+                          <!-- <dd>Testeur de WCAG, développeurs, utilisateur de technologie d'assistance</dd> -->
+                          <!-- <dt>Langue</dt> -->
+                          <!-- <dd>Anglais</dd> -->
+                        <!-- </dl> -->
                         
-                        <h2 class="h4" id="tierney">Vérifier l'accessibilité avant le développement: Revues de maquettes fonctionnelles et prototypes par Aidan Tierney</h2>
-                        <dl class="dl-horizontal">
-                          <dt>Description</dt>
-                          <dd>Explorez des techniques pratiques pour introduire l'accessibilité, du début, dans la conception d'un site Web ou application. Nous regarderons comment examiner les maquettes et prototypes pour identifier des problèmes d'accessibilité de bonheur et comment documenter les exigences pour le développement et l'assurance de la qualité. Cette approche peut être plus efficaces que l'expérience typique de bâtir une application, vérifier l'accessibilité et seulement identifier à ce point les détails des exigences d'accessibilité dans une liste de problèmes et solutions.</dd>
-                          <dt>Public cible</dt>
-                          <dd>Concepteurs d'interactions, chefs de projets, concepteusr visuels, information architects, architectes de l'information, développeurs, AQ</dd>
-                          <dt>Langue</dt>
-                          <dd>Anglais</dd>
-                        </dl>
+                        <!-- <h2 class="h4" id="tierney">Vérifier l'accessibilité avant le développement: Revues de maquettes fonctionnelles et prototypes par Aidan Tierney</h2> -->
+                        <!-- <dl class="dl-horizontal"> -->
+                          <!-- <dt>Description</dt> -->
+                          <!-- <dd>Explorez des techniques pratiques pour introduire l'accessibilité, du début, dans la conception d'un site Web ou application. Nous regarderons comment examiner les maquettes et prototypes pour identifier des problèmes d'accessibilité de bonheur et comment documenter les exigences pour le développement et l'assurance de la qualité. Cette approche peut être plus efficaces que l'expérience typique de bâtir une application, vérifier l'accessibilité et seulement identifier à ce point les détails des exigences d'accessibilité dans une liste de problèmes et solutions.</dd> -->
+                          <!-- <dt>Public cible</dt> -->
+                          <!-- <dd>Concepteurs d'interactions, chefs de projets, concepteusr visuels, information architects, architectes de l'information, développeurs, AQ</dd> -->
+                          <!-- <dt>Langue</dt> -->
+                          <!-- <dd>Anglais</dd> -->
+                        <!-- </dl> -->
                         
-                        <h2 class="h4" id="atz">Zone de démonstration des technologies adaptées</h2>
-                        <dl class="dl-horizontal">
-                          <dt>Description</dt>
-                          <dd>Venez rencontrer un groupe d'employés passionnés, engagés, enthousiastes et experts en matière d'accessibilité, d'adaptation et de technologie informatique adaptée (AATIA). Au cours des 25 dernières années, le programme d'AATIA est un chef de file dans les domaines de l'accessibilité, de l'adaptation et de la technologie informatique adaptée. L'AATIA est reconnu à l'échelle internationale pour les services uniques fournis aux personnes avec un handicap, des blessures et des exigences ergonomiques. Venez voir des technologies utilisées par cette équipe et discutez avec les experts à la zone de démonstration des technologies adaptées.</dd>
-                          <dt>Public cible</dt>
-                          <dd>Tout le monde</dd>
-                          <dt>Langue</dt>
-                          <dd>Français et anglais</dd>
-                        </dl>
+                        <!-- <h2 class="h4" id="atz">Zone de démonstration des technologies adaptées</h2> -->
+                        <!-- <dl class="dl-horizontal"> -->
+                          <!-- <dt>Description</dt> -->
+                          <!-- <dd>Venez rencontrer un groupe d'employés passionnés, engagés, enthousiastes et experts en matière d'accessibilité, d'adaptation et de technologie informatique adaptée (AATIA). Au cours des 25 dernières années, le programme d'AATIA est un chef de file dans les domaines de l'accessibilité, de l'adaptation et de la technologie informatique adaptée. L'AATIA est reconnu à l'échelle internationale pour les services uniques fournis aux personnes avec un handicap, des blessures et des exigences ergonomiques. Venez voir des technologies utilisées par cette équipe et discutez avec les experts à la zone de démonstration des technologies adaptées.</dd> -->
+                          <!-- <dt>Public cible</dt> -->
+                          <!-- <dd>Tout le monde</dd> -->
+                          <!-- <dt>Langue</dt> -->
+                          <!-- <dd>Français et anglais</dd> -->
+                        <!-- </dl> -->
                         
 
 					</main>
 
-					<footer role="contentinfo" id="footer">
+					<footer id="footer">
 						<section>
 							<h2 id="wb-info" class="wb-inv">À propos de ce site</h2>
 							<div id="footer-contact" class="row">
@@ -391,54 +391,20 @@
 
 							<div id="footer-hosts" class="row">
 								<div class="col-xs-12">
-
 									<p>Le FestiCode 4 est tenu conjointement par :</p>
 									<ul id="host-list">
 										<li><a href="http://wet-boew.github.io/wet-boew/index-fr.html"><img src="./theme/assets/boew-logo.png" alt="la Boîte à outils de l'expérience Web" /></a></li>
 										<li><a href="http://www.uottawa.ca"><img src="./theme/assets/uottawa-logo.png" alt="uOttawa" /></a></li>
-                                        <li><a href="http://www.cic.gc.ca"><img src="./theme/assets/ircc-fip-f.png" class="img-responsive"  alt="Immigration, Refugiés et Citoyenneté Canada" /></a></li>
+                                        <li><a href="http://www.cic.gc.ca"><img src="./theme/assets/ircc-fip-f.png"  class="img-responsive" alt="Immigration, Refugiés et Citoyenneté Canada" /></a></li>
 									</ul>
 								</div>
 							</div>
 						</section>
 					</footer>
 				</div>
-
-				<nav role="navigation" id="site-menu" class="col-sm-12 col-md-3 col-md-pull-9 col-lg-2 col-lg-pull-10" typeof="SiteNavigationElement">
-					<h2 class="wb-inv">Menu des sujets</h2>
-					<ul class="list-group list-unstyled">
-						<li><a class="list-group-item" href="index-fr.html"><span class="glyphicon glyphicon-home"></span> Accueil</a></li>
-						<li><a class="list-group-item" href="about-fr.html"><span class="glyphicon glyphicon-info-sign glyth-yellow"></span> Au sujet de</a></li>
-						<li><a class="list-group-item" href="schedule-fr.html"><span class="glyphicon glyphicon-time"></span> Horaire</a></li>
-						<li><a class="list-group-item" href="location-fr.html"><span class="glyphicon glyphicon-map-marker"></span> Lieu</a></li>
-                        <li><a class="list-group-item" href="panel-fr.html"><span class="glyphicon glyphicon-bookmark"></span> Panel</a></li>
-                        <li><a class="list-group-item" href="speakers-fr.html"><span class="glyphicon glyphicon-user"></span> Présentations principales</a></li>
-                        <li><a class="list-group-item item-selected" href="sessions-fr.html"><span class="glyphicon glyphicon-bullhorn"></span> Ateliers</a></li>
-						<li><a class="list-group-item" href="designjam-fr.html"><span class="glyphicon glyphicon-pencil"></span> Design jam</a></li>
-						<!--<li><a class="list-group-item" href="codesprint-fr.html"><span class="glyphicon glyphicon-wrench"></span> Sprint de codage</a></li>-->
-						<li><a class="list-group-item" href="proposal-fr.html"><span class="glyphicon glyphicon-hand-up"></span> Dirigez un atelier</a></li>
-						<li><a lang="en" hreflang="en" class="list-group-item menu-util" href="./sessions-en.html"><span class="glyphicon glyphicon-share-alt menu-util"></span> English</a></li>
-					</ul>
-				</nav>
 			</div>
 		</div>
-
-		<!--[if gte IE 9 | !IE ]><!-->
-			<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
-			<script src="./wet-boew/js/wet-boew.min.js"></script>
-			<script>
-				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-				ga('create', 'UA-52036019-1', 'auto');
-				ga('set', 'anonymizeIp', true);
-				ga('send', 'pageview');
-			</script>
-		<!--<![endif]-->
-		<!--[if lt IE 9]>
-			<script src="./wet-boew/js/ie8-wet-boew2.min.js"></script>
-		<![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="./wet-boew/wet-boew/js/wet-boew.min.js"></script>
 	</body>
 </html>

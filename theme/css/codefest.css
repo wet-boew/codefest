@@ -5,6 +5,10 @@
  *
  */
 
+ body { 
+	background: #FFF;
+ }
+ 
 /*
  *	Splash page banner
  */
@@ -23,13 +27,16 @@
  *  Site banner
  */
 #banner {
-	background-color: #176ba6;
+	/*background-color: #176ba6;*/
+	margin-bottom: 36px;
+	position: relative;
 }
 
 #banner-logo {
-	background-color: #464646;
+	/*background-color: #464646;*/
 	padding-top: 15px;
-	padding-bottom: 10px;
+	padding-bottom: 0;
+	padding-left: 30px;
 	min-height: 73px;
 }
 
@@ -42,44 +49,79 @@
 	width: 100%;
 }
 
+#wet-logo {
+	width: 100%;
+}
+
 #banner-date-location {
-	background-color: #176ba6;
+	/*background-color: #176ba6;*/
+	background-color: #FFF;
 	padding-top: 25px;
 	font-size: 1.4em;
-	color: #FFFFFF;
-	line-height: 1em;
+	color: #464646;
+	line-height: 1.5em;
+	padding-right: 30px;
 }
 
 #banner-register {
-	background-color: #176ba6;
 	padding-top: 15px; 
 	margin-top: 2px;
+	display: block;
+	margin-right: 0;
+	margin-left: auto;
 }
-
-@media (min-width: 768px) {
+#content-area{
+	padding-top: 15px;
+}
+	
+@media (min-width: 992px) {
+	#site-menu {
+		left: 0;
+	}
+	#main {
+		left:0;
+	}
 	#banner-date-location span {
 		display: inline-block;
-		text-align: center;
+		text-align: right;
 		vertical-align: top;
 	}    
 
 	#banner-date, #banner-location {
-		width: 49%;
+		width: 100%;
 	}
 }
-
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 1200px) {
+	#content-area {
+		min-height: 440px;
+	}
+	#banner-date-location {
+		padding-bottom: 10px;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
 	#banner-register {
-			width: 50%;   
+		width: 30%;
 	}
 }
 
-@media (max-width: 768px) {
+/*@media (min-width: 480px) and (max-width: 768px) {
+	#banner-register {
+			width: 100%;   
+	}
+}*/
+
+@media (max-width: 991px) {
 	#banner-date, #banner-location {
 		width: 100%; 
 		display: block;
-		padding-left: 10px;
-		line-height: 40px;
+		line-height: 1.5em;
+		text-align: center;
+	}
+	#banner-register {
+		width: 100%;
+		margin: 0 auto;
 	}
 }
 
@@ -89,6 +131,7 @@
 	}
 	#banner-register {
 		min-height: 81px;
+		width: 50%;
 	}
 }
 
@@ -107,7 +150,7 @@ footer {
 }
 
 #footer-hosts {
-	background: rgba(23,107,166,.6);
+	/*background: rgba(23,107,166,.6);*/	
 	padding-top: 15px;
 	border-top: 1px solid #bbbbbb;
 }

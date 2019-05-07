@@ -1,172 +1,78 @@
 <!DOCTYPE html>
-<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
-<!--[if gt IE 8]><!-->
 <html class="no-js" lang="fr" dir="ltr">
-<!--<![endif]--><head>
+	<head>
 		<meta charset="utf-8" />
 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-		<title>FestiCode 4</title>
+		<title>FestiCode 5</title>
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
-		<!-- Meta data -->
 		<meta name="description" content="" />
-		<!-- Meta data-->
-		<!--[if gte IE 9 | !IE ]><!-->
-			<link href="./wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon" />
-			<link rel="stylesheet" href="./wet-boew/css/wet-boew.min.css" />
-			<!--<![endif]-->
-			<link rel="stylesheet" href="./theme/css/theme.css" />
-			<link rel="stylesheet" href="./theme/css/codefest.css" />
-		<!--[if lt IE 9]>
-			<link href="./wet-boew/assets/favicon.ico" rel="shortcut icon" />
-			<link rel="stylesheet" href=" ./wet-boew/css/ie8-wet-boew.min.css" />
-			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
-			<script src="./wet-boew/js/ie8-wet-boew.min.js"></script>
-		<![endif]-->
-		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-		
+
+		<link href="./wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon" />
+		<link rel="stylesheet" href="./wet-boew/theme-wet-boew/css/theme.min.css" />
+		<link rel="stylesheet" href="./theme/css/theme.css" />
+		<link rel="stylesheet" href="./theme/css/codefest.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<noscript><link rel="stylesheet" href="./wet-boew/css/noscript.min.css" /></noscript>
 	</head>
 	<body vocab="http://schema.org/" typeof="WebPage">
-		<ul id="wb-tphp">
-			<li class="wb-slc">
-				<a class="wb-sl" href="#wb-cont">Passer au contenu principal</a>
-			</li>
-			<li class="wb-slc">
-				<a class="wb-sl" href="#wb-info">Passer à « À propos de ce site »</a>
-			</li>
-			<li class="wb-slc">
-				<a class="wb-sl" href="#site-menu">Passer au menu des sujets</a>
-			</li>
-		</ul>
+		<nav>
+			<ul id="wb-tphp">
+				<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Passer au contenu principal</a></li>
+				<li class="wb-slc"><a class="wb-sl" href="#wb-info">Passer à « À propos de ce site »</a></li>
+				<li class="wb-slc"><a class="wb-sl" href="#site-menu">Passer au menu des sujets</a></li>
+			</ul>
+		</nav>
 
 		<div class="container-fluid">
-			<header role="banner" class="row" id="banner">
-				<div id="banner-logo" class="col-sm-12 col-md-3 col-lg-2">
+			<header class="row" id="banner">
+				<div id="banner-logo" class="col-sm-12 col-md-6 col-lg-5">
 					<a href="./index-fr.html">
-						<object type="image/svg+xml" tabindex="-1" data="./theme/assets/wxt-festicode-logo-tagline-white.svg"></object><span class="wb-inv"> FestiCode 4 de la Boîte à outils de l'expérience Web, Ensemble pour un meilleur Web (Retourner à la page d'accueil).</span>
+						<img src="./theme/assets/WXT5-Logo-FR.png" alt="Logo de FestiCode 5" id="wet-logo" /><span class="wb-inv">FestiCode 5 de la Boîte à outils de l'expérience Web, Ensemble pour un meilleur Web (Retourner à la page d'accueil).</span>
 					</a>
 				</div>
 
-				<div id="banner-date-location" class="col-sm-12 col-md-7 col-lg-8">
-					<span id="banner-date">Le 18 et 19 février 2016</span>
-					<span id="banner-location">Université d'Ottawa, Ottawa, Ontario</span>
-				</div>
-
-				<div id="banner-register" class="col-xs-12 col-sm-6 col-md-2">
-					<a class="btn btn-block btn-warning enabled" href="https://www.eventbrite.ca/e/billets-festicode-4-2016-20089083991">Liste d'attente disponible</a>
+				<div id="banner-date-location" class="col-sm-12 col-md-6 col-lg-7">
+					<span id="banner-date">Août 2019</span>
+					<span id="banner-location">Université Carleton, Ottawa, Ontario</span>
+					<div id="banner-register">
+						<a class="btn btn-block btn-warning disabled" href="https://www.eventbrite.ca/e/billets-festicode-4-2016-20089083991">Procurer des billets (à venir bientôt)</a>
+					</div>
 				</div>
 			</header>
+
 			<div class="row wb-eqht">
-				<div class="col-sm-12 col-md-9 col-md-push-3 col-lg-10 col-lg-push-2">
+				<nav id="site-menu" class="col-sm-12 col-md-3 col-md-pull-9 col-lg-2" typeof="SiteNavigationElement">
+					<h2 class="wb-inv">Menu des sujets</h2>
+					<ul class="list-group list-unstyled">
+						<li><span class="list-group-item item-selected"><span class="glyphicon glyphicon-home"></span> Accueil</span></li>
+						<li><a class="list-group-item" href="about-fr.html"><span class="glyphicon glyphicon-info-sign glyth-yellow"></span> Au sujet de</a></li>
+						<li><a class="list-group-item" href="schedule-fr.html"><span class="glyphicon glyphicon-time"></span> Horaire</a></li>
+						<li><a class="list-group-item" href="location-fr.html"><span class="glyphicon glyphicon-map-marker"></span> Lieu</a></li>
+                        <li><a class="list-group-item" href="panel-fr.html"><span class="glyphicon glyphicon-bookmark"></span> Panel</a></li>
+                        <li><a class="list-group-item" href="speakers-fr.html"><span class="glyphicon glyphicon-user"></span> Présentations principales</a></li>
+						<li><a class="list-group-item" href="sessions-fr.html"><span class="glyphicon glyphicon-bullhorn"></span> Ateliers</a></li>
+						<!-- <li><a class="list-group-item" href="designjam-fr.html"><span class="glyphicon glyphicon-pencil"></span> Design jam</a></li> -->
+						<li><a class="list-group-item" href="proposal-fr.html"><span class="glyphicon glyphicon-hand-up"></span> Dirigez un atelier</a></li>
+						<li><a class="list-group-item" href="http://wet-boew.github.io/codefest/codefest4/index-fr.html"><span class="glyphicon glyphicon glyphicon-link"></span> FestiCode 4</a></li>
+						<li><a lang="en" hreflang="en" class="list-group-item menu-util" href="./index-en.html"><span class="glyphicon glyphicon-share-alt menu-util"></span> English</a></li>
+					</ul>
+				</nav>
+				<div id="main" class="col-sm-12 col-md-9 col-md-push-3 col-lg-10">
 					<main role="main" property="mainContentOfPage" id="content-area">
-						<div class="row">
-							<h1 id="wb-cont" class="wb-inv">FestiCode de la Boîte à outils de l'expérience Web 2014</h1>
-							<!--<div id="announcements" class="col-xs-12">
-								<p><span class="glyphicon glyphicon-comment"></span><a href="updates-fr.html"><strong>Dernières nouvelles</strong></a></p>
-							</div>-->
-						</div>
-						<div class="row">
-							<div class="col-md-8 col-sm-12">
-								<h2>Piqué d'intérêt pour la création de solutions innovantes et centrées sur l'utilisateur ?</h2>
-                                
-                                <p>FestiCode 4 est une activité ouverte à tous les fonctionnaires, contributeurs et organisations collaboratrices à la BOEW.</p>
-                                
-                                
-                                <div class="row mrgn-tp-md">
-                                	<div class="col-sm-4">
-                                        <div class="jumbotron text-center">
-                                            <p><span class="fa fa-group fa-2x"></span><br />
-                                            <span class="h1">300</span><br /> participants</p>
-                                        </div>
-                                	</div>
-                                	<div class="col-sm-4">
-                                        <div class="jumbotron text-center">
-                                            <p><span class="fa fa-book fa-2x"></span><br />
-                                            <span class="h1">30+</span><br /> ateliers</p>
-                                        </div>
-                                	</div>
-                                	<div class="col-sm-4">
-                                        <div class="jumbotron text-center">
-                                            <p><span class="fa fa-calendar fa-2x"></span><br />
-                                            <span class="h1">2</span><br /> jours</p>
-                                        </div>
-                                	</div>
-                                </div>
-                                
-                                
-								<p>Que vous soyez <span class="job-titles">développeur</span>, <span class="job-titles">designer</span> ou <span class="job-titles">communicateur</span>, nous avons besoin de votre expertise.</p>
-								<p>Joignez-nous pour la quatrième édition du <span class="job-titles">FestiCode de la Boîte à outils de l'expérience Web !</span></p>
+						<h1 id="wb-cont" class="wb-inv">FestiCode 5</h1>
+						
+						<p>À venir bientôt</p>
+						
+						
+						
+						
+						
+						
 
-								<ul>
-									<li>Des orateurs pour présenter des concepts et idées de haut-niveau pour le développement de solutions Web innovatrices et axées sur l'utilisateur.</li>
-									<li>Des sessions dirigées par la communauté pour se remonter les manches et aborder des sujets et apprendre des techniques particulières.</li>
-									<li>Un panel d'experts.</li>
-                                    <li>Zone de démonstration des technologies adaptées.</li>
-								</ul>
-
-                                
-                                
-                                <h2 class="wb-inv">Aperçu des ateliers</h2>  
-                                
-                                <div class="row wb-eqht">
-                                  <div class="col-md-6">
-                                    <div class="well">
-                                      <h3 class="mrgn-tp-0">Ateliers pour codeurs</h3>
-                                      <ul>
-                                        <li>Mettre en oeuvre et à jour la BOEW sur votre site web</li>
-                                        <li>Introduction à WAI-ARIA</li>
-                                      </ul>
-                                      <p class="text-right mrgn-bttm-0"><a href="sessions-fr.html" class="btn btn-default">En savoir plus</a></p>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-6">
-                                    <div class="well">
-                                      <h3 class="mrgn-tp-0">Ateliers pour rédacteurs</h3>
-                                      <ul>
-                                       <li>Écrire pour le web</li>
-                                        <li>Concevoir le contenu à être accessible c'est concevoir pour tout le monde. </li>
-                                      </ul>
-                                      <p class="text-right mrgn-bttm-0"><a href="sessions-fr.html" class="btn btn-default">En savoir plus</a></p>
-                                    </div>
-                                  </div>
-                                  <div class="clearfix"></div>
-                                  <div class="col-md-6">
-                                    <div class="well">
-                                      <h3 class="mrgn-tp-0">Ateliers pour designer</h3>
-                                      <ul>
-                                        <li>Vérifier l'accessibilité avant le développement: Revues de maquettes fonctionnelles et prototypes</li>
-                                      </ul>
-                                      <p class="text-right mrgn-bttm-0"><a href="sessions-fr.html" class="btn btn-default">En savoir plus</a></p>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-6">
-                                    <div class="well">
-                                      <h3 class="mrgn-tp-0">Ateliers pour tout le monde</h3>
-                                      <ul>
-                                        <li>L'accessibilité: Qu'est-ce que ça veut dire? Le côté pratique! Démonstration de lecteur d'écran</li>
-                                      </ul>
-                                      <p class="text-right mrgn-bttm-0"><a href="sessions-fr.html" class="btn btn-default">En savoir plus</a></p>
-                                    </div>
-                                  </div>
-                                </div>
-								<div class="clearfix"></div>
-                                
-                                
-							</div>
-                            
-                            <h2 class="wb-inv">Photos</h2>
-                         		<figure class="col-md-4 mrgn-tp-md"><img src="./assets/codefest42016.jpg" class="img-responsive" alt=""><figcaption class="text-center">Comité organisateur de FestiCode4 (2016)</figcaption></figure>
-
-							<h2 class="wb-inv">Suivez-nous sur Twitter</h2>
-							<div class="wb-twitter col-md-4 col-sm-12">
-                             <p class="small">Utiliser <span class="badge">#FestiCodeBOEW</span> pour joindre et suivre la discussion sur FestiCode 4!</p>
-								<a class="twitter-timeline" href="https://twitter.com/hashtag/FestiCodeBOEW" data-widget-id="646149502223675396">Gazouillis au sujet du #FestiCodeBOEW de la #BOEW</a>
-							</div>
-						</div>
 					</main>
 
-					<footer role="contentinfo" id="footer">
+					<footer id="footer">
 						<section>
 							<h2 id="wb-info" class="wb-inv">À propos de ce site</h2>
 							<div id="footer-contact" class="row">
@@ -177,8 +83,7 @@
 
 							<div id="footer-hosts" class="row">
 								<div class="col-xs-12">
-
-									<p>Le FestiCode 4 est tenu conjointement par  :</p>
+									<p>Le FestiCode 4 est tenu conjointement par :</p>
 									<ul id="host-list">
 										<li><a href="http://wet-boew.github.io/wet-boew/index-fr.html"><img src="./theme/assets/boew-logo.png" alt="la Boîte à outils de l'expérience Web" /></a></li>
 										<li><a href="http://www.uottawa.ca"><img src="./theme/assets/uottawa-logo.png" alt="uOttawa" /></a></li>
@@ -189,40 +94,9 @@
 						</section>
 					</footer>
 				</div>
-
-				<nav role="navigation" id="site-menu" class="col-sm-12 col-md-3 col-md-pull-9 col-lg-2 col-lg-pull-10" typeof="SiteNavigationElement">
-					<h2 class="wb-inv">Menu des sujets</h2>
-					<ul class="list-group list-unstyled">
-						<li><span class="list-group-item item-selected"><span class="glyphicon glyphicon-home"></span> Accueil</span></li>
-						<li><a class="list-group-item" href="about-fr.html"><span class="glyphicon glyphicon-info-sign glyth-yellow"></span> Au sujet de</a></li>
-						<li><a class="list-group-item" href="schedule-fr.html"><span class="glyphicon glyphicon-time"></span> Horaire</a></li>
-						<li><a class="list-group-item" href="location-fr.html"><span class="glyphicon glyphicon-map-marker"></span> Lieu</a></li>
-                        
-                        <li><a class="list-group-item" href="panel-fr.html"><span class="glyphicon glyphicon-bookmark"></span> Panel</a></li>
-                        <li><a class="list-group-item" href="speakers-fr.html"><span class="glyphicon glyphicon-user"></span> Présentations principales</a></li><li><a class="list-group-item" href="sessions-fr.html"><span class="glyphicon glyphicon-bullhorn"></span> Ateliers</a></li>						<li><a class="list-group-item" href="designjam-fr.html"><span class="glyphicon glyphicon-pencil"></span> Design jam</a></li>
-						<!--<li><a class="list-group-item" href="codesprint-fr.html"><span class="glyphicon glyphicon-wrench"></span> Sprint de codage</a></li>-->
-						<li><a class="list-group-item" href="proposal-fr.html"><span class="glyphicon glyphicon-hand-up"></span> Dirigez un atelier</a></li>
-						<li><a lang="en" hreflang="en" class="list-group-item menu-util" href="./index-en.html"><span class="glyphicon glyphicon-share-alt menu-util"></span> English</a></li>
-					</ul>
-				</nav>
 			</div>
 		</div>
-		<!--[if gte IE 9 | !IE ]><!-->
-			<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
-			<script src="./wet-boew/js/wet-boew.min.js"></script>
-			<script>
-				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-				ga('create', 'UA-52036019-1', 'auto');
-				ga('set', 'anonymizeIp', true);
-				ga('send', 'pageview');
-			</script>
-		<!--<![endif]-->
-		<!--[if lt IE 9]>
-			<script src="./wet-boew/js/ie8-wet-boew2.min.js"></script>
-		<![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="./wet-boew/wet-boew/js/wet-boew.min.js"></script>
 	</body>
 </html>
