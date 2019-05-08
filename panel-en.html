@@ -1,147 +1,147 @@
 <!DOCTYPE html>
-<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
-<!--[if gt IE 8]><!-->
 <html class="no-js" lang="en" dir="ltr">
-<!--<![endif]--><head>
+	<head>
 		<meta charset="utf-8" />
 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-		<title>Panel | CodeFest 4</title>
+		<title>Panel | CodeFest 5</title>
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
-		<!-- Meta data -->
 		<meta name="description" content="" />
-		<!-- Meta data-->
-		<!--[if gte IE 9 | !IE ]><!-->
-			<link href="./wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon" />
-			<link rel="stylesheet" href="./wet-boew/css/wet-boew.min.css" />
-			<!--<![endif]-->
-			<link rel="stylesheet" href="./theme/css/theme.css" />
-			<link rel="stylesheet" href="./theme/css/codefest.css" />
-		<!--[if lt IE 9]>
-			<link href="./wet-boew/assets/favicon.ico" rel="shortcut icon" />
-			<link rel="stylesheet" href=" ./wet-boew/css/ie8-wet-boew.min.css" />
-			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
-			<script src="./wet-boew/js/ie8-wet-boew.min.js"></script>
-		<![endif]-->
-		
+		<link href="./wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon" />
+		<link rel="stylesheet" href="./wet-boew/theme-wet-boew/css/theme.min.css" />
+		<link rel="stylesheet" href="./theme/css/theme.css" />
+		<link rel="stylesheet" href="./theme/css/codefest.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<noscript><link rel="stylesheet" href="./wet-boew/css/noscript.min.css" /></noscript>
 	</head>
 	<body vocab="http://schema.org/" typeof="WebPage">
-		<ul id="wb-tphp">
-			<li class="wb-slc">
-				<a class="wb-sl" href="#wb-cont">Skip to main content</a>
-			</li>
-			<li class="wb-slc">
-				<a class="wb-sl" href="#wb-info">Skip to "About this site"</a>
-			</li>
-			<li class="wb-slc">
-				<a class="wb-sl" href="#site-menu">Skip to topics menu</a>
-			</li>
-		</ul>
+		<nav>
+			<ul id="wb-tphp">
+				<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to main content</a></li>
+				<li class="wb-slc"><a class="wb-sl" href="#wb-info">Skip to "About this site"</a></li>
+				<li class="wb-slc"><a class="wb-sl" href="#site-menu">Skip to topics menu</a></li>
+			</ul>
+		</nav>
 
 		<div class="container-fluid">
-			<header role="banner" class="row" id="banner">
-				<div id="banner-logo" class="col-sm-12 col-md-3 col-lg-2">
+			<header class="row" id="banner">
+				<div id="banner-logo" class="col-sm-12 col-md-6 col-lg-5">
 					<a href="./index-en.html">
-						<object type="image/svg+xml" tabindex="-1" data="./theme/assets/wxt-codefest-logo-tagline-white.svg"></object><span class="wb-inv"> Web Experience Toolkit CodeFest 4, Together for a better Web (Go back to home page).</span>
+						<img src="./theme/assets/WXT5-Logo-EN.png" alt="CodeFest 5 logo" id="wet-logo" /><span class="wb-inv">Web Experience Toolkit CodeFest 5, Together for a better Web (Go back to home page).</span>
 					</a>
 				</div>
 
-				<div id="banner-date-location" class="col-sm-12 col-md-7 col-lg-8">
-					<span id="banner-date">February 18th and 19th, 2016</span>
-					<span id="banner-location">University of Ottawa, Ottawa, Ontario</span>
-				</div>
-
-				<div id="banner-register" class="col-xs-12 col-sm-6 col-md-2">
-					<a class="btn btn-block btn-warning enabled" href="https://www.eventbrite.ca/e/codefest-4-2016-tickets-19295464253">Join Waitlist</a>
+				<div id="banner-date-location" class="col-sm-12 col-md-6 col-lg-7">
+					<span id="banner-date">August 2019</span>
+					<span id="banner-location">Carleton University, Ottawa, Ontario</span>
+					<div id="banner-register">
+						<a class="btn btn-block btn-warning disabled" href="https://www.eventbrite.ca/e/codefest-4-2016-tickets-19295464253">Get tickets (coming soon)</a>
+					</div>
 				</div>
 			</header>
 			<div class="row wb-eqht">
-				<div class="col-sm-12 col-md-9 col-md-push-3 col-lg-10 col-lg-push-2">
-					<main role="main" property="mainContentOfPage" id="content-area">
+				<nav id="site-menu" class="col-sm-12 col-md-3 col-md-pull-9 col-lg-2" typeof="SiteNavigationElement">
+					<h2 class="wb-inv">Topics menu</h2>
+					<ul class="list-group list-unstyled">
+						<li><a class="list-group-item" href="index-en.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+						<li><a class="list-group-item" href="about-en.html"><span class="glyphicon glyphicon-info-sign glyth-yellow"></span> About</a></li>
+						<li><a class="list-group-item" href="schedule-en.html"><span class="glyphicon glyphicon-time"></span> Schedule</a></li>
+						<li><a class="list-group-item" href="location-en.html"><span class="glyphicon glyphicon-map-marker"></span> Location</a></li>
+						<li><span class="list-group-item item-selected"><span class="glyphicon glyphicon-bookmark"></span> Panel</span></li>
+						<li><a class="list-group-item" href="speakers-en.html"><span class="glyphicon glyphicon-user"></span> Main presentations</a></li>
+						<li><a class="list-group-item" href="sessions-en.html"><span class="glyphicon glyphicon-bullhorn"></span> Sessions</a></li>
+						<!-- <li><a class="list-group-item" href="designjam-en.html"><span class="glyphicon glyphicon-pencil"></span> Design jam</a></li> -->
+						<li><a class="list-group-item" href="proposal-en.html"><span class="glyphicon glyphicon-hand-up"></span> Lead a session</a></li>
+						<li><a class="list-group-item" href="http://wet-boew.github.io/codefest/codefest4/index-en.html"><span class="glyphicon glyphicon glyphicon-link"></span> CodeFest 4</a></li>
+						<li><a lang="fr" hreflang="fr" class="list-group-item menu-util" href="./panel-fr.html"><span class="glyphicon glyphicon-share-alt menu-util"></span> Français</a></li>
+					</ul>
+				</nav>
+				
+				<div id="main" class="col-sm-12 col-md-9 col-md-push-3 col-lg-10">
+					<main property="mainContentOfPage" id="content-area">
 						<h1 id="wb-cont">Panel</h1>
-                        
-                        <div class="wb-tabs mrgn-bttm-md">
-                          <div class="tabpanels">
-                            <details id="details-panel1" open>
-                              <summary>Mario Bonito</summary>
-                              <div class="col-md-3">
-                                <p><img class="media-object img-responsive img-thumbnail" src="./assets/mario-photo.jpg" alt="Mario Bonito" /></p>
-                              </div>
-                              <div class="col-md-9">
-                                <h2 class="mrgn-tp-sm">Mario Bonito</h2>
-                                <p class="h2 mrgn-tp-0"><span class="speaker-job">Team Lead for development of Canada.ca <span class="workplace">Service Canada</span></span></p>
-                                <p class="twitter-handle"><a href="https://twitter.com/masterbee_" title="Mario Bonito Twitter">@masterbee_</a></p>
-                                <div class="clearfix"></div>
-                                <section>
-                                  <p>Working during the day at Canada.ca helping with the adoption and integration of many sites with the new Government of Canada Site, Mario spends his nights working on various open source projects like jQuery, Bootstrap, and other Front end web platforms. Focused on modular, and versatile coding practices, he embraces the challenges web development armed with nothing more than innovation, simplicity and good old humor to keep things fun.</p>
-                                </section>
-                              </div>
-                              <div class="clearfix"></div>
-                            </details>
-                            <details id="details-panel2">
-                              <summary>Lisa Fast</summary>
-                              <p>
-                              <div class="col-md-3">
-                                <p><img class="media-object img-responsive img-thumbnail" src="./assets/lisafast-photo.jpg" alt="Lisa Fast" /></p>
-                              </div>
-                              <div class="col-md-9">
-                                <h2 class="mrgn-tp-sm">Lisa Fast</h2>
-                                <p class="h2 mrgn-tp-0"><span class="speaker-job">Senior Partner, User Experience Research &amp; Strategy <span class="workplace">NeoInsight</span></span></p>
-                                <p class="twitter-handle"><a href="https://twitter.com/NeoInsight" title="NeoInsight Twitter">@NeoInsight</a></p>
-                                <div class="clearfix"></div>
-                                <section>
-                                  <p>Lisa Fast has tested almost 1,000 usability participants in her strategy and research work at Neo Insight. Those hours of watching people on the web, and a background in behavioural psychology, have given her a powerful sense of what it takes to create a successful User Experience. Lisa has worked in the User Experience (UX) field for over 25 years, in Nortel's Design Interpretive group, and as research coordinator at Carleton's Centre for Applied Cognitive Research. Back before UX was a thing, she completed a Masters degree in Computer Science in the psychology of programming. Lisa holds two patents and her design publications are listed on interaction-design.org. She has been an active GitHub collaborator on the Government of Canada's Web Experience Toolkit (WET) since 2011. She recently spoke at GTEC, and will present at the UX Professionals Association (UXPA) conference in Seattle this spring.</p>
-                                </section>
-                              </div>
-                              <div class="clearfix"></div>
-                              </p>
-                            </details>
-                            <details id="details-panel3">
-                              <summary>Jeffrey D. Stark</summary>
-                              <p>
-                              <div class="col-md-3">
-                                <p><img class="media-object img-responsive img-thumbnail" src="./assets/jeffstark-photo.jpg" alt="Jeff Stark" /></p>
-                              </div>
-                              <div class="col-md-9">
-                                <h2 class="mrgn-tp-sm">Jeffrey D. Stark</h2>
-                                <p class="h2 mrgn-tp-0"><span class="speaker-job">Accessibility, Accommodations and Adaptive Computer Technology Program <span class="workplace">Shared Services Canada</span></span></p>
-                                <div class="clearfix"></div>
-                                <section>
-                                  <p>Jeffrey Is A Firm believer in the 3 Ts to happiness: 1) Tools 2) Toys 3) Tech.</p>
-                                  <p>Jeffrey is widely respected as an expert in Inclusive & Accessible Information & Communication Technology. He is the recent recipient of the 2014 Council of Canadians with Disabilities (CCD) outstanding contribution to the Canadian  disability rights movement Award and the 2012-2013 Federal Public Service Award Of Excellence.</p>
-                                  <p>He manages a group of passionate, engaged, enthusiastic & experienced Accessibility, Job Accommodation & Adaptive Technology Subject Matter Experts who make up Shared Service Canada's Accessibility, Accommodation & Adaptive Computer Technology Program (AAACT). Over the last 24 years, this program has been blazing a trail in the field of accessibility, job accommodation and adaptive computer technology and has received international recognition for the services it provides to Federal Government Employees & the Government of Canada.</p>
-                                  <p>This group consistently demonstrates its commitment to making accessibility and inclusiveness a cornerstone of workplace culture in government. Through the group's services, the unique needs of persons with disabilities for a more accessible workplace are met by creating a corporate culture that is more inclusive of all.</p>
-                                </section>
-                              </div>
-                              <div class="clearfix"></div>
-                              </p>
-                            </details>
-                          </div>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="row">
-                        <div class="col-xs-12">
-                          <div class="panel panel-default">
-                            <div class="panel-heading">
-                              <h2 class="panel-title">The panel will be moderated by David Berman</h2>
-                            </div>
-                            <div class="panel-body"> 
-                            	<div class="col-md-3"><img src="./assets/davidberman-photo.png" alt="" class="img-responsive thumbnail" /></div>
-                                <div class="col-md-9">
-                              <p>David Berman has 30 years of experience in design and communications and has worked extensively in the adaptation of printed materials for electronic distribution, including accessible Web and PDF design and software interface development.</p>
-                              <p>As an author (Do Good Design [Peachpit/Pearson, 2009]), expert speaker, designer, communications strategist, and consultant, his professional work has brought him to over 50 countries.</p>
-                              <p>In 2012, David was appointed as chair of the Carleton Access Network, a new committee on accessible information technology by Carleton University's READ Research, Education, Accessibility and Design Initiative.</p>
-                              <p>In 2009, David was appointed a high-level advisor to the United Nations on how accessible Web design thinking can help fulfill the Millennium Development Goals.</p></div>
-                            </div>
-                          </div>
-                        </div>
-                        </div>
-						 <div class="clearfix"></div>
+                        <p>Coming soon.</p>
+                        <!-- <div class="wb-tabs mrgn-bttm-md"> -->
+                          <!-- <div class="tabpanels"> -->
+                            <!-- <details id="details-panel1" open> -->
+                              <!-- <summary>Mario Bonito</summary> -->
+                              <!-- <div class="col-md-3"> -->
+                                <!-- <p><img class="media-object img-responsive img-thumbnail" src="./assets/mario-photo.jpg" alt="Mario Bonito" /></p> -->
+                              <!-- </div> -->
+                              <!-- <div class="col-md-9"> -->
+                                <!-- <h2 class="mrgn-tp-sm">Mario Bonito</h2> -->
+                                <!-- <p class="h2 mrgn-tp-0"><span class="speaker-job">Team Lead for development of Canada.ca <span class="workplace">Service Canada</span></span></p> -->
+                                <!-- <p class="twitter-handle"><a href="https://twitter.com/masterbee_" title="Mario Bonito Twitter">@masterbee_</a></p> -->
+                                <!-- <div class="clearfix"></div> -->
+                                <!-- <section> -->
+                                  <!-- <p>Working during the day at Canada.ca helping with the adoption and integration of many sites with the new Government of Canada Site, Mario spends his nights working on various open source projects like jQuery, Bootstrap, and other Front end web platforms. Focused on modular, and versatile coding practices, he embraces the challenges web development armed with nothing more than innovation, simplicity and good old humor to keep things fun.</p> -->
+                                <!-- </section> -->
+                              <!-- </div> -->
+                              <!-- <div class="clearfix"></div> -->
+                            <!-- </details> -->
+                            <!-- <details id="details-panel2"> -->
+                              <!-- <summary>Lisa Fast</summary> -->
+                              <!-- <p> -->
+                              <!-- <div class="col-md-3"> -->
+                                <!-- <p><img class="media-object img-responsive img-thumbnail" src="./assets/lisafast-photo.jpg" alt="Lisa Fast" /></p> -->
+                              <!-- </div> -->
+                              <!-- <div class="col-md-9"> -->
+                                <!-- <h2 class="mrgn-tp-sm">Lisa Fast</h2> -->
+                                <!-- <p class="h2 mrgn-tp-0"><span class="speaker-job">Senior Partner, User Experience Research &amp; Strategy <span class="workplace">NeoInsight</span></span></p> -->
+                                <!-- <p class="twitter-handle"><a href="https://twitter.com/NeoInsight" title="NeoInsight Twitter">@NeoInsight</a></p> -->
+                                <!-- <div class="clearfix"></div> -->
+                                <!-- <section> -->
+                                  <!-- <p>Lisa Fast has tested almost 1,000 usability participants in her strategy and research work at Neo Insight. Those hours of watching people on the web, and a background in behavioural psychology, have given her a powerful sense of what it takes to create a successful User Experience. Lisa has worked in the User Experience (UX) field for over 25 years, in Nortel's Design Interpretive group, and as research coordinator at Carleton's Centre for Applied Cognitive Research. Back before UX was a thing, she completed a Masters degree in Computer Science in the psychology of programming. Lisa holds two patents and her design publications are listed on interaction-design.org. She has been an active GitHub collaborator on the Government of Canada's Web Experience Toolkit (WET) since 2011. She recently spoke at GTEC, and will present at the UX Professionals Association (UXPA) conference in Seattle this spring.</p> -->
+                                <!-- </section> -->
+                              <!-- </div> -->
+                              <!-- <div class="clearfix"></div> -->
+                              <!-- </p> -->
+                            <!-- </details> -->
+                            <!-- <details id="details-panel3"> -->
+                              <!-- <summary>Jeffrey D. Stark</summary> -->
+                              <!-- <p> -->
+                              <!-- <div class="col-md-3"> -->
+                                <!-- <p><img class="media-object img-responsive img-thumbnail" src="./assets/jeffstark-photo.jpg" alt="Jeff Stark" /></p> -->
+                              <!-- </div> -->
+                              <!-- <div class="col-md-9"> -->
+                                <!-- <h2 class="mrgn-tp-sm">Jeffrey D. Stark</h2> -->
+                                <!-- <p class="h2 mrgn-tp-0"><span class="speaker-job">Accessibility, Accommodations and Adaptive Computer Technology Program <span class="workplace">Shared Services Canada</span></span></p> -->
+                                <!-- <div class="clearfix"></div> -->
+                                <!-- <section> -->
+                                  <!-- <p>Jeffrey Is A Firm believer in the 3 Ts to happiness: 1) Tools 2) Toys 3) Tech.</p> -->
+                                  <!-- <p>Jeffrey is widely respected as an expert in Inclusive & Accessible Information & Communication Technology. He is the recent recipient of the 2014 Council of Canadians with Disabilities (CCD) outstanding contribution to the Canadian  disability rights movement Award and the 2012-2013 Federal Public Service Award Of Excellence.</p> -->
+                                  <!-- <p>He manages a group of passionate, engaged, enthusiastic & experienced Accessibility, Job Accommodation & Adaptive Technology Subject Matter Experts who make up Shared Service Canada's Accessibility, Accommodation & Adaptive Computer Technology Program (AAACT). Over the last 24 years, this program has been blazing a trail in the field of accessibility, job accommodation and adaptive computer technology and has received international recognition for the services it provides to Federal Government Employees & the Government of Canada.</p> -->
+                                  <!-- <p>This group consistently demonstrates its commitment to making accessibility and inclusiveness a cornerstone of workplace culture in government. Through the group's services, the unique needs of persons with disabilities for a more accessible workplace are met by creating a corporate culture that is more inclusive of all.</p> -->
+                                <!-- </section> -->
+                              <!-- </div> -->
+                              <!-- <div class="clearfix"></div> -->
+                              <!-- </p> -->
+                            <!-- </details> -->
+                          <!-- </div> -->
+                        <!-- </div> -->
+                        <!-- <div class="clearfix"></div> -->
+                        <!-- <div class="row"> -->
+                        <!-- <div class="col-xs-12"> -->
+                          <!-- <div class="panel panel-default"> -->
+                            <!-- <div class="panel-heading"> -->
+                              <!-- <h2 class="panel-title">The panel will be moderated by David Berman</h2> -->
+                            <!-- </div> -->
+                            <!-- <div class="panel-body">  -->
+                            	<!-- <div class="col-md-3"><img src="./assets/davidberman-photo.png" alt="" class="img-responsive thumbnail" /></div> -->
+                                <!-- <div class="col-md-9"> -->
+                              <!-- <p>David Berman has 30 years of experience in design and communications and has worked extensively in the adaptation of printed materials for electronic distribution, including accessible Web and PDF design and software interface development.</p> -->
+                              <!-- <p>As an author (Do Good Design [Peachpit/Pearson, 2009]), expert speaker, designer, communications strategist, and consultant, his professional work has brought him to over 50 countries.</p> -->
+                              <!-- <p>In 2012, David was appointed as chair of the Carleton Access Network, a new committee on accessible information technology by Carleton University's READ Research, Education, Accessibility and Design Initiative.</p> -->
+                              <!-- <p>In 2009, David was appointed a high-level advisor to the United Nations on how accessible Web design thinking can help fulfill the Millennium Development Goals.</p></div> -->
+                            <!-- </div> -->
+                          <!-- </div> -->
+                        <!-- </div> -->
+                        <!-- </div> -->
+						 <!-- <div class="clearfix"></div> -->
                         
 					</main>
 
-					<footer role="contentinfo" id="footer">
+					<footer id="footer">
 						<section>
 							<h2 id="wb-info" class="wb-inv">About this site</h2>
 							<div id="footer-contact" class="row">
@@ -156,49 +156,16 @@
 									<ul id="host-list">
 										<li><a href="http://wet-boew.github.io/wet-boew/index-en.html"><img src="./theme/assets/wet-logo.png" alt="Web Experience Toolkit" /></a></li>
 										<li><a href="http://www.uottawa.ca"><img src="./theme/assets/uottawa-logo.png" alt="uOttawa" /></a></li>
-                                        <li><a href="http://www.cic.gc.ca"><img src="./theme/assets/ircc-fip-e.png"  class="img-responsive" alt="Immigration, Refugees and Citizenship Canada" /></a></li>
+                                        <li><a href="http://www.cic.gc.ca"><img src="./theme/assets/ircc-fip-e.png" class="img-responsive" alt="Immigration, Refugees and Citizenship Canada" /></a></li>
 									</ul>
 								</div>
 							</div>
 						</section>
 					</footer>
 				</div>
-
-				<nav role="navigation" id="site-menu" class="col-sm-12 col-md-3 col-md-pull-9 col-lg-2 col-lg-pull-10" typeof="SiteNavigationElement">
-					<h2 class="wb-inv">Topics menu</h2>
-					<ul class="list-group list-unstyled">
-						<li><a class="list-group-item" href="index-en.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-						<li><a class="list-group-item" href="about-en.html"><span class="glyphicon glyphicon-info-sign glyth-yellow"></span> About</a></li>
-						<li><a class="list-group-item" href="schedule-en.html"><span class="glyphicon glyphicon-time"></span> Schedule</a></li>
-						<li><a class="list-group-item" href="location-en.html"><span class="glyphicon glyphicon-map-marker"></span> Location</a></li>
-						
-						<li><span class="list-group-item item-selected"><span class="glyphicon glyphicon-bookmark"></span> Panel</span></li>
-						<li><a class="list-group-item" href="speakers-en.html"><span class="glyphicon glyphicon-user"></span> Main presentations</a></li>
-                        <li><a class="list-group-item" href="sessions-en.html"><span class="glyphicon glyphicon-bullhorn"></span> Sessions</a></li>
-						<li><a class="list-group-item" href="designjam-en.html"><span class="glyphicon glyphicon-pencil"></span> Design jam</a></li>
-						<!--<li><a class="list-group-item" href="codesprint-en.html"><span class="glyphicon glyphicon-wrench"></span> CodeSprint</a></li>-->
-						<li><a class="list-group-item" href="proposal-en.html"><span class="glyphicon glyphicon-hand-up"></span> Lead a session</a></li>
-						<li><a lang="fr" hreflang="fr" class="list-group-item menu-util" href="./panel-fr.html"><span class="glyphicon glyphicon-share-alt menu-util"></span> Français</a></li>
-					</ul>
-				</nav>
 			</div>
 		</div>
-		<!--[if gte IE 9 | !IE ]><!-->
-			<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
-			<script src="./wet-boew/js/wet-boew.min.js"></script>
-			<script>
-				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-				ga('create', 'UA-52036019-1', 'auto');
-				ga('set', 'anonymizeIp', true);
-				ga('send', 'pageview');
-			</script>
-		<!--<![endif]-->
-		<!--[if lt IE 9]>
-			<script src="./wet-boew/js/ie8-wet-boew2.min.js"></script>
-		<![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="./wet-boew/wet-boew/js/wet-boew.min.js"></script>
 	</body>
 </html>
